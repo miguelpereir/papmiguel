@@ -1,23 +1,80 @@
 .campo{
-    width: 640px;
+    width: 1040px;
     height: 820px;
     background-image: url("../images/campo.png");
     position: relative;
+    font-size: 10px;
+
 }
 
 .plantel{
     width: 80px;
     height: 80px;
     border-radius: 40px;
-
 }
 .guardaRedes{
     position: absolute;
     top: 20px;
-    left: 270px;
+    left: 480px;
 }
 .defesaDireito{
     position: absolute;
-    top: 100px;
-    left: 20px;
+    top: 120px;
+    left: 270px;
 }
+.defesaCentralDireito{
+    position: absolute;
+    top: 170px;
+    left: 300px;
+}
+.defesaCentral{
+    position: absolute;
+    top: 170px;
+    left: 480px;
+}
+.defesaCentralEsquerdo{
+    position: absolute;
+    top: 170px;
+    right: 300px;
+}
+.centralDireito{
+    position: absolute;
+    top: 370px;
+    left: 270px;
+}
+.centralCentralDireito{
+    position: absolute;
+    top: 370px;
+    left: 410px;
+}
+.centralCentralEsquerdo{
+    position: absolute;
+    top: 370px;
+    right: 410px;
+}
+.centralEsquerdo{
+    position: absolute;
+    top: 370px;
+    right: 270px;
+}
+.avancadoDireito{
+    position: absolute;
+    top: 570px;
+    left: 300px;
+}
+.avancadoCentral{
+    position: absolute;
+    top: 570px;
+    left: 480px;
+}
+.avancadoEsquerdo{
+    position: absolute;
+    top: 570px;
+    right: 300px;
+}
+.treinador{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+.plantel

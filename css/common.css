@@ -1,3 +1,44 @@
+#divBusca{
+    background-color: #ffffff;
+    border:solid 2px #ffffff;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+}
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+
+#btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background: #ffffff;
+}
+
+#divBusca img{
+    float:left;
+}
+.linha{
+    border: #000000;
+    background-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.jogador{
+
+}
 .campo{
     width: 1040px;
     height: 820px;

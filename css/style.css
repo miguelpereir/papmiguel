@@ -749,10 +749,13 @@ ul.social-icons li a{
     background: #fe7200;
 }
 /* Shuffle and sort controls */
+/*
 select {
     padding: 1rem 1rem;
     text-transform: uppercase;
 }
+
+ */
 .sortandshuffle .shuffle-btn {
     background-color: #dec800;
 }

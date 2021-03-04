@@ -1,77 +1,7 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Olha a Bola!!</title>
-<link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
-<!-- custom-theme -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Goal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //custom-theme -->
-<script src="https://kit.fontawesome.com/90ff2770af.js" crossorigin="anonymous"></script>
-<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="../css/JiSlider.css" rel="stylesheet">
-<!-- light-box -->
-<link rel="stylesheet" href="../css/lightbox.css">
-<!-- //light-box -->
-
-<!-- Owl-carousel-CSS --><link href="../css/owl.carousel.css" rel="stylesheet">
-
-<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- font-awesome-icons -->
-<link href="../css/font-awesome.css" rel="stylesheet">
-<!-- //font-awesome-icons -->
-<link href="//fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
-	<link href="../css/common.css" rel="stylesheet">
-</head>
-	
-<body>
-<!-- banner -->
-<div class="main_section_agile">
-
-		
-		<div class="agileits_w3layouts_banner_nav">
-			<nav class="navbar navbar-default">
-				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<h3><a class="navbar-brand" href="index.html">Olha a B<i class="fa fa-futbol-o" aria-hidden="true"></i>la!!</a></h3>
-
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-					<nav class="menu--iris">
-						<ul class="nav navbar-nav menu__list">
-							<li class="menu__item menu__item--current"><a href="index.html">Home</a></li>
-							<li class="menu__item"><a href="classificacao.html" >Classificação</a></li>
-							<li class="menu__item"><a href="noticias.html">Noticias</a></li>
-							<li class="menu__item"><a href="estatisticas.html">Estatísticas</a></li>
-							<li class="menu__item">
-								<a href="perfil.html"><img class="perfil-imagem" src="../images/a1.jpg" width="40"></a>
-							</li>
-
-						</ul>
-						
-					</nav>
-				</div>
-			</nav>
-		</div>
-</div>
+<?php
+include_once("includes/body.inc.php");
+top();
+?>
 <!-- banner -->
 	<div class="banner-silder" id="home">
 		<div id="JiSlider" class="jislider">
@@ -247,26 +177,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="gallery-grids">
 				<div class="col-md-6 gallery-grids-left">
 					<div class="gallery-grid">
-						<a class="example-image-link" href="../images/w1.jpg" data-lightbox="example-set" data-title="Fotografia: Miguel OIO">
-							<img src="../images/w1.jpg" alt="" />
+						<a class="example-image-link" href="images/w1.jpg" data-lightbox="example-set" data-title="Fotografia: Miguel OIO">
+							<img src="images/w1.jpg" alt="" />
 						</a>
 					</div>
 					<div class="gallery-grids-left-sub">
 						<div class="col-md-6 gallery-grids-left-subl">
-							<div class="gallery-grid"><a class="example-image-link" href="../images/w2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
-									<img src="../images/w2.jpg" alt="" />
+							<div class="gallery-grid"><a class="example-image-link" href="images/w2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+									<img src="images/w2.jpg" alt="" />
 								</a>
 							</div>
 							<div class="gallery-grid gallery-grid-sub">
-								<a class="example-image-link" href="../images/w3.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
-									<img src="../images/w3.jpg" alt="" />
+								<a class="example-image-link" href="images/w3.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+									<img src="images/w3.jpg" alt="" />
 								</a>
 							</div>
 						</div>
 						<div class="col-md-6 gallery-grids-left-subr">
 							<div class="gallery-grid">
-								<a class="example-image-link" href="../images/w4.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
-									<img src="../images/w4.jpg" alt="" />
+								<a class="example-image-link" href="images/w4.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+									<img src="images/w4.jpg" alt="" />
 								</a>
 							</div>
 						</div>
@@ -276,44 +206,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-6 gallery-grids-left">
 					<div class="col-md-6 gallery-grids-right">
 						<div class="gallery-grid">
-							<a class="example-image-link" href="../images/w5.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
-								<img src="../images/w5.jpg" alt="" />
+							<a class="example-image-link" href="images/w5.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+								<img src="images/w5.jpg" alt="" />
 							</a>
 						</div>
 					</div>
 					<div class="col-md-6 gallery-grids-right">
 						<div class="gallery-grid">
-							<a class="example-image-link" href="../images/w6.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
-								<img src="../images/w6.jpg" alt="" />
+							<a class="example-image-link" href="images/w6.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+								<img src="images/w6.jpg" alt="" />
 							</a>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
 					<div class="gallery-grids-right1">
 						<div class="gallery-grid">
-							<a class="example-image-link" href="../images/w7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
-								<img src="../images/w7.jpg" alt="" />
+							<a class="example-image-link" href="images/w7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+								<img src="images/w7.jpg" alt="" />
 							</a>
 						</div>
 					</div>
 					<div class="col-md-6 gallery-grids-right">
 						<div class="gallery-grid">
-							<a class="example-image-link" href="../images/w8.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
-								<img src="../images/w8.jpg" alt="" />
+							<a class="example-image-link" href="images/w8.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+								<img src="images/w8.jpg" alt="" />
 							</a>
 						</div>
 					</div>
 					<div class="col-md-6 gallery-grids-right">
 						<div class="gallery-grid">
-							<a class="example-image-link" href="../images/w9.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
-								<img src="../images/w9.jpg" alt="" />
+							<a class="example-image-link" href="images/w9.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae cursus ligula">
+								<img src="images/w9.jpg" alt="" />
 							</a>
 						</div>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="clearfix"> </div>
-				<script src="../js/lightbox-plus-jquery.min.js"> </script>
+				<script src="js/lightbox-plus-jquery.min.js"> </script>
 			</div>
 		</div>
 	</div>
@@ -394,104 +324,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   
 </div><!-- End Main Container -->
 		</div>
-		<div class="clearfix"></div>
-	</div>
-<!-- /contact bottom -->
-<!-- Footer Section -->
-<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 w3-footer-nav">
-				<div class="links">
-					<a href="index.html">Home</a>
-					<a href="#about">Classificação</a>
-					<a href="#team">Jornalistas</a>
-					<a href="#gallery">Fotos</a>
-				</div>
-			</div>
-			<div class="col-md-6 w3-footer-copy">
-				<div class="copyright">
-					<p>&copy; 2017 Goal. All Rights Reserved | Design by <a href="http://w3layouts.com/"> W3layouts </a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- /Footer Section -->
-
-<!-- start-smoth-scrolling -->
-<!-- js -->
-<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<script src="../js/JiSlider.js"></script>
-<script>
-			$(window).load(function () {
-				$('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: false}).addClass('ff')
-			})
-		</script>
-
-<!-- //footer -->
-<!-- stats -->
-	<script src="../js/jquery.waypoints.min.js"></script>
-	<script src="../js/jquery.countup.js"></script>
-		<script>
-			$('.counter').countUp();
-		</script>
-<!-- //stats -->
- <!-- Custom-JavaScript-File-Links -->
-        <script type="text/javascript" src="../js/moment.js"></script>
-        <script type="text/javascript" src="../js/moment-timezone-with-data.js"></script>
-        <script type="text/javascript" src="../js/timer.js"></script>
-    <!-- //Custom-JavaScript-File-Links -->
-
-<!-- requried-jsfiles-for owl -->
- <script src="../js/owl.carousel.js"></script>
-							        <script>
-									    $(document).ready(function() {
-									      $("#owl-demo2").owlCarousel({
-									        items : 1,
-									        lazyLoad : false,
-									        autoPlay : true,
-									        navigation : false,
-									        navigationText :  false,
-									        pagination : true,
-									      });
-									    });
-									  </script>
-							 <!-- //requried-jsfiles-for owl -->
- <script src="../js/index.js"></script>
-  <script src="../js/scrolling-nav.js"></script>
-
-<script type="text/javascript" src="../js/move-top.js"></script>
-<script type="text/javascript" src="../js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
-<!-- for bootstrap working -->
-	<script src="../js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
-</body>
-</html>
+<?php
+bot();
+?>

@@ -157,7 +157,7 @@ top();
 			<div align="center"  class="col-md-12 col-sm-4 w3-agileits-about-grid">
 				<br>
 				<br>
-				<a href="classificacao.html"><h4> ver mais+</h4></a>
+				<a href="classificacao.php"><h4> ver mais+</h4></a>
 
 			</div>
 

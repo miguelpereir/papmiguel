@@ -10,7 +10,7 @@ top_admin();
 		</div>
 
 		<div align="left">
-			<a href="admin_equipas.php"><button type="button" class="btn btn-success">Back</button></a>
+			<a href="admin_paises.php"><button type="button" class="btn btn-success">Back</button></a>
 		</div>
     <br>
         <div align="left">

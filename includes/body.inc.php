@@ -631,6 +631,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
             function hideURLbar(){ window.scrollTo(0,1); } </script>
         <!-- //custom-theme -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/common.js"></script>
         <script src="https://kit.fontawesome.com/90ff2770af.js" crossorigin="anonymous"></script>
         <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="../css/JiSlider.css" rel="stylesheet">

@@ -8,8 +8,8 @@ $novoNome="../imagens/".$imagem;
 
 copy($_FILES['logoPais']['tmp_name'],$novoNome);
 
-echo $sql="insert into canais(canalNome,canalBandeiraURL)
+echo $sql="insert into paises(paisNome,paisBandeiraURL)
 values('".$nome."','../imagens/".$imagem."');";
 mysqli_query($con,$sql);
-header("location:admin_equipas.php");
+header("location:admin_paises.php");
 ?>

@@ -35,6 +35,7 @@ $result = mysqli_query($con, $sql);
         <td><a href="admin_equipas.php"><button type="button" class="btn btn-success">Equipas</button></a>
             <a href="admin_noticias.php"><button type="button" class="btn btn-success">Noticias</button></a>
             <a href="admin_paises.php"><button type="button" class="btn btn-success">Paises</button></a>
+            <a href="admin_jogadores.php"><button type="button" class="btn btn-success">Jodadores</button></a>
     </tr>
     <br>
     Pesquisar:<br><input type="text" id="search">
@@ -43,7 +44,7 @@ $result = mysqli_query($con, $sql);
     <table  class='table table-striped' align="center" width="100%">
         <tr>
             <td colspan="5" align='right'>
-                <a href="adicionar_paises.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
+                <a href="adicionar_jogadores.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
             </td>
         </tr>
         <tr>

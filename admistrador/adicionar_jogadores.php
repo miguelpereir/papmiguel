@@ -10,7 +10,7 @@ top_admin();
 		</div>
 
 		<div align="left">
-			<a href="admin_paises.php"><button type="button" class="btn btn-success">Back</button></a>
+			<a href="admin_jogadores.php"><button type="button" class="btn btn-success">Back</button></a>
 		</div>
     <br>
         <div align="left">
@@ -20,7 +20,7 @@ top_admin();
         <label>Data de nascimento:</label>
             <input type="date" name="dataJogador">
 
-        <label>Foto:</label>
+            <br><label>Foto:</label>
         <input type="file" name="fotoJogador"><br>
             <select name="jogadorPais">
                 <option value="-1">Escolha a pais...</option>

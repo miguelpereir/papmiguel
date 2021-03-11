@@ -13,6 +13,7 @@ top_admin();
 				<a href="admin_equipas.php"><button type="button" class="btn btn-success">Equipas</button></a>
 				<a href="admin_noticias.php"><button type="button" class="btn btn-success">Noticias</button></a>
                 <a href="admin_paises.php"><button type="button" class="btn btn-success">Paises</button></a>
+                <a href="admin_jogadores.php"><button type="button" class="btn btn-success">Jodadores</button></a>
 		</div>
 	<br><a href="adicionar_equipa.html"><p align="right">adicionar equipa</p></a>
 

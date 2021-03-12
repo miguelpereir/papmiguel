@@ -6,7 +6,7 @@ top_admin();
 
 
 		<div>
-			<h1 align="center">Adicionar Pais </h1>
+			<h1 align="center">Adicionar Jogador </h1>
 		</div>
 
 		<div align="left">

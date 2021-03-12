@@ -36,6 +36,7 @@ $result = mysqli_query($con, $sql);
             <a href="admin_noticias.php"><button type="button" class="btn btn-success">Noticias</button></a>
             <a href="admin_paises.php"><button type="button" class="btn btn-success">Paises</button></a>
             <a href="admin_jogadores.php"><button type="button" class="btn btn-success">Jodadores</button></a>
+            <a href="admin_posicoes.php"><button type="button" class="btn btn-success">Posições</button></a>
     </tr>
     <br>
     Pesquisar:<br><input type="text" id="search">

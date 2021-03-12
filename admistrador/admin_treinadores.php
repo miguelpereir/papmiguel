@@ -2,34 +2,34 @@
 include_once("../includes/body.inc.php");
 top_admin();
 $txt = addslashes($_POST['txt']);
-$sql = "Select * from jogadores inner join paises on jogadorPaisID=paisID  where jogadorNome LIKE '$txt%'";
+$sql = "Select * from treinadores inner join equipas on treinadorEquipaID=equipaID  where treinadorNome LIKE '$txt%'";
 
 $result = mysqli_query($con, $sql);
 ?>
     <script>
         function confirmaElimina(id) {
             $.ajax({
-                url:"AJAX/AJAXGetNameJogador.php",
+                url:"AJAX/AJAXGetNameTreinador.php",
                 type:"post",
                 data:{
                     idPais:id
                 },
                 success:function (result){
-                    if(confirm('Confirma que deseja eliminar o jogador:'+result+"?"))
-                        window.location="eliminaJogador.php?id=" + id;
+                    if(confirm('Confirma que deseja eliminar o treinador:'+result+"?"))
+                        window.location="eliminaTreinador.php?id=" + id;
                 }
             })
         };
 
         $('document').ready(function (){
             $('#search').keyup(function (){
-                fillTableJogadores(this.value);
+                fillTableTreinador(this.value);
             });
-            fillTableJogadores();
+            fillTableTreinador();
         })
     </script>
 <div class="container" align="center">
-    <h1>Lista dos paises</h1>
+    <h1>Lista dos Treinadores</h1>
     <tr>
         <td><a href="admin_equipas.php"><button type="button" class="btn btn-success">Equipas</button></a>
             <a href="admin_noticias.php"><button type="button" class="btn btn-success">Noticias</button></a>
@@ -43,16 +43,15 @@ $result = mysqli_query($con, $sql);
 </div>
     <table  class='table table-striped' align="center" width="100%">
         <tr>
-            <td colspan="7" align='right'>
-                <a href="adicionar_jogadores.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
+            <td colspan="6" align='right'>
+                <a href="adicionar_treinadores.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
             </td>
         </tr>
         <tr>
             <th>Id</th>
             <th>Nome</th>
-            <th>Data</th>
             <th>Foto</th>
-            <th>Pais</th>
+            <th>Equipa</th>
             <th colspan="2">op&ccedil&otildees</th>
         </tr>
 
@@ -61,13 +60,12 @@ $result = mysqli_query($con, $sql);
             ?>
 
             <tr>
-                <td><?php echo $dados['jogadorId'] ?></td>
-                <td><?php echo $dados['jogadorNome'] ?></td>
-                <td><?php echo $dados['jogadorDataNascimento'] ?></td>
-                <td><img width='90' src="../<?php echo $dados['jogadorFotoURL'] ?>"></td>
-                <td><?php echo $dados['paisNome'] ?></td>
-                <td><a href="editaJogador.php?id=<?php echo $dados['jogadorId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
-                <td><a href="#" onclick="confirmaElimina(<?php echo $dados['jogadorId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
+                <td><?php echo $dados['treinadorId'] ?></td>
+                <td><?php echo $dados['treinadorNome'] ?></td>
+                <td><img width='90' src="../<?php echo $dados['treinadorFotoURL'] ?>"></td>
+                <td><?php echo $dados['equipaNome'] ?></td>
+                <td><a href="editaTreinador.php?id=<?php echo $dados['treinadorId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
+                <td><a href="#" onclick="confirmaElimina(<?php echo $dados['treinadorId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
             </tr>
             <?php
         }

@@ -1,11 +1,10 @@
 <?php
 include_once ("../includes/body.inc.php");
-$id=intval($_GET['id']);
 
+$id=intval($_GET['id']);
 $sql="select * from paises where paisId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
-
 ?>
 <h1>Editar Pais</h1>
 <form action="confirmaEditaPais.php" method="post" enctype="multipart/form-data">
@@ -15,6 +14,4 @@ $dados=mysqli_fetch_array($result);
     <label>Logótipo:</label><br>
     <img src="../<?php echo $dados['paisBandeiraURL']?>"><br>
     <input type="file" name="logoPais"><br>
-
-
     <input type="Submit" value="Edita"><br>

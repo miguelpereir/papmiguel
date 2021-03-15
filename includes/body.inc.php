@@ -71,8 +71,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<nav class="menu--iris">
 					<ul class="nav navbar-nav menu__list">
 						<li class="menu__item"><a href="index.php">Home</a></li>
-						<li class="menu__item"><a href="classificacao.php" >Classificação</a></li>
+						<li class="menu__item"><a href="classificacao.php" >ClassificaÃ§Ã£o</a></li>
 						<li class="menu__item"><a href="noticias.php" >Noticias</a></li>
+                        <li class="menu__item"><a href="clubes.php" >Clubes</a></li>
 
 						<li class="menu__item"><a href="login.php">Registar/Entrar</a></li>
 					</ul>
@@ -99,8 +100,9 @@ function bot(){
             <div class="col-md-6 w3-footer-nav">
                 <div class="links">
                     <a href="index.php">Home</a>
-                    <a href="classificacao.php">Classificação</a>
+                    <a href="classificacao.php">ClassificaÃ§Ã£o</a>
                     <a href="noticias.php">Noticias</a>
+                    <a href="clubes.php">Clubes</a>
                     <a href="login.php">Registar/Entrar</a>
                 </div>
             </div>
@@ -279,8 +281,9 @@ function top_login(){
                 <nav class="menu--iris">
                     <ul class="nav navbar-nav menu__list">
                         <li class="menu__item menu__item--current"><a href="index.php">Home</a></li>
-                        <li class="menu__item"><a href="classificacao.php" >Classificação</a></li>
+                        <li class="menu__item"><a href="classificacao.php" >ClassificaÃ§Ã£o</a></li>
                         <li class="menu__item"><a href="noticias.php">Noticias</a></li>
+                        <li class="menu__item"><a href="clubes.php" >Clubes</a></li>
 
                         <li class="menu__item"><a href="login.php">Registar/Entrar</a></li>
                     </ul>
@@ -303,8 +306,9 @@ function bot_login(){
             <div class="col-md-6 w3-footer-nav">
                 <div class="links">
                     <a href="index.php">Home</a>
-                    <a href="classificacao.php">Classificação</a>
+                    <a href="classificacao.php">ClassificaÃ§Ã£o</a>
                     <a href="noticias.php">Noticias</a>
+                    <a href="clubes.php">Clubes</a>
                     <a href="login.php">Registar/Entrar</a>
                 </div>
             </div>
@@ -483,9 +487,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <nav class="menu--iris">
                     <ul class="nav navbar-nav menu__list">
                         <li class="menu__item menu__item--current"><a href="index.php">Home</a></li>
-                        <li class="menu__item"><a href="classificacao.php" >Classificação</a></li>
+                        <li class="menu__item"><a href="classificacao.php" >ClassificaÃ§Ã£o</a></li>
                         <li class="menu__item"><a href="noticias.php">Noticias</a></li>
-                        <li class="menu__item"><a href="estatisticas.php">Estatísticas</a></li>
+                        <li class="menu__item"><a href="clubes.php" >Clubes</a></li>
+                        <li class="menu__item"><a href="estatisticas.php">EstatÃ­sticas</a></li>
+
                         <li class="menu__item">
                             <a href="perfil.php"><img class="perfil-imagem" src="../images/a1.jpg" width="40"></a>
                         </li>
@@ -512,8 +518,9 @@ function bot_utilizador(){
                 <div class="col-md-6 w3-footer-nav">
                     <div class="links">
                         <a href="index.php">Home</a>
-                        <a href="classificacao.php">Classificação</a>
+                        <a href="classificacao.php">ClassificaÃ§Ã£o</a>
                         <a href="noticias.php">Noticias</a>
+                        <a href="clubes.php">Clubes</a>
                         <a href="perfil.php">Perfil</a>
                     </div>
                 </div>
@@ -674,9 +681,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <nav class="menu--iris">
                         <ul class="nav navbar-nav menu__list">
                             <li class="menu__item menu__item--current"><a href="index.php">Home</a></li>
-                            <li class="menu__item"><a href="classificacao.php" >Classificação</a></li>
+                            <li class="menu__item"><a href="classificacao.php" >ClassificaÃ§Ã£o</a></li>
                             <li class="menu__item"><a href="noticias.php">Noticias</a></li>
-                            <li class="menu__item"><a href="estatisticas.php">Estatísticas</a></li>
+                            <li class="menu__item"><a href="clubes.php" >Clubes</a></li>
+                            <li class="menu__item"><a href="estatisticas.php">EstatÃ­sticas</a></li>
                             <li class="menu__item"><a href="admin.php">Admin</a></li>
 
                         </ul>
@@ -704,8 +712,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-6 w3-footer-nav">
                     <div class="links">
                         <a href="index.php">Home</a>
-                        <a href="classificacao.php">Classificação</a>
+                        <a href="classificacao.php">ClassificaÃ§Ã£o</a>
                         <a href="noticias.php">Noticias</a>
+                        <a href="clubes.php">Clubes</a>
                         <a href="admin.php">Admin</a>
                     </div>
                 </div>

@@ -53,12 +53,12 @@ top();
 						<div class="view view-tenth">
 							<div class="agile_text_box">
 								<i  class="fa fa-star" aria-hidden="true"></i>
-								<h3> Jorge Jesus Despedido</h3>
-								<p>O Treinador do Benfica é despedido.</p>
+								<h3> Sporting</h3>
+								<p>Sequencia de Vitórias incrivel</p>
 							</div>
 							<div  class="mask">
 
-								<a href="noticiajj.html"> <img src="images/jj.png" class="img-responsive" alt="" /></a>
+								<a href="noticias_sporting.php"> <img src="images/sporting.jpg" class="img-responsive" alt="" /></a>
 							</div>
 						</div>
 					</div>

@@ -15,6 +15,7 @@ top_admin();
                 <a href="admin_jogadores.php"><button type="button" class="btn btn-success">Jodadores</button></a>
                 <a href="admin_posicoes.php"><button type="button" class="btn btn-success">Posições</button></a>
                 <a href="admin_treinadores.php"><button type="button" class="btn btn-success">Treinadores</button></a>
+                <a href="admin_plantel.php"><button type="button" class="btn btn-success">Plantel</button></a>
 		</tr>
 		<tr>
 		<tr>

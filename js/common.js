@@ -33,9 +33,22 @@ function fillTableEquipas(txt='') {
             $('#tableContent').html(result);
         }
     });
-}function fillTablePosicao(txt='') {
+}
+function fillTablePosicao(txt='') {
     $.ajax({
         url: "AJAX/AJAXFillPosicao.php",
+        type: "post",
+        data: {
+            txt: txt
+        },
+        success: function (result) {
+            $('#tableContent').html(result);
+        }
+    });
+}
+function fillTablePlantel(txt='') {
+    $.ajax({
+        url: "AJAX/AJAXFillPlantel.php",
         type: "post",
         data: {
             txt: txt

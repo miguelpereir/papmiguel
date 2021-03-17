@@ -2,29 +2,31 @@
 include_once("../includes/body.inc.php");
 top_admin();
 $txt = addslashes($_POST['txt']);
-$sql = "Select * from (((equipajogadores inner join jogadores on equipaJogadorJogadorId=jogadorId AND equipajogadores inner join equipas on equipaJogadorEquipaId=equipaId AND equipajogadores posicoes on equipaJogadorPosicaoId=posicaoId where jogadorNome LIKE '$txt%'";
+$sql = "Select * from (((equipajogadores inner join jogadores on equipaJogadorJogadorId=jogadorId)
+    inner join equipas on equipaJogadorEquipaId=equipaId)
+    inner join posicoes on equipaJogadorPosicaoId=posicaoId) where jogadorNome LIKE '$txt%'";
 $result = mysqli_query($con, $sql);
 ?>
     <script>
         function confirmaElimina(id) {
             $.ajax({
-                url:"AJAX/AJAXGetNamePais.php",
+                url:"AJAX/AJAXGetNamePlantel.php",
                 type:"post",
                 data:{
                     idPais:id
                 },
                 success:function (result){
-                    if(confirm('Confirma que deseja eliminar o pais:'+result+"?"))
-                        window.location="eliminaPais.php?id=" + id;
+                    if(confirm('Confirma que deseja eliminar o plantel:'+result+"?"))
+                        window.location="eliminaPlantel.php?id=" + id;
                 }
             })
         };
 
         $('document').ready(function (){
             $('#search').keyup(function (){
-                fillTablePaises(this.value);
+                fillTablePlantel(this.value);
             });
-            fillTablePaises();
+            fillTablePlantel();
         })
     </script>
 </div>

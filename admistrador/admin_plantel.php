@@ -67,8 +67,8 @@ $result = mysqli_query($con, $sql);
                 <td><?php echo $dados['equipaNome'] ?></td>
                 <td><?php echo $dados['posicaoNome'] ?></td>
                 <td><?php echo $dados['equipaJogadorNumero'] ?></td>
-                <td><a href="editaPais.php?id=<?php echo $dados['paisId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
-                <td><a href="#" onclick="confirmaElimina(<?php echo $dados['paisId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
+                <td><a href="editaPlantel.php?id=<?php echo $dados['equipaJogadorJogadorId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
+                <td><a href="#" onclick="confirmaElimina(<?php echo $dados['equipaJogadorJogadorId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
             </tr>
             <?php
         }

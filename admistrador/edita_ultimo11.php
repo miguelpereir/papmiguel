@@ -1,7 +1,10 @@
 <?php
 include_once("../includes/body.inc.php");
 top_admin();
-
+$id=intval($_GET['id']);
+$sql="select * from equipasjodadores where equipaJogadorEquipaId=$id";
+$result=mysqli_query($con,$sql);
+$dados=mysqli_fetch_array($result);
 ?>
     <div align="center" style="padding-bottom: 20px;"><h1>Editar Ultimo11</h1></div>
     <div class="container">
@@ -13,7 +16,19 @@ top_admin();
             <div class="col-md-2">
                 <select name="guardaRedes">
                     <option value="-1">Escolha o Guarda-Redes...</option>
-                    <option value="">
+                    <?php
+                    $sql="select * from jogadores order by jogadorNome";
+                    $result=mysqli_query($con,$sql);
+                    while ($dados=mysqli_fetch_array($result)){
+                        ?>
+                        <option value="<?php echo $dados['jogadorId']?>"><?php echo $dados['jogadorNome']?></option>
+                        <?php
+                    }
+
+
+                    ?>
+
+
                     </option>
                 </select>
             </div>

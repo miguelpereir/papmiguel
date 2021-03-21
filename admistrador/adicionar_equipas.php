@@ -19,11 +19,11 @@ top_admin();
         <input type="text" name="nomeEquipa"><br>
         <label>Emblema:</label>
         <input type="file" name="emblemaEquipa"><br>
-        <label>Ano de FundaÁ„o: </label>
+        <label>Ano de Funda√ß√£o: </label>
         <input type="text" name="anoEquipa"><br>
-        <label>Nome do Est·dio: </label>
+        <label>Nome do Est√°dio: </label>
         <input type="text" name="nomeEstadio"><br>
-        <label>Foto do Est·dio:</label>
+        <label>Foto do Est√°dio:</label>
         <input type="file" name="fotoEstadio"><br>
         <label>Historia: </label>
         <textarea name="historiaEquipa" id="" cols="50" rows="5"></textarea><br>

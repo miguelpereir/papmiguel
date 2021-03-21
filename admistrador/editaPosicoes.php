@@ -1,22 +1,39 @@
 <?php
 include_once ("../includes/body.inc.php");
-
+top_admin();
 $id=intval($_GET['id']);
 $sql="select * from posicoes where posicaoId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 ?>
-<h1>Editar Posicao</h1>
-<form action="confirmaEditaPosicao.php" method="post" enctype="multipart/form-data">
-    <input type="hidden" name="posicaoId" value="<?php echo $id?>">
-    <label>Nome: </label>
-    <input type="text" name="nomePosicao" value="<?php echo $dados['posicaoNome']?>"><br>
-    <br><label>PosiÁ„o no Campo:</label>
-    <select name="campoPosicao">
-        <option value="-1">Escolha a posicao...</option>
-        <option value="1">Guarda redes</option>
-        <option value="2">Defesa</option>
-        <option value="3">MÈdio</option>
-        <option value="4">AvanÁado</option>
-    </select>
-    <input type="Submit" value="Edita"><br>
+<div class="container" align="center" >
+
+
+    <div>
+        <h1 align="center">Edita Posi√ß√£o </h1>
+    </div>
+
+    <div align="left">
+        <a href="admin_posicoes.php"><button type="button" class="btn btn-success">Back</button></a>
+    </div>
+    <br>
+    <div align="left">
+        <form action="confirmaEditaPosicao.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="posicaoId" value="<?php echo $id?>">
+            <label>Nome: </label>
+            <input type="text" name="nomePosicao" value="<?php echo $dados['posicaoNome']?>"><br>
+
+            <br><label>Posi√ß√£o no Campo:</label>
+            <select name="campoPosicao">
+                <option value="-1">Escolha a posicao...</option>
+                <option value="1">Guarda redes</option>
+                <option value="2">Defesa</option>
+                <option value="3">M√©dio</option>
+                <option value="4">Avan√ßado</option>
+            </select>
+            <input type="Submit" value="Edita"><br>
+    </div>
+</div>
+<?php
+bot_admin();
+?>

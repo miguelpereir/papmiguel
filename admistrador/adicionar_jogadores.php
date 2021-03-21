@@ -19,7 +19,6 @@ top_admin();
         <input type="text" name="nomeJogador"><br>
         <label>Data de nascimento:</label>
             <input type="date" name="dataJogador">
-
             <br><label>Foto:</label>
         <input type="file" name="fotoJogador"><br>
             <select name="jogadorPais">

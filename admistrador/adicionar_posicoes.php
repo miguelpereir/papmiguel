@@ -18,13 +18,13 @@ top_admin();
         <label>Nome: </label>
         <input type="text" name="nomePosicao"><br>
 
-            <br><label>Posição no Campo:</label>
+            <br><label>PosiÃ§Ã£o no Campo:</label>
             <select name="campoPosicao">
                 <option value="-1">Escolha a posicao...</option>
                 <option value="1">Guarda redes</option>
                 <option value="2">Defesa</option>
-                <option value="3">Médio</option>
-                <option value="4">Avançado</option>
+                <option value="3">MÃ©dio</option>
+                <option value="4">AvanÃ§ado</option>
             </select>
         <input type="Submit" value="Adiciona"><br>
         </div>

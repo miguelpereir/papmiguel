@@ -30,13 +30,13 @@ $result = mysqli_query($con, $sql);
     </script>
 </div>
 <div class="container" align="center">
-    <h1>Lista dos Posições</h1>
+    <h1>Lista dos PosiÃ§Ãµes</h1>
     <tr>
         <td><a href="admin_equipas.php"><button type="button" class="btn btn-success">Equipas</button></a>
             <a href="admin_noticias.php"><button type="button" class="btn btn-success">Noticias</button></a>
             <a href="admin_paises.php"><button type="button" class="btn btn-success">Paises</button></a>
             <a href="admin_jogadores.php"><button type="button" class="btn btn-success">Jodadores</button></a>
-            <a href="admin_posicoes.php"><button type="button" class="btn btn-success">Posições</button></a>
+            <a href="admin_posicoes.php"><button type="button" class="btn btn-success">PosiÃ§Ãµes</button></a>
             <a href="admin_treinadores.php"><button type="button" class="btn btn-success">Treinadores</button></a>
             <a href="admin_plantel.php"><button type="button" class="btn btn-success">Plantel</button></a>
             <a href="admin_ultimo11.php"><button type="button" class="btn btn-success">Ultimo 11</button></a>
@@ -55,7 +55,7 @@ $result = mysqli_query($con, $sql);
         <tr>
             <th>Id</th>
             <th>Nome</th>
-            <th>Posição do Campo</th>
+            <th>PosiÃ§Ã£o do Campo</th>
             <th colspan="2">op&ccedil&otildees</th>
         </tr>
 

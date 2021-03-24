@@ -50,7 +50,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -69,7 +69,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -90,7 +90,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -111,7 +111,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -132,7 +132,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -166,7 +166,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -187,7 +187,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -206,7 +206,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -225,7 +225,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -244,7 +244,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -273,7 +273,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -293,7 +293,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>
@@ -313,7 +313,7 @@ $id=intval($_GET['id']);
                     <?php
                     $sql="select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and posicaoCampo='Medio' and posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
                     $result=mysqli_query($con,$sql);
                     while ($dados=mysqli_fetch_array($result)){
                         ?>

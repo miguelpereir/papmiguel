@@ -19,10 +19,10 @@ top();
 		<tr>
 			<div class="linha"></div>
 				<td>
-					<a href="noticias_sporting.html"><img width="200" src="images/sporting.jpg" alt=""></a>
+					<a href="noticias_sporting.php"><img width="200" src="images/sporting.jpg" alt=""></a>
 				</td>
 				<td>
-					<a href="noticias_sporting.html"><h2  align="left">Sporting</h2></a>
+					<a href="noticias_sporting.php"><h2  align="left">Sporting</h2></a>
 				<h4>Sequencia de Vitórias incrivel</h4>
 				<br>
 				<h5>O Sporting segue imparável e somou nova vitória, esta terça-feira, na 18.ª jornada da Liga, a primeirada segunda volta do campeonato.</h5>

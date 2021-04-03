@@ -2,10 +2,17 @@
 include_once("../includes/body.inc.php");
 top_admin();
 $id = intval($_GET['id']);
+$sql="select jogoId from jogos where jogoEquipaCasaId = $id or jogoEquipaForaId=$id order by jogoData desc limit 1";
+$res=mysqli_query($con,$sql);
+$dados=mysqli_fetch_array($res);
+$idJogo=$dados[0];
+
 ?>
     <div align="center" style="padding-bottom: 20px;"><h1>Editar Ultimo11</h1></div>
+<h3> NOTA: ir buscar o ID do último jogo</h3>
     <div class="container" style=" background-image: url('../images/campo_2.png');width: 1115px; height: 749px">
-        <form action="view.php" method="post" enctype="multipart/form-data">
+        <form action="confirmaEdita11.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="jogoId" value="<?php echo $idJogo?>">
             <div class="row">
                 <div class="col-md-12" style="padding-bottom: 50px;padding-top: 50px;">
 
@@ -54,7 +61,7 @@ $id = intval($_GET['id']);
                         <?php
                         $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                                                  where posicaoCampo<>'Guarda redes' and equipaJogadorEquipaId=$id  order by jogadorNome";
                         $result = mysqli_query($con, $sql);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
@@ -72,10 +79,7 @@ $id = intval($_GET['id']);
                     <select name="DefesaCentralEsquerdo">
                         <option value="-1">Escolha o Defesa Central Esquerdo...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -93,10 +97,7 @@ $id = intval($_GET['id']);
                     <select name="DefesaCentralCentro">
                         <option value="-1">Escolha o Defesa Central Centro...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -114,10 +115,7 @@ $id = intval($_GET['id']);
                     <select name="DefesaCentralDireito">
                         <option value="-1">Escolha o Defesa Central Direito...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -135,10 +133,7 @@ $id = intval($_GET['id']);
                     <select name="DefesaDireito">
                         <option value="-1">Escolha o Defesa Direito...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -171,10 +166,7 @@ $id = intval($_GET['id']);
                     <select name="MedioEsquerdo">
                         <option value="-1">Escolha o Medio Esquerdo...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -192,10 +184,7 @@ $id = intval($_GET['id']);
                     <select name="MedioCentralEsquerdo">
                         <option value="-1">Escolha o Medio Central Esquerdo...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -211,10 +200,7 @@ $id = intval($_GET['id']);
                     <select name="MedioCentralCentro">
                         <option value="-1">Escolha o Medio Central Centro...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -230,10 +216,7 @@ $id = intval($_GET['id']);
                     <select name="MedioCentralDireito">
                         <option value="-1">Escolha o Medio Central Direito...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -249,10 +232,7 @@ $id = intval($_GET['id']);
                     <select name="MedioDireito">
                         <option value="-1">Escolha o Medio Direito...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -280,10 +260,7 @@ $id = intval($_GET['id']);
                     <select name="avancadoEsquerdo">
                         <option value="-1">Escolha o Avançado Esquerdo...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -300,10 +277,7 @@ $id = intval($_GET['id']);
                     <select name="avancadoCentro">
                         <option value="-1">Escolha o Avançado Centro...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>
@@ -320,10 +294,7 @@ $id = intval($_GET['id']);
                     <select name="avancadoDireito">
                         <option value="-1">Escolha o Avançado Direito...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
-                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
-                                                  where posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                        $result = mysqli_query($con, $sql);
+                        mysqli_data_seek($result,0);
                         while ($dados = mysqli_fetch_array($result)) {
                             ?>
                             <option value="<?php echo $dados['jogadorId'] ?>"><?php echo $dados['jogadorNome'] ?></option>

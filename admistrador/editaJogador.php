@@ -66,7 +66,7 @@ $dadosJogadores = mysqli_fetch_array($resultJogadores);
                     ?>
                 </select>
 
-                <input type="Submit" value="Adiciona"><br>
+                <input type="Submit" value="edita"><br>
         </div>
     </div>
 

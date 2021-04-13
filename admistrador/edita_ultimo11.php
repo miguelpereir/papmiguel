@@ -27,7 +27,7 @@ $idJogo=$dados[0];
                     <select name="guardaRedes">
                         <option value="-1">Escolha o Guarda-Redes...</option>
                         <?php
-                        $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
+                         $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
                                                   where posicaoCampo='guarda redes' and equipaJogadorEquipaId=$id  order by jogadorNome";
                         $result = mysqli_query($con, $sql);

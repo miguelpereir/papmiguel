@@ -1,6 +1,8 @@
 <?php
 include_once("../includes/body.inc.php");
 top_admin();
+$id = intval($_GET['id']);
+$sql="select * from equipas where equipaId=$id";
 ?>
 <div class="container" align="center" >
 
@@ -15,6 +17,7 @@ top_admin();
     <br>
         <div align="left">
         <form action="confirmaNovoPlantel.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="<?php echo $id?>">
             <select name="equipaJogadorJogador">
                 <option value="-1">Escolha a Jogador...</option>
                 <?php
@@ -28,20 +31,6 @@ top_admin();
 
                 ?>
             </select>
-            <br>
-                <select name="equipaJogadorEquipa">
-                    <option value="-1">Escolha a Equipa...</option>
-                    <?php
-                    $sql="select * from equipas order by equipaNome";
-                    $result=mysqli_query($con,$sql);
-                    while ($dados=mysqli_fetch_array($result)){
-                        ?>
-                        <option value="<?php echo $dados['equipaId']?>"><?php echo $dados['equipaNome']?></option>
-                        <?php
-                    }
-
-                    ?>
-                </select>
             <br>
                     <select name="equipaJogadorPosicao">
                         <option value="-1">Escolha a Posicao...</option>

@@ -2,7 +2,7 @@
 include_once("../includes/body.inc.php");
 top_admin();
 $txt = addslashes($_POST['txt']);
-$sql = "Select * from equipas  where equipaNome LIKE '$txt%'";
+$sql = "Select * from equipas  where equipaNome LIKE '$txt%' ";
 
 $result = mysqli_query($con, $sql);
 ?>
@@ -30,7 +30,7 @@ $result = mysqli_query($con, $sql);
     </script>
 
     <div class="container" align="center">
-        <h1>Lista dos paises</h1>
+        <h1>Lista das Equipas</h1>
         <tr>
             <td><a href="admin_equipas.php"><button type="button" class="btn btn-success">Equipas</button></a>
                 <a href="admin_noticias.php"><button type="button" class="btn btn-success">Noticias</button></a>
@@ -38,7 +38,6 @@ $result = mysqli_query($con, $sql);
                 <a href="admin_jogadores.php"><button type="button" class="btn btn-success">Jodadores</button></a>
                 <a href="admin_posicoes.php"><button type="button" class="btn btn-success">Posições</button></a>
                 <a href="admin_treinadores.php"><button type="button" class="btn btn-success">Treinadores</button></a>
-                <a href="admin_plantel.php"><button type="button" class="btn btn-success">Plantel</button></a>
                 <a href="admin_ultimo11.php"><button type="button" class="btn btn-success">Ultimo 11</button></a>
 
         </tr>
@@ -47,7 +46,7 @@ $result = mysqli_query($con, $sql);
     </div>
     <table  class='table table-striped' align="center" width="100%">
         <tr>
-            <td colspan="10" align='right'>
+            <td colspan="11" align='right'>
                 <a href="adicionar_equipas.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
             </td>
         </tr>
@@ -77,6 +76,7 @@ $result = mysqli_query($con, $sql);
                 <td><img width="90" src="../<?php echo $dados['equipaEstadioURL'] ?>"></td>
                 <td><?php echo $dados['equipaHistoria'] ?></td>
                 <td><?php echo $dados['equipaPresidente'] ?></td>
+                <td><a href="admin_plantel.php?id=<?php echo $dados['equipaId'] ?>"> <i class="fas fa-eye text-info"></i></a></td>
                 <td><a href="editaEquipa.php?id=<?php echo $dados['equipaId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
                 <td><a href="#" onclick="confirmaElimina(<?php echo $dados['equipaId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
             </tr>

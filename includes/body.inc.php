@@ -673,7 +673,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h3><a class="navbar-brand" href="index.php">Olha a B<i class="fa fa-futbol-o" aria-hidden="true"></i>la!!</a></h3>
+                    <h3><a class="navbar-brand" href="index.php">Olha a B<i class="fa fa-futbol-o" aria-hidden="true"></i>la!! - Admin</a></h3>
 
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -681,12 +681,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <nav class="menu--iris">
                         <ul class="nav navbar-nav menu__list">
                             <li class="menu__item menu__item--current"><a href="index.php">Home</a></li>
-                            <li class="menu__item"><a href="classificacao.php" >Classificação</a></li>
-                            <li class="menu__item"><a href="noticias.php">Noticias</a></li>
-                            <li class="menu__item"><a href="clubes.php" >Clubes</a></li>
-                            <li class="menu__item"><a href="estatisticas.php">Estatísticas</a></li>
-                            <li class="menu__item"><a href="admin.php">Admin</a></li>
-
+                            <li class="menu__item"><a href="admin_jogos.php" >Jogos</a></li>
+                            <li class="menu__item"><a href="admin_equipas.php" >Equipas</a></li>
+                            <li class="menu__item"><a href="admin_jogadores.php">Jogadores</a></li>
+                            <li class="menu__item"><a href="admin_noticias.php" >Noticias</a></li>
                         </ul>
 
                     </nav>
@@ -701,7 +699,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ?>
 
     <?php
-    function bot_admin(){
+    function bot_admin($menu=HOME){
     ?>
     <div class="clearfix"></div>
     <!-- /contact bottom -->
@@ -712,10 +710,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-6 w3-footer-nav">
                     <div class="links">
                         <a href="index.php">Home</a>
-                        <a href="classificacao.php">Classificação</a>
-                        <a href="noticias.php">Noticias</a>
-                        <a href="clubes.php">Clubes</a>
-                        <a href="admin.php">Admin</a>
+                        <a href="admin_jogos.php">Jogos</a>
+                        <a href="admin_equipas.php">Equipas</a>
+                        <a href="admin_jogadores.php">Jogadores</a>
+                        <a href="admin_noticias.php">Noticias</a>
                     </div>
                 </div>
                 <div class="col-md-6 w3-footer-copy">
@@ -801,6 +799,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             $().UItoTop({easingType: 'easeOutQuart'});
 
         });
+
+                $('document').ready(function () {
+
+            <?php
+            if ($menu == EQUIPAS){
+            ?>
+            $('#search').keyup(function () {
+                fillTableEquipas(this.value);
+            });
+            fillTableEquipas();
+                })
+        <?php }
+
+        ?>
     </script>
     <!-- //here ends scrolling icon -->
     </body>

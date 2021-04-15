@@ -30,22 +30,15 @@ $result = mysqli_query($con, $sql);
     </script>
 <div class="container" align="center">
     <h1>Lista dos Treinadores</h1>
-    <tr>
-        <td><a href="admin_equipas.php"><button type="button" class="btn btn-success">Equipas</button></a>
-            <a href="admin_noticias.php"><button type="button" class="btn btn-success">Noticias</button></a>
-            <a href="admin_paises.php"><button type="button" class="btn btn-success">Paises</button></a>
-            <a href="admin_jogadores.php"><button type="button" class="btn btn-success">Jodadores</button></a>
-            <a href="admin_posicoes.php"><button type="button" class="btn btn-success">Posições</button></a>
-            <a href="admin_treinadores.php"><button type="button" class="btn btn-success">Treinadores</button></a>
-            <a href="admin_ultimo11.php"><button type="button" class="btn btn-success">Ultimo 11</button></a>
 
-    </tr>
-    <br>
     Pesquisar:<br><input type="text" id="search">
-</div>
+
     <table  class='table table-striped' align="center" width="100%">
         <tr>
-            <td colspan="6" align='right'>
+            <td colspan="2" align='left'>
+                <a href="admin_jogadores.php"><i class='fas fa-arrow-left text-black'> Back</i></a>
+            </td>
+            <td colspan="4" align='right'>
                 <a href="adicionar_treinadores.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
             </td>
         </tr>
@@ -74,6 +67,7 @@ $result = mysqli_query($con, $sql);
         ?>
 
     </table>
+</div>
 <?php
 
 bot_admin();

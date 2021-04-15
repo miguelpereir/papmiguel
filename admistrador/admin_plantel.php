@@ -33,25 +33,17 @@ $result = mysqli_query($con, $sql);
 </div>
 <div class="container" align="center">
     <h1>Lista do Plantel</h1>
-    <tr>
-        <td><a href="admin_equipas.php"><button type="button" class="btn btn-success">Equipas</button></a>
-            <a href="admin_noticias.php"><button type="button" class="btn btn-success">Noticias</button></a>
-            <a href="admin_paises.php"><button type="button" class="btn btn-success">Paises</button></a>
-            <a href="admin_jogadores.php"><button type="button" class="btn btn-success">Jodadores</button></a>
-            <a href="admin_posicoes.php"><button type="button" class="btn btn-success">Posições</button></a>
-            <a href="admin_ultimo11.php"><button type="button" class="btn btn-success">Ultimo 11</button></a>
-
-    </tr>
-    <br>
     Pesquisar:<br><input type="text" id="search">
 
-    </div>
+
     <table  class='table table-striped' align="center" width="100%">
         <tr>
-
-            <td colspan="5" align='right'>
+            <td colspan="2" align='left'>
+                <a href="admin_equipas.php"><i class='fas fa-arrow-left text-black'> Back</i></a>
+            </td>
+            <td colspan="3" align='right'>
+                <a href="admin_posicoes.php"><i class='fas fa-map-marker text-warning'> Posições</i></a>
                 <a href="edita_ultimo11.php?id=<?php echo $id ?>"><i class='fas fa-image text-info'> Ultimo 11</i></a>
-
                 <a href="adicionar_plantel.php?id=<?php echo $id ?>"><i class='fas fa-plus text-success'> Adiciona</i></a>
             </td>
         </tr>
@@ -78,6 +70,7 @@ $result = mysqli_query($con, $sql);
         ?>
 
     </table>
+</div>
 <?php
 
 bot_admin();

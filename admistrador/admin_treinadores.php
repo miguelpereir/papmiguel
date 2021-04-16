@@ -36,7 +36,7 @@ $result = mysqli_query($con, $sql);
     <table  class='table table-striped' align="center" width="100%">
         <tr>
             <td colspan="2" align='left'>
-                <a href="admin_jogadores.php"><i class='fas fa-arrow-left text-black'> Back</i></a>
+                <a href="admin_equipas.php"><i class='fas fa-arrow-left text-black'> Back</i></a>
             </td>
             <td colspan="4" align='right'>
                 <a href="adicionar_treinadores.php"><i class='fas fa-plus text-success'> Adiciona</i></a>

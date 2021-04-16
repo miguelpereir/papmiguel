@@ -42,7 +42,7 @@ $result = mysqli_query($con, $sql);
                 <a href="admin_equipas.php"><i class='fas fa-arrow-left text-black'> Back</i></a>
             </td>
             <td colspan="3" align='right'>
-                <a href="admin_posicoes.php"><i class='fas fa-map-marker text-warning'> Posições</i></a>
+                <a href="admin_posicoes.php?id=<?php echo $id ?>"><i class='fas fa-map-marker text-warning'> Posições</i></a>
                 <a href="edita_ultimo11.php?id=<?php echo $id ?>"><i class='fas fa-image text-info'> Ultimo 11</i></a>
                 <a href="adicionar_plantel.php?id=<?php echo $id ?>"><i class='fas fa-plus text-success'> Adiciona</i></a>
             </td>
@@ -62,7 +62,7 @@ $result = mysqli_query($con, $sql);
                 <td><?php echo $dados['jogadorNome'] ?></td>
                 <td><?php echo $dados['posicaoNome'] ?></td>
                 <td><?php echo $dados['equipaJogadorNumero'] ?></td>
-                <td><a href="editaPlantel.php?id=<?php echo $dados['equipaJogadorJogadorId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
+                <td><a href="editaPlantel.php?id=<?php echo $id ?>"> <i class="fas fa-edit text-primary"></i></a></td>
                 <td><a href="#" onclick="confirmaElimina(<?php echo $dados['equipaJogadorJogadorId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
             </tr>
             <?php

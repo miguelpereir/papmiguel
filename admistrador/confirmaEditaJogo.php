@@ -9,5 +9,5 @@ $data=$_POST['dataJogo'];
  echo $sql="Update jogos set jogoEquipaCasaId='".$equipaCasa."', jogoEquipaForaId='".$equipaFora."', jogoData='".$data."'";
  echo $sql.=" where jogoId=".$id;
 mysqli_query($con,$sql);
-//header("location:admin_jogos.php");
+header("location:admin_jogos.php");
 ?>

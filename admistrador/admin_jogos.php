@@ -2,13 +2,13 @@
 include_once("../includes/body.inc.php");
 top_admin();
 //$txt = addslashes($_POST['txt']);
- $sql = "Select * from jogos inner join equipas on jogoEquipaCasaId=equipaId";
+$sql = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora from equipas as e1 inner join jogos on e1.equipaId=jogos.jogoEquipaCasaId inner join equipas as e2 on e2.equipaId=jogos.jogoEquipaForaId";
 $result = mysqli_query($con, $sql);
 ?>
     <script>
         function confirmaElimina(id) {
             $.ajax({
-                url:"AJAX/AJAXGetNameJogos.php",
+                url:"AJAX/AJAXGetNameJogo.php",
                 type:"post",
                 data:{
                     idPais:id
@@ -52,8 +52,8 @@ $result = mysqli_query($con, $sql);
 
             <tr>
                 <td><?php echo $dados['jogoId'] ?></td>
-                <td><?php echo $dados['equipaNome'] ?></td>
-                <td><?php echo $dados['equipaNome'] ?></td>
+                <td><?php echo $dados['casa'] ?></td>
+                <td><?php echo $dados['fora'] ?></td>
                 <td><?php echo $dados['jogoData'] ?></td>
                 <td><a href="editajogo.php?id=<?php echo $dados['jogoId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
                 <td><a href="#" onclick="confirmaElimina(<?php echo $dados['jogoId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>

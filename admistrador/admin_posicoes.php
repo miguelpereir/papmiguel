@@ -1,6 +1,7 @@
 <?php
 include_once("../includes/body.inc.php");
 top_admin();
+$id = intval($_GET['id']);
 $txt = addslashes($_POST['txt']);
 $sql = "Select * from posicoes where posicaoNome LIKE '$txt%'";
 
@@ -34,10 +35,13 @@ $result = mysqli_query($con, $sql);
 
     Pesquisar:<br><input type="text" id="search">
 
-    </div>
+
     <table  class='table table-striped' align="center" width="100%">
         <tr>
-            <td colspan="5" align='right'>
+            <td colspan="2" align='left'>
+                <a href="admin_plantel.php?id=<?php echo $id ?>"> <i class='fas fa-arrow-left text-black'> Back</i></a>
+            </td>
+            <td colspan="3" align='right'>
                 <a href="adicionar_posicoes.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
             </td>
         </tr>
@@ -64,6 +68,7 @@ $result = mysqli_query($con, $sql);
         ?>
 
     </table>
+</div>
 <?php
 
 bot_admin();

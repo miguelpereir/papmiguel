@@ -9,8 +9,9 @@ $idJogo=$dados[0];
 
 ?>
     <div align="center" style="padding-bottom: 20px;"><h1>Editar Ultimo11</h1></div>
+    <a href="admin_plantel.php?id=<?php echo $id ?>"> <i class='fas fa-arrow-left text-black'> Back</i></a>
 <h3> NOTA: ir buscar o ID do último jogo</h3>
-    <div class="container" style=" background-image: url('../images/campo_2.png');width: 1115px; height: 749px">
+    <div class="container" style=" background-image: url('../images/campo_2.png');width: 1115px; height: 719px">
         <form action="confirmaEdita11.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="jogoId" value="<?php echo $idJogo?>">
             <div class="row">
@@ -24,7 +25,7 @@ $idJogo=$dados[0];
 
                 </div>
                 <div class="col-md-2">
-                    <select name="guardaRedes">
+                    <select style="width: 100%" name="guardaRedes">
                         <option value="-1">Escolha o Guarda-Redes...</option>
                         <?php
                          $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
@@ -49,14 +50,14 @@ $idJogo=$dados[0];
             </div>
 
             <div class="row">
-                <div class="col-md-12" style="padding-bottom: 80px;padding-top: 75px;">
+                <div class="col-md-12" style="padding-bottom: 80px;padding-top: 50px;">
 
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-1 mt-4"></div>
                 <div class="col-md-2 mt-4">
-                    <select name="DefesaEsquerdo">
+                    <select style="width: 100%" name="DefesaEsquerdo">
                         <option value="-1">Escolha o Defesa Esquerdo...</option>
                         <?php
                         $sql = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
@@ -76,7 +77,7 @@ $idJogo=$dados[0];
                 </div>
 
                 <div class="col-md-2 mt-4">
-                    <select name="DefesaCentralEsquerdo">
+                    <select style="width: 100%" name="DefesaCentralEsquerdo">
                         <option value="-1">Escolha o Defesa Central Esquerdo...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -94,7 +95,7 @@ $idJogo=$dados[0];
                     </select>
                 </div>
                 <div class="col-md-2 mt-4">
-                    <select name="DefesaCentralCentro">
+                    <select style="width: 100%" name="DefesaCentralCentro">
                         <option value="-1">Escolha o Defesa Central Centro...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -112,7 +113,7 @@ $idJogo=$dados[0];
                     </select>
                 </div>
                 <div class="col-md-2 mt-4">
-                    <select name="DefesaCentralDireito">
+                    <select style="width: 100%" name="DefesaCentralDireito">
                         <option value="-1">Escolha o Defesa Central Direito...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -130,7 +131,7 @@ $idJogo=$dados[0];
                     </select>
                 </div>
                 <div class="col-md-2 mt-4">
-                    <select name="DefesaDireito">
+                    <select style="width: 100%" name="DefesaDireito">
                         <option value="-1">Escolha o Defesa Direito...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -152,7 +153,7 @@ $idJogo=$dados[0];
             </div>
 
             <div class="row">
-                <div class="col-12" style="padding-bottom: 80px;padding-top: 75px;">
+                <div class="col-12" style="padding-bottom: 80px;padding-top: 50px;">
 
                 </div>
             </div>
@@ -163,7 +164,7 @@ $idJogo=$dados[0];
 
                 </div>
                 <div class="col-md-2 mt-4">
-                    <select name="MedioEsquerdo">
+                    <select style="width: 100%" name="MedioEsquerdo">
                         <option value="-1">Escolha o Medio Esquerdo...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -181,7 +182,7 @@ $idJogo=$dados[0];
                     </select>
                 </div>
                 <div class="col-md-2 mt-4">
-                    <select name="MedioCentralEsquerdo">
+                    <select style="width: 100%" name="MedioCentralEsquerdo">
                         <option value="-1">Escolha o Medio Central Esquerdo...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -197,7 +198,7 @@ $idJogo=$dados[0];
                     </select>
                 </div>
                 <div class="col-md-2 mt-4">
-                    <select name="MedioCentralCentro">
+                    <select style="width: 100%" name="MedioCentralCentro">
                         <option value="-1">Escolha o Medio Central Centro...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -213,7 +214,7 @@ $idJogo=$dados[0];
                     </select>
                 </div>
                 <div class="col-md-2 mt-4">
-                    <select name="MedioCentralDireito">
+                    <select style="width: 100%" name="MedioCentralDireito">
                         <option value="-1">Escolha o Medio Central Direito...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -229,7 +230,7 @@ $idJogo=$dados[0];
                     </select>
                 </div>
                 <div class="col-md-2 mt-4">
-                    <select name="MedioDireito">
+                    <select style="width: 100%" name="MedioDireito">
                         <option value="-1">Escolha o Medio Direito...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -249,7 +250,7 @@ $idJogo=$dados[0];
             </div>
 
             <div class="row">
-                <div class="col-12" style="padding-bottom: 80px;padding-top: 75px;">
+                <div class="col-12" style="padding-bottom: 80px;padding-top: 50px;">
 
                 </div>
             </div>
@@ -257,7 +258,7 @@ $idJogo=$dados[0];
             <div class="row">
                 <div class="col-md-3 mt-4"></div>
                 <div class="col-md-2 mt-4">
-                    <select name="avancadoEsquerdo">
+                    <select style="width: 100%" name="avancadoEsquerdo">
                         <option value="-1">Escolha o Avançado Esquerdo...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -274,7 +275,7 @@ $idJogo=$dados[0];
                 </div>
                 <p></p>
                 <div class="col-md-2 mt-4">
-                    <select name="avancadoCentro">
+                    <select style="width: 100%" name="avancadoCentro">
                         <option value="-1">Escolha o Avançado Centro...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -291,7 +292,7 @@ $idJogo=$dados[0];
                 </div>
 
                 <div class="col-md-2 mt-4">
-                    <select name="avancadoDireito">
+                    <select style="width: 100%" name="avancadoDireito">
                         <option value="-1">Escolha o Avançado Direito...</option>
                         <?php
                         mysqli_data_seek($result,0);
@@ -308,12 +309,8 @@ $idJogo=$dados[0];
                 </div>
                 <div class="col-md-3 mt-4"></div>
             </div>
-            <div class="row">
-            <div class="col-md-12" style="padding-bottom: 35px;padding-top: 30px;">
-
             </div>
-            </div>
-            <div align="right">
+            <div align="right" style="padding-right: 200px">
                 <input type="Submit" value="Confirmar"><br>
             </div>
         </form>

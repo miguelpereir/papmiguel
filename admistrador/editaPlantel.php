@@ -3,52 +3,40 @@ include_once("../includes/body.inc.php");
 top_admin();
 $id = intval($_GET['id']);
 
-$sql = "select * from jogadores where jogadorId=$id";
+$sql = "select * from equipajogadores";
 $result = mysqli_query($con, $sql);
-$resultJogadores = mysqli_query($con, $sql);
-$dadosJogadores = mysqli_fetch_array($resultJogadores);
+$resultPlantel = mysqli_query($con, $sql);
+$dadosPlantel = mysqli_fetch_array($resultPlantel);
 
 ?>
-    <script>
-        function preview_image(event) {
-            var reader = new FileReader();
-            reader.onload = function () {
-                var output = document.getElementById('output_image');
-                output.src = reader.result;
-            }
-            reader.readAsDataURL(event.target.files[0]);
-        }
-    </script>
     <div class="container" align="center">
 
-
         <div>
-            <h1 align="center">Editar Jogador </h1>
+            <h1 align="center">Edita treinador </h1>
         </div>
-
         <div align="left">
-            <a href="admin_plantel.php">
+            <a href="admin_plantel.php?id=<?php echo $id ?>">
                 <button type="button" class="btn btn-success">Back</button>
             </a>
         </div>
-        <br>
         <div align="left">
-            <form action="confirmaEditaPlantel.php" method="post" enctype="multipart/form-data">
-
-                <select name="jogadorPais">
-                    <option value="-1">Escolha o pais...</option>
+            <br>
+            <form action="confirmaEditaTreinador.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="equipaId" value="<?php echo $id ?>">
+                <select name="jogador">
+                    <option value="-1">Escolha o jogador...</option>
                     <?php
-                    $sql = "select * from paises order by paisNome";
-                    $resultPaises = mysqli_query($con, $sql);
-                    while ($dadosPaises = mysqli_fetch_array($resultPaises)) {
+                    $sql = "select * from jogadores order by jogadorNome";
+                    $resultJogadores = mysqli_query($con, $sql);
+                    while ($dadosJogadores = mysqli_fetch_array($resultJogadores)) {
                         ?>
-                        <option value="<?php echo $dadosPaises['paisId'] ?>"
+                        <option value="<?php echo $dadosJogadores['jogadorId'] ?>"
                             <?php
-                            if ($dadosJogadores['jogadorPaisId'] == $dadosPaises['paisId'])
+                            if ($dadosPlantel['equipaJogadorJogadorId'] == $dadosJogadores['jogadorId'])
                                 echo " selected ";
                             ?>
                         >
-                            <?php echo $dadosPaises['paisNome'] ?>
+                            <?php echo $dadosJogadores['jogadorNome'] ?>
                         </option>
                         <?php
                     }
@@ -56,11 +44,36 @@ $dadosJogadores = mysqli_fetch_array($resultJogadores);
 
                     ?>
                 </select>
+                <br>
+                <select name="posicao">
+                    <option value="-1">Escolha o Posicao...</option>
+                    <?php
+                    $sql = "select * from posicoes order by posicaoNome";
+                    $resultPosicoes = mysqli_query($con, $sql);
+                    while ($dadosPosicoes = mysqli_fetch_array($resultPosicoes)) {
+                        ?>
+                        <option value="<?php echo $dadosPosicoes['posicaoId'] ?>"
+                            <?php
+                            if ($dadosPlantel['equipaJogadorPosicaoId'] == $dadosPosicoes['posicaoId'])
+                                echo " selected ";
+                            ?>
+                        >
+                            <?php echo $dadosPosicoes['posicaoNome'] ?>
+                        </option>
+                        <?php
+                    }
 
-                <input type="Submit" value="Adiciona"><br>
+
+                    ?>
+                </select>
+                <br>
+                <label>Nome: </label>
+                <input type="text" name="jogadorNumero" value="<?php echo $dadosPlantel['equipaJogadorNumero'] ?>"><br>
+
+                <input type="Submit" value="Edita"><br>
+            </form>
         </div>
     </div>
-
 <?php
 bot_admin();
 ?>

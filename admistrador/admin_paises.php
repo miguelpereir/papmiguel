@@ -36,6 +36,9 @@ $result = mysqli_query($con, $sql);
 
     <table  class='table table-striped' align="center" width="100%">
         <tr>
+            <td colspan="2" align='left'>
+                <a href="admin_jogadores.php"> <i class='fas fa-arrow-left text-black'> Back</i></a>
+            </td>
             <td colspan="5" align='right'>
                 <a href="adicionar_paises.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
             </td>

@@ -2,10 +2,10 @@
 include_once("../includes/body.inc.php");
 top_admin();
 $id = intval($_GET['id']);
-$txt = addslashes($_POST['txt']);
+//$txt = addslashes($_POST['txt']);
 $sql = "Select * from (((equipajogadores inner join jogadores on equipaJogadorJogadorId=jogadorId)
     inner join equipas on equipaJogadorEquipaId=equipaId)
-    inner join posicoes on equipaJogadorPosicaoId=posicaoId) where jogadorNome LIKE '$txt%' and equipaId= $id";
+    inner join posicoes on equipaJogadorPosicaoId=posicaoId) where equipaId= $id";
 $result = mysqli_query($con, $sql);
 ?>
     <script>

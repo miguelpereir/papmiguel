@@ -1,8 +1,8 @@
 <?php
 include_once("../includes/body.inc.php");
 top_admin();
-$txt = addslashes($_POST['txt']);
-$sql = "Select * from paises where paisNome LIKE '$txt%'";
+//$txt = addslashes($_POST['txt']);
+$sql = "Select * from paises";
 
 $result = mysqli_query($con, $sql);
 ?>

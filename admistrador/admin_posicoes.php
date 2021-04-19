@@ -2,8 +2,8 @@
 include_once("../includes/body.inc.php");
 top_admin();
 $id = intval($_GET['id']);
-$txt = addslashes($_POST['txt']);
-$sql = "Select * from posicoes where posicaoNome LIKE '$txt%'";
+//$txt = addslashes($_POST['txt']);
+$sql = "Select * from posicoes";
 
 $result = mysqli_query($con, $sql);
 ?>

@@ -1,8 +1,8 @@
 <?php
 include_once("../includes/body.inc.php");
 top_admin();
-$txt = addslashes($_POST['txt']);
-$sql = "Select * from jogadores inner join paises on jogadorPaisID=paisID  where jogadorNome LIKE '$txt%'";
+//$txt = addslashes($_POST['txt']);
+$sql = "Select * from jogadores inner join paises on jogadorPaisID=paisID";
 
 $result = mysqli_query($con, $sql);
 ?>

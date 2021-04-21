@@ -9,7 +9,8 @@ $result = mysqli_query($con, $sql);
 ?>
 <table  class='table table-striped' align="center" width="100%">
     <tr>
-        <td colspan="10" align='right'>
+        <td colspan="11" align='right'>
+            <a href="admin_treinadores.php"><i class='fas fa-clipboard text-secondary'> Treinadores</i></a>
             <a href="adicionar_equipas.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
         </td>
     </tr>
@@ -39,12 +40,13 @@ $result = mysqli_query($con, $sql);
             <td><img width="90" src="../<?php echo $dados['equipaEstadioURL'] ?>"></td>
             <td><?php echo $dados['equipaHistoria'] ?></td>
             <td><?php echo $dados['equipaPresidente'] ?></td>
+            <td><a href="admin_plantel.php?id=<?php echo $dados['equipaId'] ?>"> <i class="fas fa-eye text-warning"></i></a></td>
             <td><a href="editaEquipa.php?id=<?php echo $dados['equipaId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
-            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['equipaId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
+            <td><a href="#" onclick="confirmaEliminaEquipa(<?php echo $dados['equipaId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
         </tr>
         <?php
     }
     ?>
-
 </table>
+
 

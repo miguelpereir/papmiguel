@@ -59,7 +59,7 @@ $result = mysqli_query($con, $sql);
                 <td><img width='90' src="../<?php echo $dados['jogadorFotoURL'] ?>"></td>
                 <td><?php echo $dados['paisNome'] ?></td>
                 <td><a href="editaJogador.php?id=<?php echo $dados['jogadorId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
-                <td><a href="#" onclick="confirmaElimina(<?php echo $dados['jogadorId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
+                <td><a href="#" onclick="confirmaEliminaJogador(<?php echo $dados['jogadorId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
             </tr>
             <?php
         }

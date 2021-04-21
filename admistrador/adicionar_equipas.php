@@ -86,11 +86,12 @@ top_admin();
         <label>Foto do Estádio:</label>
         <input type="file" name="fotoEstadio"><br>
         <label>Historia: </label>
-        <textarea  class="col-2" name="historiaEquipa" id="mytextarea"  cols="50" rows="5"></textarea><br>
+        <textarea  class="col-2" name="historiaEquipa" id="myTextarea"  cols="50" rows="5"></textarea><br>
         <label>Presidente:</label>
         <input type="text" name="presidenteEquipa"><br>
 
         <input type="Submit" value="Adiciona"><br>
+        </form>
         </div>
     </div>
 

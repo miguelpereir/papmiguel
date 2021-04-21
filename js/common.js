@@ -59,3 +59,36 @@ function fillTablePlantel(txt='') {
     });
 }
 
+function confirmaEliminaEquipa(idEquipa) {
+    var nomeEquipa;
+    $.ajax({
+        url:"AJAX/AJAXGetNameEquipa.php",
+        type:"post",
+        data:{
+            idEquipa:idEquipa
+        },
+        success:function (result){
+            nomeEquipa=result;
+            if(confirm('Confirma que deseja eliminar a equipa:'+nomeEquipa+'?'))
+                window.location="eliminaEquipa.php?id=" + idEquipa;
+        }
+    })
+};
+function confirmaEliminaJogador(idJogador) {
+    var nomeJogador;
+    $.ajax({
+        url:"AJAX/AJAXGetNameJogador.php",
+        type:"post",
+        data:{
+            idJogador:idJogador
+        },
+        success:function (result){
+            nomeJogador=result;
+            if(confirm('Confirma que deseja eliminar a equipa:'+nomeJogador+'?'))
+                window.location="eliminaJogador.php?id=" + idJogador;
+        }
+    })
+};
+
+
+

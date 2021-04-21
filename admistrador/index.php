@@ -44,76 +44,80 @@ top_admin();
 
             </ul>
         </div>
-        <!-- banner-bottom -->
-        <div class="banner-bottom">
-            <div class="container">
-                <div class="banner_bottom_agile_grids">
-                    <div class="wthree_banner_bottom_right_grids">
-                        <div class="col-md-3 banner_bottom_right_grid">
-                            <div class="view view-tenth">
-                                <div class="agile_text_box">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <h3> Jorge Jesus Despedido</h3>
-                                    <p>O Treinador do Benfica é despedido.</p>
-                                </div>
-                                <div class="mask">
 
-                                    <a href="noticiajj.html"> <img src="images/jj.png" class="img-responsive"
-                                                                   alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 banner_bottom_right_grid">
-                            <div class="view view-tenth">
-                                <div class="agile_text_box">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <h3> Sporting em 1º</h3>
-                                    <p>Sporting nao perde à 5 jogos.</p>
-                                </div>
-                                <div class="mask">
-                                    <a href="index.html"><img src="images/sporting.jpg" class="img-responsive" alt=""/></a>
 
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-3 banner_bottom_right_grid">
-                            <div class="view view-tenth">
-                                <div class="agile_text_box">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <h3> Santa Clara desce de divisão? </h3>
-                                    <p>A equipa pode descer de divisão. Saiba o pq?</p>
-                                </div>
-                                <div class="mask">
-                                    <a href="index.html"><img src="images/Santa Clara.jpg" class="img-responsive"
-                                                              alt=""/></a>
-                                </div>
+    <!-- banner-bottom -->
+    <div class="banner-bottom">
+        <div class="container">
+            <div class="banner_bottom_agile_grids">
+                <div class="wthree_banner_bottom_right_grids">
+                    <div class="col-md-3 banner_bottom_right_grid">
+                        <div class="view view-tenth">
+                            <div class="agile_text_box">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <h3> Jorge Jesus Despedido</h3>
+                                <p>O Treinador do Benfica é despedido.</p>
+                            </div>
+                            <div class="mask">
+
+                                <a href="noticiajj.html"> <img src="images/jj.png" class="img-responsive"
+                                                               alt=""/></a>
                             </div>
                         </div>
-                        <div class="col-md-3 banner_bottom_right_grid">
-                            <div class="view view-tenth">
-                                <div class="agile_text_box">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <h3>Sergio fica na Bancada</h3>
-                                    <p>Sergio Conceição foi expulso do jogo e vai ficar na bancada</p>
-                                </div>
-                                <div class="mask">
-                                    <a href="index.html"><img src="images/Sergio.jpg" class="img-responsive"
-                                                              alt=""/></a>
-                                </div>
+                    </div>
+                    <div class="col-md-3 banner_bottom_right_grid">
+                        <div class="view view-tenth">
+                            <div class="agile_text_box">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <h3> Sporting em 1º</h3>
+                                <p>Sporting nao perde à 5 jogos.</p>
+                            </div>
+                            <div class="mask">
+                                <a href="index.html"><img src="images/sporting.jpg" class="img-responsive" alt=""/></a>
+
                             </div>
                         </div>
-                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="col-md-3 banner_bottom_right_grid">
+                        <div class="view view-tenth">
+                            <div class="agile_text_box">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <h3> Santa Clara desce de divisão? </h3>
+                                <p>A equipa pode descer de divisão. Saiba o pq?</p>
+                            </div>
+                            <div class="mask">
+                                <a href="index.html"><img src="images/Santa Clara.jpg" class="img-responsive"
+                                                          alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 banner_bottom_right_grid">
+                        <div class="view view-tenth">
+                            <div class="agile_text_box">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <h3>Sergio fica na Bancada</h3>
+                                <p>Sergio Conceição foi expulso do jogo e vai ficar na bancada</p>
+                            </div>
+                            <div class="mask">
+                                <a href="index.html"><img src="images/Sergio.jpg" class="img-responsive"
+                                                          alt=""/></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
+                <div class="clearfix"></div>
             </div>
         </div>
-        <!-- banner-bottom -->
+    </div>
+    <!-- banner-bottom -->
 
     </div>
 
     <!-- //banner -->
+
     <!-- about -->
     <div class="w3-agileits-about" id="about">
         <div class="container">
@@ -178,7 +182,7 @@ top_admin();
             <div align="center" class="col-md-12 col-sm-4 w3-agileits-about-grid">
                 <br>
                 <br>
-                <a href="admin.html"><h4> ver mais+</h4></a>
+                <a href="#"><h4> ver mais+</h4></a>
 
             </div>
 

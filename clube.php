@@ -48,9 +48,12 @@ $dados = mysqli_fetch_array($result);
             </div>
         </div>
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5" align="left">
-                <h4><?php echo $dados['equipaHistoria'] ?></h4>
+
+            <div class="col-md-6" align="left">
+                <h4 ><?php echo $dados['equipaHistoria'] ?></h4>
+            </div>
+            <div class="col-md-1" align="left">
+
             </div>
             <div class="col-md-5" align="right">
                 <h3><?php echo $dados['equipaEstadioNome'] ?></h3>

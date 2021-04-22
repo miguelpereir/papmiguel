@@ -7,20 +7,6 @@ $sql = "Select * from paises";
 $result = mysqli_query($con, $sql);
 ?>
     <script>
-        function confirmaElimina(id) {
-            $.ajax({
-                url:"AJAX/AJAXGetNamePais.php",
-                type:"post",
-                data:{
-                    idPais:id
-                },
-                success:function (result){
-                    if(confirm('Confirma que deseja eliminar o pais:'+result+"?"))
-                        window.location="eliminaPais.php?id=" + id;
-                }
-            })
-        };
-
         $('document').ready(function (){
             $('#search').keyup(function (){
                 fillTablePaises(this.value);
@@ -59,7 +45,7 @@ $result = mysqli_query($con, $sql);
                 <td><?php echo $dados['paisNome'] ?></td>
                 <td><img width='90' src="../<?php echo $dados['paisBandeiraURL'] ?>"></td>
                 <td><a href="editaPais.php?id=<?php echo $dados['paisId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
-                <td><a href="#" onclick="confirmaElimina(<?php echo $dados['paisId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
+                <td><a href="#" onclick="confirmaEliminaPais(<?php echo $dados['paisId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
             </tr>
             <?php
         }

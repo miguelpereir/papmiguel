@@ -6,20 +6,6 @@ $sql = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora from equipa
 $result = mysqli_query($con, $sql);
 ?>
     <script>
-        function confirmaElimina(id) {
-            $.ajax({
-                url:"AJAX/AJAXGetNameJogo.php",
-                type:"post",
-                data:{
-                    idPais:id
-                },
-                success:function (result){
-                    if(confirm('Confirma que deseja eliminar o jogo:'+result+"?"))
-                        window.location="eliminaJogo.php?id=" + id;
-                }
-            })
-        };
-
     //    $('document').ready(function (){
        //     $('#search').keyup(function (){
      //           fillTableTreinador(this.value);
@@ -56,7 +42,7 @@ $result = mysqli_query($con, $sql);
                 <td><?php echo $dados['fora'] ?></td>
                 <td><?php echo $dados['jogoData'] ?></td>
                 <td><a href="editajogo.php?id=<?php echo $dados['jogoId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
-                <td><a href="#" onclick="confirmaElimina(<?php echo $dados['jogoId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
+                <td><a href="#" onclick="confirmaEliminaJogo(<?php echo $dados['jogoId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
             </tr>
             <?php
         }

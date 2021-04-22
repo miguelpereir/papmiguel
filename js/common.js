@@ -85,10 +85,57 @@ function confirmaEliminaJogador(idJogador) {
         success:function (result){
             nomeJogador=result;
             if(confirm('Confirma que deseja eliminar a equipa:'+nomeJogador+'?'))
-                window.location="eliminaJogador.php?id=" + idJogador;
+                window.location="eliminaJogador.php?id="+idJogador;
         }
     })
 };
+
+function confirmaEliminaPais(idPais) {
+    var nomePais;
+    $.ajax({
+        url:"AJAX/AJAXGetNamePais.php",
+        type:"post",
+        data:{
+            idPais:idPais
+        },
+        success:function (result){
+            nomePais=result;
+            if(confirm('Confirma que deseja eliminar o pais:'+nomePais+'?'))
+                window.location="eliminaPais.php?id=" + idPais;
+        }
+    })
+};
+function confirmaEliminaJogo(idJogo) {
+    var jogo;
+    $.ajax({
+        url:"AJAX/AJAXGetNameJogo.php",
+        type:"post",
+        data:{
+            idJogo:idJogo
+        },
+        success:function (result){
+            jogo=result;
+            if(confirm('Confirma que deseja eliminar o Jogo:'+jogo+'?'))
+                window.location="eliminaJogo.php?id=" + idJogo;
+        }
+    })
+};
+function confirmaEliminaPsicao(idPosicao) {
+    var jogo;
+    $.ajax({
+        url:"AJAX/AJAXGetNameJogo.php",
+        type:"post",
+        data:{
+            idJogo:idJogo
+        },
+        success:function (result){
+            jogo=result;
+            if(confirm('Confirma que deseja eliminar o Jogo:'+jogo+'?'))
+                window.location="eliminaJogo.php?id=" + idJogo;
+        }
+    })
+};
+
 
 
 

@@ -1,6 +1,6 @@
 <?php
 // dados na base de dados
-include_once("../includes/body.inc.php");
+include_once("../../includes/body.inc.php");
 $id=intval($_POST['idJogo']);
 $sql="Select * from jogos where jogoId=$id";
 

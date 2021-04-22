@@ -852,11 +852,22 @@ function bot_admin($menu = HOME)
                 fillTableEquipas(this.value);
             });
             fillTableEquipas();
-
+            <?php
+            }
+            ?>
+            <?php
+            if ($menu == JOGADORES){
+            ?>
+            $('#search').keyup(function () {
+                fillTableJogadores(this.value);
+            });
+            fillTableJogadores();
+            <?php
+            }
+            ?>
         })
-        <?php
-        }
-        ?>
+
+
     </script>
     <!-- //here ends scrolling icon -->
     </body>

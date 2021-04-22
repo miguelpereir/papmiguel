@@ -1,8 +1,8 @@
 <?php
 // dados na base de dados
-include_once("../includes/body.inc.php"); //precisa do ../
+include_once("../../includes/body.inc.php"); //precisa do ../
 $txt = addslashes($_POST['txt']);
-$sql = "Select * from jogadores where jogadorNome LIKE '$txt%'";
+$sql = "Select * from jogadores inner join paises on jogadorPaisID=paisID where jogadorNome LIKE '$txt%'";
 
 $result = mysqli_query($con, $sql);
 
@@ -10,6 +10,7 @@ $result = mysqli_query($con, $sql);
 <table  class='table table-striped' align="center" width="100%">
     <tr>
         <td colspan="7" align='right'>
+            <a href="admin_paises.php"><i class='fas fa-flag text-warning'> Paises</i></a>
             <a href="adicionar_jogadores.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
         </td>
     </tr>
@@ -33,7 +34,7 @@ $result = mysqli_query($con, $sql);
             <td><img width='90' src="../<?php echo $dados['jogadorFotoURL'] ?>"></td>
             <td><?php echo $dados['paisNome'] ?></td>
             <td><a href="editaJogador.php?id=<?php echo $dados['jogadorId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
-            <td><a href="#" onclick="confirmaElimina(<?php echo $dados['jogadorId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
+            <td><a href="#" onclick="confirmaEliminaJogador(<?php echo $dados['jogadorId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
         </tr>
         <?php
     }

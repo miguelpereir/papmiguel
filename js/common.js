@@ -84,7 +84,7 @@ function confirmaEliminaJogador(idJogador) {
         },
         success:function (result){
             nomeJogador=result;
-            if(confirm('Confirma que deseja eliminar a equipa:'+nomeJogador+'?'))
+            if(confirm('Confirma que deseja eliminar o Jogador:'+nomeJogador+'?'))
                 window.location="eliminaJogador.php?id="+idJogador;
         }
     })

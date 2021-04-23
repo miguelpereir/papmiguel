@@ -6,7 +6,7 @@ $imagem=$_FILES['logoPais']['name'];
 $novoNome="images/".$imagem;
 $sql="Update paises set paisNome='".$nome."'";
 if($imagem!=''){
-    $sql.=", paisBandeiraURL='images/".$imagem."'";
+     $sql.=", paisBandeiraURL='images/".$imagem."'";
     copy($_FILES['logoPais']['tmp_name'],$novoNome);
 }
 $sql.=" where paisId=".$id;

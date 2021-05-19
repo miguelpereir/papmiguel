@@ -864,6 +864,25 @@ function bot_admin($menu = HOME)
             fillTableJogadores();
             <?php
             }
+            ?> <?php
+            if ($menu == JOGADORES){
+            ?>
+            $('#search').keyup(function () {
+                fillTableJogadores(this.value);
+            });
+            fillTableJogadores();
+            <?php
+            }
+            ?>
+            <?php
+            if ($menu == NOTICIAS){
+            ?>
+            $('#search').keyup(function () {
+                fillTableNoticias()(this.value);
+            });
+            fillTableNoticias();
+            <?php
+            }
             ?>
         })
 

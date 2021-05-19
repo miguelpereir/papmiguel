@@ -34,6 +34,18 @@ function fillTableEquipas(txt='') {
         }
     });
 }
+function fillTableNoticias(txt='') {
+    $.ajax({
+        url: "AJAX/AJAXFillNoticia.php",
+        type: "post",
+        data: {
+            txt: txt
+        },
+        success: function (result) {
+            $('#tableContent').html(result);
+        }
+    });
+}
 function fillTablePosicao(txt='') {
     $.ajax({
         url: "AJAX/AJAXFillPosicao.php",
@@ -71,6 +83,21 @@ function confirmaEliminaEquipa(idEquipa) {
             nomeEquipa=result;
             if(confirm('Confirma que deseja eliminar a equipa:'+nomeEquipa+'?'))
                 window.location="eliminaEquipa.php?id=" + idEquipa;
+        }
+    })
+};
+function confirmaEliminaNoticia(idNoticia) {
+    var nomeNoticia;
+    $.ajax({
+        url:"AJAX/AJAXGetNameNoticia.php",
+        type:"post",
+        data:{
+            idEquipa:idNoticia
+        },
+        success:function (result){
+            nomeNoticia=result;
+            if(confirm('Confirma que deseja eliminar a noticia:'+nomeNoticia+'?'))
+                window.location="eliminaNoticia.php?id=" + idNoticia;
         }
     })
 };
@@ -120,7 +147,7 @@ function confirmaEliminaJogo(idJogo) {
         }
     })
 };
-function confirmaEliminaPsicao(idPosicao) {
+function confirmaEliminaPosicao(idPosicao) {
     var jogo;
     $.ajax({
         url:"AJAX/AJAXGetNameJogo.php",

@@ -32,9 +32,9 @@ $result = mysqli_query($con, $sql);
             <td><?php echo $dados['noticiaId'] ?></td>
             <td><?php echo $dados['noticiaTitulo'] ?></td>
             <td><?php echo $dados['noticiaSubTitulo'] ?></td>
-            <td><img width='90' src="../<?php echo $dados['noticiaImagemURL'] ?>"></td>
+            <td><img width='90' src="<?php echo $dados['noticiaImagemURL'] ?>"></td>
             <td><?php echo $dados['noticiaDescricao'] ?></td>
-            <td><img width="90" src="../<?php echo $dados['noticiaCapaURL'] ?>"></td>
+            <td><img width="90" src="<?php echo $dados['noticiaCapaURL'] ?>"></td>
             <td><?php echo $dados['noticiaData'] ?></td>
             <td><a href="editaNoticia.php?id=<?php echo $dados['noticiaId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
             <td><a href="#" onclick="confirmaEliminaNoticia(<?php echo $dados['noticiaId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>

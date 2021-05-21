@@ -76,7 +76,7 @@ top_admin();
         <div align="left">
         <form action="confirmaNovaNoticia.php" method="post" enctype="multipart/form-data">
         <label>Titulo: </label>
-        <input type="text" name="ttuloNoticia"><br>
+        <input type="text" name="tituloNoticia"><br>
         <label>Sub Titulo:</label>
         <input type="text" name="subtituloNoticia"><br>
         <label>Imagem: </label>
@@ -85,7 +85,7 @@ top_admin();
         <textarea  class="col-2" name="descricaoNoticia" id="myTextarea"  cols="50" rows="5"></textarea><br>
         <label>Foto Capa:</label>
         <input type="file" name="capaNoticia"><br>
-        <label>Presidente:</label>
+        <label>Data:</label>
         <input type="date" name="dataNoticia"><br>
 
         <input type="Submit" value="Adiciona"><br>

@@ -2,7 +2,7 @@
 // dados na base de dados
 include_once("../../includes/body.inc.php"); //precisa do ../
 $txt = addslashes($_POST['txt']);
-$sql = "Select * from noticias where noticiaTitulo LIKE '$txt%'";
+$sql = "Select * from noticias where noticiaTitulo LIKE '%$txt%'";
 
 $result = mysqli_query($con, $sql);
 

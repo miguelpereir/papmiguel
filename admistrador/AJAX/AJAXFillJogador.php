@@ -2,7 +2,7 @@
 // dados na base de dados
 include_once("../../includes/body.inc.php"); //precisa do ../
 $txt = addslashes($_POST['txt']);
-$sql = "Select * from jogadores inner join paises on jogadorPaisID=paisID where jogadorNome LIKE '$txt%'";
+$sql = "Select * from jogadores inner join paises on jogadorPaisID=paisID where jogadorNome LIKE '%$txt%'";
 
 $result = mysqli_query($con, $sql);
 

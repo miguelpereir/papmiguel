@@ -2,7 +2,7 @@
 include_once ("../includes/body.inc.php");
 top_admin();
 $id=intval($_GET['id']);
-$sql="select * from equipas where equipaId=$id";
+$sql="select * from noticias where noticiaId=$id";
 $result=mysqli_query($con,$sql);
 $dados=mysqli_fetch_array($result);
 ?>
@@ -17,8 +17,7 @@ $dados=mysqli_fetch_array($result);
     }
     reader.readAsDataURL(event.target.files[0]);
     }
-    </script>
-    <script>
+ //--------------------------------------------------
         function preview_image_2(event)
         {
             var reader = new FileReader();
@@ -93,32 +92,30 @@ $dados=mysqli_fetch_array($result);
 
 
         <div>
-            <h1 align="center">Edita Equipa </h1>
+            <h1 align="center">Edita Noticia </h1>
         </div>
 
         <div align="left">
-            <a href="admin_equipas.php"><button type="button" class="btn btn-success">Back</button></a>
+            <a href="admin_noticias.php"><button type="button" class="btn btn-success">Back</button></a>
         </div>
         <br>
         <div align="left">
-            <form action="confirmaEditaEquipa.php" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="equipaId" value="<?php echo $id?>">
-                <label>Nome: </label>
-                <input type="text" name="nomeEquipa" value="<?php echo $dados['equipaNome']?>"><br>
-                <label>Emblema:</label>
-                <img width="200" id="output_image" src="../<?php echo $dados['equipaEmblemaURL'] ?>">
-                <input type="file" accept="image/*" name="emblemaEquipa" onchange="preview_image(event)" style="color: darkgray">
-                <label>Ano de Fundação: </label>
-                <input type="text" name="anoEquipa" value="<?php echo $dados['equipaAnoFundacao']?>"><br>
-                <label>Nome do Estádio: </label>
-                <input type="text" name="nomeEstadio" value="<?php echo $dados['equipaEstadioNome']?>"><br>
-                <label>Foto do Estádio:</label>
-                <img width="200" id="output_image_2" src="../<?php echo $dados['equipaEstadioURL'] ?>">
-                <input type="file" accept="image/*" name="fotoEstadio" onchange="preview_image_2(event)" style="color: darkgray">
-                <label>Historia: </label>
-                <textarea name="historiaEquipa" id="myTextarea" cols="50" rows="5"><?php echo $dados['equipaHistoria']?> </textarea><br>
-                <label>Presidente:</label>
-                <input type="text" name="presidenteEquipa" value="<?php echo $dados['equipaPresidente']?>"><br>
+            <form action="confirmaEditaNoticia.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="noticiaId" value="<?php echo $id?>">
+                <label>Titulo: </label>
+                <input type="text" name="tituloNoticia" value="<?php echo $dados['noticiaTitulo']?>"><br>
+                <label>Sub Titulo: </label>
+                <input type="text" name="subtituloNoticia" value="<?php echo $dados['noticiaSubTitulo']?>"><br>
+                <label>Imagem:</label>
+                <img width="200" id="output_image" src="<?php echo $dados['noticiaImagemURL'] ?>">
+                <input type="file" accept="image/*" name="imagemNoticia" onchange="preview_image(event)" style="color: darkgray">
+                <label>Descrição: </label>
+                <textarea name="descricaoNoticia" id="myTextarea" cols="50" rows="5"><?php echo $dados['noticiaDescricao']?> </textarea><br>
+                <label>Imagem de Capa:</label>
+                <img width="200" id="output_image_2" src="<?php echo $dados['noticiaCapaURL'] ?>">
+                <input type="file" accept="image/*" name="capaNoticia" onchange="preview_image_2(event)" style="color: darkgray">
+                <label>Data:</label>
+                <input type="text" name="dataNoticia" value="<?php echo $dados['noticiaData']?>"><br>
 
                 <input type="Submit" value="Edita"><br>
         </div>

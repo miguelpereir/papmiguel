@@ -1,43 +1,37 @@
 <?php
 include_once("includes/body.inc.php");
 top();
+$id = intval($_GET['id']);
+$sql = "select * from noticias where noticiaId=$id";
+$result = mysqli_query($con, $sql);
+$dados = mysqli_fetch_array($result);
 ?>
-<div class="container" align="center">
+<div class="container" >
 
 
     <div class="row">
-        <div class="col-md-12"><h1>Sporting</h1></div>
+        <div class="col-md-12" align="center"><h1><?php echo $dados['noticiaTitulo'] ?></h1></div>
     </div>
     <div class="row">
-        <div class="col-md-12"><h3>Sequencia de Vitórias incrivel</h3></div>
+        <div class="col-md-12" align="center"><h3><?php echo $dados['noticiaSubTitulo'] ?></h3></div>
     </div>
     <div class="row">
-        <div class="col-md-2" align="left"><a href="noticias.html"> <i class="fas fa-arrow-circle-left"></i> </a></div>
+        <div class="col-md-2" align="left"><a href="noticias.php"> <i class="fas fa-arrow-circle-left"></i> </a></div>
     </div>
     <div class="row">
-        <div class="col-md-12"><img src="images/Gilsporting.jpg" alt="">
+        <div class="col-md-12"align="center"><img width="1000" src="<?php echo $dados['noticiaImagemURL'] ?>" alt="">
 
         </div>
     </div>
-    <div class="row">
-        <div align="left" class="col-md-12"><h2>SPORTING VENCE EM BARCELOS COM REVIRAVOLTA</h2></div>
 
-    </div>
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <h4>O Sporting segue imparável e somou nova vitória, esta terça-feira, na 18.ª jornada da Liga, a primeira
-                da segunda volta do campeonato. Em Barcelos, os leões venceram o Gil Vicente por 2-1 e conseguiram a
-                reviravolta depois de terem estado a perder durante grande parte do encontro.</h4>
+            <h4><?php echo $dados['noticiaDescricao'] ?></h4>
         </div>
     </div>
     <br>
-    <div class="row">
-        <div class="col-md-12">
-            <h2 align="center"><img width="50" src="images/gilvicente.png" alt="">Gil vicente 1-2 Sporting
-                <img width="50" src="images/sportingicon.jpg" alt=""></h2>
-        </div>
-    </div>
+
     <br>
     <div class="row">
         <div class="col-md-12" align="left">
@@ -143,7 +137,7 @@ top();
     </div>
 </div>
 </div>
-
+</div>
 <!--<tr>
     <td width="100%" colspan="6" align="center" >
 

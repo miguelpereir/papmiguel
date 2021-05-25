@@ -106,18 +106,19 @@ $dados=mysqli_fetch_array($result);
                 <input type="text" name="tituloNoticia" value="<?php echo $dados['noticiaTitulo']?>"><br>
                 <label>Sub Titulo: </label>
                 <input type="text" name="subtituloNoticia" value="<?php echo $dados['noticiaSubTitulo']?>"><br>
-                <label>Imagem:</label>
+                <label>Imagem:</label><br>
                 <img width="200" id="output_image" src="<?php echo $dados['noticiaImagemURL'] ?>">
                 <input type="file" accept="image/*" name="imagemNoticia" onchange="preview_image(event)" style="color: darkgray">
                 <label>Descrição: </label>
                 <textarea name="descricaoNoticia" id="myTextarea" cols="50" rows="5"><?php echo $dados['noticiaDescricao']?> </textarea><br>
-                <label>Imagem de Capa:</label>
-                <img width="200" id="output_image_2" src="<?php echo $dados['noticiaCapaURL'] ?>">
+                <label>Imagem de Capa:</label><br>
+                <img width="200" id="output_image_2" src="../<?php echo $dados['noticiaCapaURL'] ?>">
                 <input type="file" accept="image/*" name="capaNoticia" onchange="preview_image_2(event)" style="color: darkgray">
                 <label>Data:</label>
                 <input type="text" name="dataNoticia" value="<?php echo $dados['noticiaData']?>"><br>
 
                 <input type="Submit" value="Edita"><br>
+            </form>
         </div>
     </div>
 <?php

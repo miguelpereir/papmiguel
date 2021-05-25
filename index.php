@@ -58,7 +58,7 @@ top();
 							</div>
 							<div  class="mask">
 
-								<a href="noticias_sporting.php"> <img src="images/sporting.jpg" class="img-responsive" alt="" /></a>
+								<a href="noticia.php"> <img src="images/sporting.jpg" class="img-responsive" alt="" /></a>
 							</div>
 						</div>
 					</div>

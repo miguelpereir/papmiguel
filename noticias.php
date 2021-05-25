@@ -1,6 +1,9 @@
 <?php
 include_once("includes/body.inc.php");
 top();
+$sql = "Select * from noticias";
+
+$result = mysqli_query($con, $sql);
 ?>
 
 <div class="container" align="center">
@@ -16,24 +19,31 @@ top();
 			</td>
 		</tr>
 		<br>
-		<tr>
+
+<?php
+while ($dados = mysqli_fetch_array($result)) {
+    ?>
+        <tr>
 			<div class="linha"></div>
 				<td>
-					<a href="noticias_sporting.php"><img width="200" src="images/sporting.jpg" alt=""></a>
+					<a href="noticia.php?id=<?php echo $dados['noticiaId'] ?>"><img width="200" src="<?php echo $dados['noticiaCapaURL'] ?>" alt=""></a>
 				</td>
 				<td>
-					<a href="noticias_sporting.php"><h2  align="left">Sporting</h2></a>
-				<h4>Sequencia de Vitórias incrivel</h4>
-				<br>
-				<h5>O Sporting segue imparável e somou nova vitória, esta terça-feira, na 18.ª jornada da Liga, a primeirada segunda volta do campeonato.</h5>
-					<br>
-					<br>
-					<br>
-					<br>
-					<h6>25-02-2021</h6>
-				</td>
+					<a href="noticia.php?id=<?php echo $dados['noticiaId'] ?>"><h2 align="left"><?php echo $dados['noticiaTitulo'] ?></h2></a>
+				<h4><?php echo $dados['noticiaSubTitulo'] ?></h4>
 
-		</tr>
+					<br>
+					<br>
+                    <br>
+					<br>
+                    <br>
+					<h6><?php echo $dados['noticiaData'] ?></h6>
+				</td>
+    </tr>
+    <?php
+}
+?>
+
 
 
 

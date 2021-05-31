@@ -50,7 +50,7 @@ top_login();
 
                 <div class="container-login100-form-btn m-t-17">
                     <button class="login100-form-btn">
-                        Sign In
+                        Registar
                     </button>
                 </div>
 

@@ -65,8 +65,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h3><a class="navbar-brand" href="index.php">Olha a B<i class="fas fa-futbol-o"
-                                                                            aria-hidden="true"></i>la!!</a></h3>
+                    <h3><a class="navbar-brand" href="index.php">OLHA A B<i class="fas fa-futbol-o"
+                                                                            aria-hidden="true"></i>LA</a></h3>
 
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->

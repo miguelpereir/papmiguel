@@ -644,6 +644,7 @@ function bot_utilizador()
 
 ?>
 
+
 <?php
 function top_admin()
 {
@@ -693,6 +694,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
               rel='stylesheet' type='text/css'>
 
         <link href="../css/common.css" rel="stylesheet">
+
     </head>
 
     <body>
@@ -879,6 +881,7 @@ function bot_admin($menu = HOME)
 
 
     </script>
+
     <!-- //here ends scrolling icon -->
     </body>
     </html>

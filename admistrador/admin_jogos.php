@@ -15,8 +15,7 @@ $result = mysqli_query($con, $sql);
     </script>
 <div class="container" align="center">
     <h1>Lista dos Jogos</h1>
-
-    Pesquisar:<br><input type="text" id="search">
+    Pesquisar:<br><input  type="text" id="search">
 
     <table  class='table table-striped' align="center" width="100%">
         <tr>

@@ -3,6 +3,7 @@ include_once("../includes/body.inc.php");
 top_admin();
 
 ?>
+    <link href="../css/admin.css" rel="stylesheet">
     <link href="summernote.css" rel="stylesheet">
     <script src='../js/tinymce/tinymce.min.js'></script>
     <script>
@@ -21,36 +22,44 @@ top_admin();
             image_advtab: true,
             /*content_css: '//www.tiny.cloud/css/codepen.min.css',*/
             link_list: [
-                { title: 'My page 1', value: 'https://www.codexworld.com' },
-                { title: 'My page 2', value: 'https://www.xwebtools.com' }
+                {title: 'My page 1', value: 'https://www.codexworld.com'},
+                {title: 'My page 2', value: 'https://www.xwebtools.com'}
             ],
             image_list: [
-                { title: 'My page 1', value: 'https://www.codexworld.com' },
-                { title: 'My page 2', value: 'https://www.xwebtools.com' }
+                {title: 'My page 1', value: 'https://www.codexworld.com'},
+                {title: 'My page 2', value: 'https://www.xwebtools.com'}
             ],
             image_class_list: [
-                { title: 'None', value: '' },
-                { title: 'Some class', value: 'class-name' }
+                {title: 'None', value: ''},
+                {title: 'Some class', value: 'class-name'}
             ],
             importcss_append: true,
             file_picker_callback: function (callback, value, meta) {
                 /* Provide file and text for the link dialog */
                 if (meta.filetype === 'file') {
-                    callback('https://www.google.com/logos/google.jpg', { text: 'My text' });
+                    callback('https://www.google.com/logos/google.jpg', {text: 'My text'});
                 }
                 /* Provide image and alt text for the image dialog */
                 if (meta.filetype === 'image') {
-                    callback('https://www.google.com/logos/google.jpg', { alt: 'My alt text' });
+                    callback('https://www.google.com/logos/google.jpg', {alt: 'My alt text'});
                 }
                 /* Provide alternative source and posted for the media dialog */
                 if (meta.filetype === 'media') {
-                    callback('movie.mp4', { source2: 'alt.ogg', poster: 'https://www.google.com/logos/google.jpg' });
+                    callback('movie.mp4', {source2: 'alt.ogg', poster: 'https://www.google.com/logos/google.jpg'});
                 }
             },
             templates: [
-                { title: 'New Table', description: 'creates a new table', content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>' },
-                { title: 'Starting my story', description: 'A cure for writers block', content: 'Once upon a time...' },
-                { title: 'New list with dates', description: 'New List with dates', content: '<div class="mceTmpl"><span class="cdate">cdate</span><br /><span class="mdate">mdate</span><h2>My List</h2><ul><li></li><li></li></ul></div>' }
+                {
+                    title: 'New Table',
+                    description: 'creates a new table',
+                    content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>'
+                },
+                {title: 'Starting my story', description: 'A cure for writers block', content: 'Once upon a time...'},
+                {
+                    title: 'New list with dates',
+                    description: 'New List with dates',
+                    content: '<div class="mceTmpl"><span class="cdate">cdate</span><br /><span class="mdate">mdate</span><h2>My List</h2><ul><li></li><li></li></ul></div>'
+                }
             ],
             template_cdate_format: '[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]',
             template_mdate_format: '[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]',
@@ -62,36 +71,50 @@ top_admin();
             contextmenu: "link image imagetools table",
         });
     </script>
-<div class="container" align="center" >
+    <div class="container" align="center">
 
 
-		<div>
-			<h1 align="center">Adicionar Equipa </h1>
-		</div>
-
-		<div align="left">
-			<a href="admin_equipas.php"><button type="button" class="btn btn-success">Back</button></a>
-		</div>
-    <br>
-        <div align="left">
+        <div>
+            <h1 align="center">Adicionar Equipa </h1>
+        </div>
+        <div class="row" align="left">
         <form action="confirmaNovaEquipa.php" method="post" enctype="multipart/form-data">
-        <label>Nome: </label>
-        <input type="text" name="nomeEquipa"><br>
-        <label>Emblema:</label>
-        <input type="file" name="emblemaEquipa"><br>
-        <label>Ano de Fundação: </label>
-        <input type="text" name="anoEquipa"><br>
-        <label>Nome do Estádio: </label>
-        <input type="text" name="nomeEstadio"><br>
-        <label>Foto do Estádio:</label>
-        <input type="file" name="fotoEstadio"><br>
-        <label>Historia: </label>
-        <textarea  class="col-2" name="historiaEquipa" id="myTextarea"  cols="50" rows="5"></textarea><br>
-        <label>Presidente:</label>
-        <input type="text" name="presidenteEquipa"><br>
+            <div class="col-md-11">
+            <a href="admin_equipas.php">
+                <button type="button" class="btn btn-success">Back</button>
+            </a>
+            </div>
+            <div class="col-md-01">
+            <input type="Submit" class="btn btn-success" value="Adiciona">
+            </div>
+        <br>
 
-        <input type="Submit" value="Adiciona"><br>
-        </form>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <label>Nome: </label>
+                    <input type="text" name="nomeEquipa"><br>
+                    <label>Emblema:</label>
+                    <input class="custom-file-upload" type="file" name="emblemaEquipa">
+                    <label>Ano de Fundação: </label>
+                    <input type="text" name="anoEquipa">
+                </div>
+                <div class="col-md-5">
+                    <label>Nome do Estádio: </label>
+                    <input type="text" name="nomeEstadio"><br>
+                    <label>Foto do Estádio:</label>
+                    <input class="custom-file-upload" type="file" name="fotoEstadio">
+                    <label>Presidente:</label>
+                    <input type="text" name="presidenteEquipa"><br>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-12">
+                    <label>Historia: </label>
+                    <textarea class="col-2" name="historiaEquipa" id="myTextarea" cols="50" rows="5"></textarea><br>
+                </div>
+
+
+            </form>
         </div>
     </div>
 

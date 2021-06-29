@@ -78,16 +78,16 @@ top_admin();
             <h1 align="center">Adicionar Equipa </h1>
         </div>
         <div class="row" align="left">
-        <form action="confirmaNovaEquipa.php" method="post" enctype="multipart/form-data">
-            <div class="col-md-11">
-            <a href="admin_equipas.php">
-                <button type="button" class="btn btn-success">Back</button>
-            </a>
-            </div>
-            <div class="col-md-01">
-            <input type="Submit" class="btn btn-success" value="Adiciona">
-            </div>
-        <br>
+            <form action="confirmaNovaEquipa.php" method="post" enctype="multipart/form-data">
+                <div class="col-md-11">
+                    <a href="admin_equipas.php">
+                        <button type="button" class="btn btn-success">Back</button>
+                    </a>
+                </div>
+                <div class="col-md-01">
+                    <input type="Submit" class="btn btn-success" value="Adiciona">
+                </div>
+                <br>
 
 
                 <div class="col-md-1"></div>

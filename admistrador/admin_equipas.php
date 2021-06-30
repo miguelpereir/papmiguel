@@ -12,6 +12,12 @@ top_admin();
     <div class="container" align="center">
         <h1>Lista das Equipas</h1>
         Pesquisar:<br><input  type="text" id="search">
+        <div class="row">
+            <div class="col-md-12 " align="right">
+                <a href="admin_treinadores.php"><i class='btn btn-warning'> Treinadores</i></a>
+                <a href="adicionar_equipas.php"><i class='btn btn-success'> Adiciona</i></a>
+            </div>
+    </div>
         <div id="tableContent">
 
         </div>
@@ -19,3 +25,6 @@ top_admin();
 <?php
 bot_admin(EQUIPAS);
 ?>
+
+
+

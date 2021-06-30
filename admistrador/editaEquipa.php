@@ -86,7 +86,7 @@ $dados = mysqli_fetch_array($result);
             ],
             template_cdate_format: '[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]',
             template_mdate_format: '[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]',
-            height: 600,
+            height: 437,
             image_caption: true,
             quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
             noneditable_noneditable_class: "mceNonEditable",
@@ -118,8 +118,8 @@ $dados = mysqli_fetch_array($result);
                     <input type="hidden" name="equipaId" value="<?php echo $id ?>">
                     <label>Nome: </label>
                     <input type="text" name="nomeEquipa" value="<?php echo $dados['equipaNome'] ?>"><br>
-                    <label>Emblema:</label>
-                    <img width="100" id="output_image" src="../<?php echo $dados['equipaEmblemaURL'] ?>">
+                    <br><label>Emblema:</label>
+                    <img style="padding-bottom: 3px" width="100px" height="100px" id="output_image" src="../<?php echo $dados['equipaEmblemaURL'] ?>">
                     <input class="custom-file-upload" type="file" accept="image/*" name="emblemaEquipa"
                            onchange="preview_image(event)"
                            style="color: darkgray">
@@ -131,8 +131,8 @@ $dados = mysqli_fetch_array($result);
                     <label>Nome do Estádio: </label>
                     <input class="custom-file-upload" type="text" name="nomeEstadio"
                            value="<?php echo $dados['equipaEstadioNome'] ?>"><br>
-                    <label>Foto do Estádio:</label>
-                    <img width="100" id="output_image_2" src="../<?php echo $dados['equipaEstadioURL'] ?>">
+                    <br><label>Foto do Estádio:</label>
+                    <img style="padding-bottom: 3px" width="150px" height="100px" id="output_image_2" src="../<?php echo $dados['equipaEstadioURL'] ?>">
                     <input class="custom-file-upload" type="file" accept="image/*" name="fotoEstadio"
                            onchange="preview_image_2(event)" style="color: darkgray">
                     <label>Presidente:</label>

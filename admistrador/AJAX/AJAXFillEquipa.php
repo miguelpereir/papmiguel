@@ -7,13 +7,7 @@ $sql = "Select * from equipas where equipaNome LIKE '%$txt%'";
 $result = mysqli_query($con, $sql);
 
 ?>
-<table  class='table table-striped' align="center" width="100%">
-    <tr>
-        <td colspan="11" align='right'>
-            <a href="admin_treinadores.php"><i class='fas fa-clipboard text-secondary'> Treinadores</i></a>
-            <a href="adicionar_equipas.php"><i class='fas fa-plus text-success'> Adiciona</i></a>
-        </td>
-    </tr>
+    <table  class='table table-striped align-middle' width="100%">
     <tr>
         <th>Id</th>
         <th>Nome</th>
@@ -24,25 +18,25 @@ $result = mysqli_query($con, $sql);
         <th>Historia</th>
         <th>Presidente</th>
 
-        <th colspan="2">op&ccedil&otildees</th>
+        <th colspan="3"  >Opções</th>
     </tr>
 
     <?php
     while ($dados = mysqli_fetch_array($result)) {
         ?>
 
-        <tr>
+        <tr align="middle">
             <td><?php echo $dados['equipaId'] ?></td>
             <td><?php echo $dados['equipaNome'] ?></td>
             <td><img width='90' src="../<?php echo $dados['equipaEmblemaURL'] ?>"></td>
             <td><?php echo $dados['equipaAnoFundacao'] ?></td>
             <td><?php echo $dados['equipaEstadioNome'] ?></td>
             <td><img width="90" src="../<?php echo $dados['equipaEstadioURL'] ?>"></td>
-            <td><?php echo $dados['equipaHistoria'] ?></td>
+            <td><textarea disabled style="width: 100%" name="" id="" cols="30" rows="5"><?php echo $dados['equipaHistoria'] ?></textarea></td>
             <td><?php echo $dados['equipaPresidente'] ?></td>
-            <td><a href="admin_plantel.php?id=<?php echo $dados['equipaId'] ?>"> <i class="fas fa-eye text-warning"></i></a></td>
-            <td><a href="editaEquipa.php?id=<?php echo $dados['equipaId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
-            <td><a href="#" onclick="confirmaEliminaEquipa(<?php echo $dados['equipaId'] ?>);"> <i class="fas fa-trash  text-danger"></i></a></td>
+            <td><a href="admin_plantel.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-info">Plantel</i></a></td>
+            <td><a href="editaEquipa.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-primary">Editar</i></a></td>
+            <td><a href="#" onclick="confirmaEliminaEquipa(<?php echo $dados['equipaId'] ?>);"> <i class="btn btn-danger">Eliminar</i></a></td>
         </tr>
         <?php
     }

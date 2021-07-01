@@ -877,6 +877,16 @@ function bot_admin($menu = HOME)
             <?php
             }
             ?>
+            <?php
+            if ($menu == TREINADORES){
+            ?>
+            $('#search').keyup(function () {
+                fillTableTreinadores(this.value);
+            });
+            fillTableTreinadores();
+            <?php
+            }
+            ?>
         })
 
 

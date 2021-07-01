@@ -32,7 +32,7 @@ $result = mysqli_query($con, $sql);
             <td><?php echo $dados['equipaAnoFundacao'] ?></td>
             <td><?php echo $dados['equipaEstadioNome'] ?></td>
             <td><img width="90" src="../<?php echo $dados['equipaEstadioURL'] ?>"></td>
-            <td><textarea disabled style="width: 100%" name="" id="" cols="30" rows="5"><?php echo $dados['equipaHistoria'] ?></textarea></td>
+            <td><?php echo substr($dados['equipaHistoria'], 0,100)."(..)" ?></td>
             <td><?php echo $dados['equipaPresidente'] ?></td>
             <td><a href="admin_plantel.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-info">Plantel</i></a></td>
             <td><a href="editaEquipa.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-primary">Editar</i></a></td>

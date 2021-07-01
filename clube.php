@@ -50,7 +50,7 @@ $dados = mysqli_fetch_array($result);
         <div class="row">
 
             <div class="col-md-6" align="left">
-                <h4 ><?php echo $dados['equipaHistoria'] ?></h4>
+                <h4><?php echo $dados['equipaHistoria'] ?></h4>
             </div>
             <div class="col-md-1" align="left">
 

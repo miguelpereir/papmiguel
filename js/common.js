@@ -46,6 +46,18 @@ function fillTableNoticias(txt='') {
         }
     });
 }
+function fillTableTreinadores(txt='') {
+    $.ajax({
+        url: "AJAX/AJAXFillTreinador.php",
+        type: "post",
+        data: {
+            txt: txt
+        },
+        success: function (result) {
+            $('#tableContent').html(result);
+        }
+    });
+}
 function fillTablePosicao(txt='') {
     $.ajax({
         url: "AJAX/AJAXFillPosicao.php",

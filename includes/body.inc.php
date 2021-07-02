@@ -1,890 +1,357 @@
 <?php
-include_once("config.inc.php");
-$con = mysqli_connect(HOST, USER, PWD, DATABASE);
-$con->set_charset("utf8");
-function top()
-{
-    ?>
-    <!--
-    author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Olha a Bola!!</title>
-        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-        <!-- custom-theme -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="keywords" content="Goal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
-        <script type="application/x-javascript"> addEventListener("load", function () {
-                setTimeout(hideURLbar, 0);
-            }, false);
-
-            function hideURLbar() {
-                window.scrollTo(0, 1);
-            } </script>
-        <!-- //custom-theme -->
-        <script src="https://kit.fontawesome.com/90ff2770af.js" crossorigin="anonymous"></script>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="css/JiSlider.css" rel="stylesheet">
-        <!-- light-box -->
-        <link rel="stylesheet" href="css/lightbox.css">
-        <!-- //light-box -->
-
-        <!-- Owl-carousel-CSS -->
-        <link href="css/owl.carousel.css" rel="stylesheet">
-
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-        <!-- font-awesome-icons -->
-        <link href="css/font-awesome.css" rel="stylesheet">
-        <!-- //font-awesome-icons -->
-        <link href="//fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
-        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-              rel='stylesheet' type='text/css'>
-
-        <link href="css/common.css" rel="stylesheet">
-        <link href="css/plantel.css" rel="stylesheet">
-    </head>
-
-    <body>
-    <!-- banner -->
-    <div class="main_section_agile">
-
-        <div class="agileits_w3layouts_banner_nav">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <h3><a class="navbar-brand" href="index.php">Olha a B<i class="fas fa-futbol-o"
-                                                                            aria-hidden="true"></i>la!!</a></h3>
-
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <nav class="menu--iris">
-                        <ul class="nav navbar-nav menu__list">
-                            <li class="menu__item"><a href="index.php">Home</a></li>
-                            <li class="menu__item"><a href="classificacao.php">Classificação</a></li>
-                            <li class="menu__item"><a href="noticias.php">Noticias</a></li>
-                            <li class="menu__item"><a href="clubes.php">Clubes</a></li>
-
-                            <li class="menu__item"><a href="login.php">Registar/Entrar</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <?php
-}
-
-?>
-
-<?php
-function bot()
-{
-    ?>
-    <div class="clearfix"></div>
-    <!-- /contact bottom -->
-    <!-- Footer Section -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 w3-footer-nav">
-                    <div class="links">
-                        <a href="index.php">Home</a>
-                        <a href="classificacao.php">Classificação</a>
-                        <a href="noticias.php">Noticias</a>
-                        <a href="clubes.php">Clubes</a>
-                        <a href="login.php">Registar/Entrar</a>
-                    </div>
-                </div>
-                <div class="col-md-6 w3-footer-copy">
-                    <div class="copyright">
-                        <p>&copy; 2017 Goal. All Rights Reserved | Design by <a href="http://w3layouts.com/">
-                                W3layouts </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Footer Section -->
-
-    <!-- start-smoth-scrolling -->
-    <!-- js -->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-    <script src="js/JiSlider.js"></script>
-    <script>
-        $(window).load(function () {
-            $('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: false}).addClass('ff')
-        })
-    </script>
-
-    <!-- //footer -->
-    <!-- stats -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
-    <!-- //stats -->
-    <!-- Custom-JavaScript-File-Links -->
-    <script type="text/javascript" src="js/moment.js"></script>
-    <script type="text/javascript" src="js/moment-timezone-with-data.js"></script>
-    <script type="text/javascript" src="js/timer.js"></script>
-    <!-- //Custom-JavaScript-File-Links -->
-
-    <!-- requried-jsfiles-for owl -->
-    <script src="js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo2").owlCarousel({
-                items: 1,
-                lazyLoad: false,
-                autoPlay: true,
-                navigation: false,
-                navigationText: false,
-                pagination: true,
-            });
-        });
-    </script>
-    <!-- //requried-jsfiles-for owl -->
-    <script src="js/index.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
-            });
-        });
-    </script>
-    <!-- start-smoth-scrolling -->
-    <!-- for bootstrap working -->
-    <script src="js/bootstrap.js"></script>
-    <!-- //for bootstrap working -->
-    <!-- here stars scrolling icon -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            /*
-                var defaults = {
-                containerID: 'toTop', // fading element id
-                containerHoverID: 'toTopHover', // fading element hover id
-                scrollSpeed: 1200,
-                easingType: 'linear'
-                };
-            */
-
-            $().UItoTop({easingType: 'easeOutQuart'});
-
-        });
-    </script>
-    <!-- //here ends scrolling icon -->
-    </body>
-    </html>
-
-    <?php
-}
-
-?>
-<?php
-function top_login()
-{
+include_once ("config.php");
+function top($page=HOME){
     ?>
     <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--===============================================================================================-->
-        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="css/util.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <!--===============================================================================================-->
-        <head>
-            <title>Olha a Bola!!</title>
-            <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-            <!-- custom-theme -->
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-            <meta name="keywords" content="Goal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-        Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
-            <script type="application/x-javascript"> addEventListener("load", function () {
-                    setTimeout(hideURLbar, 0);
-                }, false);
-
-                function hideURLbar() {
-                    window.scrollTo(0, 1);
-                } </script>
-            <!-- //custom-theme -->
-            <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-            <link href="css/JiSlider.css" rel="stylesheet">
-            <!-- light-box -->
-            <link rel="stylesheet" href="css/lightbox.css">
-            <!-- //light-box -->
-
-            <!-- Owl-carousel-CSS -->
-            <link href="css/owl.carousel.css" rel="stylesheet">
-
-            <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-            <!-- font-awesome-icons -->
-            <link href="css/font-awesome.css" rel="stylesheet">
-            <!-- //font-awesome-icons -->
-            <link href="//fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800"
-                  rel="stylesheet">
-            <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-                  rel='stylesheet' type='text/css'>
-
-            <link href="css/common.css" rel="stylesheet">
-        </head>
-    </head>
-    <body>
-    <div class="main_section_agile">
-        <div class="agileits_w3layouts_banner_nav">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <h3><a class="navbar-brand" href="index.php">Olha a B<i class="fa fa-futbol-o"
-                                                                            aria-hidden="true"></i>la!!</a></h3>
-
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <nav class="menu--iris">
-                        <ul class="nav navbar-nav menu__list">
-                            <li class="menu__item menu__item--current"><a href="index.php">Home</a></li>
-                            <li class="menu__item"><a href="classificacao.php">Classificação</a></li>
-                            <li class="menu__item"><a href="noticias.php">Noticias</a></li>
-                            <li class="menu__item"><a href="clubes.php">Clubes</a></li>
-
-                            <li class="menu__item"><a href="login.php">Registar/Entrar</a></li>
-                        </ul>
-
-                    </nav>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <?php
-}
-
-?>
-<?php
-function bot_login()
-{
-    ?>
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 w3-footer-nav">
-                    <div class="links">
-                        <a href="index.php">Home</a>
-                        <a href="classificacao.php">Classificação</a>
-                        <a href="noticias.php">Noticias</a>
-                        <a href="clubes.php">Clubes</a>
-                        <a href="login.php">Registar/Entrar</a>
-                    </div>
-                </div>
-                <div class="col-md-6 w3-footer-copy">
-                    <div class="copyright">
-                        <p>&copy; 2017 Goal. All Rights Reserved | Design by <a href="http://w3layouts.com/">
-                                W3layouts </a>
-                        </p>
-                    </div>
-                </div>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <!-- Site Metas -->
+   <title>Game Info</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Colors CSS -->
+   <link rel="stylesheet" href="css/colors.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+   <!-- font family -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <!-- end font family -->
+   <link rel="stylesheet" href="css/3dslider.css" />
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+   <script src="js/3dslider.js"></script>
+   </head>
+   <body class="game_info" data-spy="scroll" data-target=".header">
+      <!-- LOADER -->
+      <div id="preloader">
+         <img class="preloader" src="images/loading-img.gif" alt="">
+      </div>
+      <!-- END LOADER -->
+      <section id="top">
+         <header>
+            <div class="container">
+               <div class="header-top">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="full">
+                           <div class="logo">
+                              <a href="index.php"><img src="images/logo.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="right_top_section">
+                           <!-- social icon -->
+                           <ul class="social-icons pull-left">
+                              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                              <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                           </ul>
+                           <!-- end social icon -->
+                           <!-- button section -->
+                           <ul class="login">
+                              <li class="login-modal">
+                                 <a href="#" class="login"><i class="fa fa-user"></i>Login</a>
+                              </li>
+                              <li>
+                                 <div class="cart-option">
+                                    <a href="#"><i class="fa fa-shopping-cart"></i>Register</a>
+                                 </div>
+                              </li>
+                           </ul>
+                           <!-- end button section -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-bottom">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="full">
+                           <div class="main-menu-section">
+                              <div class="menu">
+                                 <nav class="navbar navbar-inverse">
+                                    <div class="navbar-header">
+                                       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                       <span class="sr-only">Toggle navigation</span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       </button>
+                                       <a class="navbar-brand" href="#">Menu</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse js-navbar-collapse">
+                                       <ul class="nav navbar-nav">
+                                          <li class="active"><a href="index.php">Home</a></li>
+                                          <li><a href="about.html">About</a></li>
+                                          <li><a href="team.php">Team</a></li>
+                                          <li><a href="news.html">News</a></li>
+                                          <li class="dropdown mega-dropdown">
+                                             <a href="match" class="dropdown-toggle" data-toggle="dropdown">Match<span class="caret"></span></a>
+                                             <ul class="dropdown-menu mega-dropdown-menu">
+                                                <li class="col-sm-8">
+                                                   <ul>
+                                                      <li class="dropdown-header">Men Collection</li>
+                                                      <div id="menCollection" class="carousel slide" data-ride="carousel">
+                                                         <div class="carousel-inner">
+                                                            <div class="item active">
+                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="images/match-banner1.jpg" alt="#" /></a></div>
+                                                            </div>
+                                                            <!-- End Item -->
+                                                            <div class="item">
+                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="images/match-banner1.jpg" alt="#" /></a></div>
+                                                            </div>
+                                                            <!-- End Item -->
+                                                            <div class="item">
+                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="images/match-banner1.jpg" alt="#" /></a></div>
+                                                            </div>
+                                                            <!-- End Item -->
+                                                         </div>
+                                                         <!-- End Carousel Inner -->
+                                                         <!-- Controls -->
+                                                         <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                         <span class="sr-only">Previous</span>
+                                                         </a>
+                                                         <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                         <span class="sr-only">Next</span>
+                                                         </a>
+                                                      </div>
+                                                      <!-- /.carousel -->
+                                                   </ul>
+                                                </li>
+                                                <li class="col-sm-4">
+                                                   <ul class="menu-inner">
+                                                      <li class="dropdown-header">Next Matchs</li>
+                                                      <li><a href="#">Contrary vs classical</a></li>
+                                                      <li><a href="#">Discovered vs undoubtable</a></li>
+                                                      <li><a href="#">Contrary vs classical</a></li>
+                                                      <li><a href="#">Discovered vs undoubtable</a></li>
+                                                      <li><a href="#">Contrary vs classical</a></li>
+                                                      <li><a href="#">Discovered vs undoubtable</a></li>
+                                                      <li><a href="#">Contrary vs classical</a></li>
+                                                      <li><a href="#">Discovered vs undoubtable</a></li>
+                                                   </ul>
+                                                </li>
+                                             </ul>
+                                          </li>
+                                          <li><a href="blog.html">Blog</a></li>
+                                          <li><a href="contact.html">contact</a></li>
+                                       </ul>
+                                    </div>
+                                    <!-- /.nav-collapse -->
+                                 </nav>
+                                 <div class="search-bar">
+                                    <div id="imaginary_container">
+                                       <div class="input-group stylish-input-group">
+                                          <input type="text" class="form-control"  placeholder="Search" >
+                                          <span class="input-group-addon">
+                                          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                          </span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- /Footer Section -->
-
-    <!-- start-smoth-scrolling -->
-    <!-- js -->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-    <script src="js/JiSlider.js"></script>
-    <script>
-        $(window).load(function () {
-            $('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: false}).addClass('ff')
-        })
-    </script>
-
-    <!-- //footer -->
-    <!-- stats -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
-    <!-- //stats -->
-    <!-- Custom-JavaScript-File-Links -->
-    <script type="text/javascript" src="js/moment.js"></script>
-    <script type="text/javascript" src="js/moment-timezone-with-data.js"></script>
-    <script type="text/javascript" src="js/timer.js"></script>
-    <!-- //Custom-JavaScript-File-Links -->
-
-    <!-- requried-jsfiles-for owl -->
-    <script src="js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo2").owlCarousel({
-                items: 1,
-                lazyLoad: false,
-                autoPlay: true,
-                navigation: false,
-                navigationText: false,
-                pagination: true,
-            });
-        });
-    </script>
-    <!-- //requried-jsfiles-for owl -->
-    <script src="js/index.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
-            });
-        });
-    </script>
-    <!-- start-smoth-scrolling -->
-    <!-- for bootstrap working -->
-    <script src="js/bootstrap.js"></script>
-    <!-- //for bootstrap working -->
-    <!-- here stars scrolling icon -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            /*
-                var defaults = {
-                containerID: 'toTop', // fading element id
-                containerHoverID: 'toTopHover', // fading element hover id
-                scrollSpeed: 1200,
-                easingType: 'linear'
-                };
-            */
-
-            $().UItoTop({easingType: 'easeOutQuart'});
-
-        });
-    </script>
-    <!-- //here ends scrolling icon -->
-
-    <div id="dropDownSelect1"></div>
-
-    <!--===============================================================================================-->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/animsition/js/animsition.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/daterangepicker/moment.min.js"></script>
-    <script src="vendor/daterangepicker/daterangepicker.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/countdowntime/countdowntime.js"></script>
-    <!--===============================================================================================-->
-    <script src="js/main.js"></script>
-
-    </body>
-    </html>
-
-    <?php
-}
-
-?>
-
-<?php
-function top_utilizador()
-{
-    ?>
-    <!--
-    author: W3layouts
-    author URL: http://w3layouts.com
-    License: Creative Commons Attribution 3.0 Unported
-    License URL: http://creativecommons.org/licenses/by/3.0/
-    -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Olha a Bola!!</title>
-        <link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
-        <!-- custom-theme -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="keywords" content="Goal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
-        <script type="application/x-javascript"> addEventListener("load", function () {
-                setTimeout(hideURLbar, 0);
-            }, false);
-
-            function hideURLbar() {
-                window.scrollTo(0, 1);
-            } </script>
-        <!-- //custom-theme -->
-        <script src="https://kit.fontawesome.com/90ff2770af.js" crossorigin="anonymous"></script>
-        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="../css/JiSlider.css" rel="stylesheet">
-        <!-- light-box -->
-        <link rel="stylesheet" href="../css/lightbox.css">
-        <!-- //light-box -->
-
-        <!-- Owl-carousel-CSS -->
-        <link href="../css/owl.carousel.css" rel="stylesheet">
-
-        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all"/>
-        <!-- font-awesome-icons -->
-        <link href="../css/font-awesome.css" rel="stylesheet">
-        <!-- //font-awesome-icons -->
-        <link href="//fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
-        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-              rel='stylesheet' type='text/css'>
-
-        <link href="../css/common.css" rel="stylesheet">
-    </head>
-
-    <body>
-    <!-- banner -->
-    <div class="main_section_agile">
+         </header>
 
 
-        <div class="agileits_w3layouts_banner_nav">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <h3><a class="navbar-brand" href="index.php">Olha a B<i class="fas fa-futbol-o"
-                                                                            aria-hidden="true"></i>la!!</a></h3>
-
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <nav class="menu--iris">
-                        <ul class="nav navbar-nav menu__list">
-                            <li class="menu__item menu__item--current"><a href="index.php">Home</a></li>
-                            <li class="menu__item"><a href="classificacao.php">Classificação</a></li>
-                            <li class="menu__item"><a href="noticias.php">Noticias</a></li>
-                            <li class="menu__item"><a href="clubes.php">Clubes</a></li>
-                            <li class="menu__item"><a href="estatisticas.php">Estatísticas</a></li>
-
-                            <li class="menu__item">
-                                <a href="perfil.php"><img class="perfil-imagem" src="../images/a1.jpg" width="40"></a>
-                            </li>
-
-                        </ul>
-
-                    </nav>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <?php
-}
-
-?>
-<?php
-function bot_utilizador()
-{
-    ?>
-    <div class="clearfix"></div>
-    <!-- /contact bottom -->
-    <!-- Footer Section -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 w3-footer-nav">
-                    <div class="links">
-                        <a href="index.php">Home</a>
-                        <a href="classificacao.php">Classificação</a>
-                        <a href="noticias.php">Noticias</a>
-                        <a href="clubes.php">Clubes</a>
-                        <a href="perfil.php">Perfil</a>
+        <?php
+            if($page==HOME){
+        ?>
+        <div class="full-slider">
+            <div id="carousel-example-generic" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- First slide -->
+                    <div class="item active deepskyblue" data-ride="carousel" data-interval="5000">
+                        <div class="carousel-caption">
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <div class="slider-contant" data-animation="animated fadeInRight">
+                                    <h3>If you Don?t Practice<br>You <span class="color-yellow">Don?t Derserve</span><br>to win!</h3>
+                                    <p>If you use this site regularly and would like to help keep the site on the Internet,<br>
+                                        please consider donating a small sum to help pay..
+                                    </p>
+                                    <button class="btn btn-primary btn-lg">Read More</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 w3-footer-copy">
-                    <div class="copyright">
-                        <p>&copy; 2017 Goal. All Rights Reserved | Design by <a href="http://w3layouts.com/">
-                                W3layouts </a>
-                        </p>
+                    <!-- /.item -->
+                    <!-- Second slide -->
+                    <div class="item skyblue" data-ride="carousel" data-interval="5000">
+                        <div class="carousel-caption">
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <div class="slider-contant" data-animation="animated fadeInRight">
+                                    <h3>If you Don?t Practice<br>You <span class="color-yellow">Don?t Derserve</span><br>to win!</h3>
+                                    <p>You can make a case for several potential winners of<br>the expanded European Championships.</p>
+                                    <button class="btn btn-primary btn-lg">Button</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- /.item -->
+                    <!-- Third slide -->
+                    <div class="item darkerskyblue" data-ride="carousel" data-interval="5000">
+                        <div class="carousel-caption">
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12"></div>
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                <div class="slider-contant" data-animation="animated fadeInRight">
+                                    <h3>If you Don?t Practice<br>You <span class="color-yellow">Don?t Derserve</span><br>to win!</h3>
+                                    <p>You can make a case for several potential winners of<br>the expanded European Championships.</p>
+                                    <button class="btn btn-primary btn-lg">Button</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.item -->
                 </div>
+                <!-- /.carousel-inner -->
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
+            <!-- /.carousel -->
         </div>
-    </div>
-    <!-- /Footer Section -->
-
-    <!-- start-smoth-scrolling -->
-    <!-- js -->
-    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-    <script src="../js/JiSlider.js"></script>
-    <script>
-        $(window).load(function () {
-            $('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: false}).addClass('ff')
-        })
-    </script>
-
-    <!-- //footer -->
-    <!-- stats -->
-    <script src="../js/jquery.waypoints.min.js"></script>
-    <script src="../js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
-    <!-- //stats -->
-    <!-- Custom-JavaScript-File-Links -->
-    <script type="text/javascript" src="../js/moment.js"></script>
-    <script type="text/javascript" src="../js/moment-timezone-with-data.js"></script>
-    <script type="text/javascript" src="../js/timer.js"></script>
-    <!-- //Custom-JavaScript-File-Links -->
-
-    <!-- requried-jsfiles-for owl -->
-    <script src="../js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo2").owlCarousel({
-                items: 1,
-                lazyLoad: false,
-                autoPlay: true,
-                navigation: false,
-                navigationText: false,
-                pagination: true,
-            });
-        });
-    </script>
-    <!-- //requried-jsfiles-for owl -->
-    <script src="../js/index.js"></script>
-    <script src="../js/scrolling-nav.js"></script>
-
-    <script type="text/javascript" src="../js/move-top.js"></script>
-    <script type="text/javascript" src="../js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
-            });
-        });
-    </script>
-    <!-- start-smoth-scrolling -->
-    <!-- for bootstrap working -->
-    <script src="../js/bootstrap.js"></script>
-    <!-- //for bootstrap working -->
-    <!-- here stars scrolling icon -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            /*
-                var defaults = {
-                containerID: 'toTop', // fading element id
-                containerHoverID: 'toTopHover', // fading element hover id
-                scrollSpeed: 1200,
-                easingType: 'linear'
-                };
-            */
-
-            $().UItoTop({easingType: 'easeOutQuart'});
-
-        });
-    </script>
-    <!-- //here ends scrolling icon -->
-    </body>
-    </html>
-
-    <?php
-}
-
-?>
-
-<?php
-function top_admin()
-{
-    ?>
-    <!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Olha a Bola!!</title>
-        <link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
-        <!-- custom-theme -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="keywords" content="Goal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
-        <script type="application/x-javascript"> addEventListener("load", function () {
-                setTimeout(hideURLbar, 0);
-            }, false);
-
-            function hideURLbar() {
-                window.scrollTo(0, 1);
-            } </script>
-        <!-- //custom-theme -->
-        <script src="../js/jquery.min.js"></script>
-        <script src="../js/common.js"></script>
-        <script src="https://kit.fontawesome.com/90ff2770af.js" crossorigin="anonymous"></script>
-        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="../css/JiSlider.css" rel="stylesheet">
-        <!-- light-box -->
-        <link rel="stylesheet" href="../css/lightbox.css">
-        <!-- //light-box -->
-
-        <!-- Owl-carousel-CSS -->
-        <link href="../css/owl.carousel.css" rel="stylesheet">
-
-        <link href="../css/style.css" rel="stylesheet" type="text/css" media="all"/>
-        <!-- font-awesome-icons -->
-        <link href="../css/font-awesome.css" rel="stylesheet">
-        <!-- //font-awesome-icons -->
-        <link href="//fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
-        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
-              rel='stylesheet' type='text/css'>
-
-        <link href="../css/common.css" rel="stylesheet">
-    </head>
-
-    <body>
-    <!-- banner -->
-    <div class="main_section_agile">
-
-
-        <div class="agileits_w3layouts_banner_nav">
-            <nav class="navbar navbar-default">
-                <div class="navbar-header navbar-left">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <h3><a class="navbar-brand" href="index.php">Olha a B<i class="fa fa-futbol-o"
-                                                                            aria-hidden="true"></i>la!! - Admin</a></h3>
-
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <nav class="menu--iris">
-                        <ul class="nav navbar-nav menu__list">
-                            <li class="menu__item menu__item--current"><a href="index.php">Home</a></li>
-                            <li class="menu__item"><a href="admin_jogos.php">Jogos</a></li>
-                            <li class="menu__item"><a href="admin_equipas.php">Equipas</a></li>
-                            <li class="menu__item"><a href="admin_jogadores.php">Jogadores</a></li>
-                            <li class="menu__item"><a href="admin_noticias.php">Noticias</a></li>
-                        </ul>
-
-                    </nav>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-
-    <?php
-}
-
-?>
-
-<?php
-function bot_admin($menu = HOME)
-{
-    ?>
-    <div class="clearfix"></div>
-    <!-- /contact bottom -->
-    <!-- Footer Section -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 w3-footer-nav">
-                    <div class="links">
-                        <a href="index.php">Home</a>
-                        <a href="admin_jogos.php">Jogos</a>
-                        <a href="admin_equipas.php">Equipas</a>
-                        <a href="admin_jogadores.php">Jogadores</a>
-                        <a href="admin_noticias.php">Noticias</a>
-                    </div>
-                </div>
-                <div class="col-md-6 w3-footer-copy">
-                    <div class="copyright">
-                        <p>&copy; 2017 Goal. All Rights Reserved | Design by <a href="http://w3layouts.com/">
-                                W3layouts </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Footer Section -->
-
-    <!-- start-smoth-scrolling -->
-    <!-- js -->
-    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-    <script src="../js/JiSlider.js"></script>
-    <script>
-        $(window).load(function () {
-            $('#JiSlider').JiSlider({color: '#fff', start: 1, reverse: false}).addClass('ff')
-        })
-    </script>
-
-    <!-- //footer -->
-    <!-- stats -->
-    <script src="../js/jquery.waypoints.min.js"></script>
-    <script src="../js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
-    <!-- //stats -->
-    <!-- Custom-JavaScript-File-Links -->
-    <script type="text/javascript" src="../js/moment.js"></script>
-    <script type="text/javascript" src="../js/moment-timezone-with-data.js"></script>
-    <script type="text/javascript" src="../js/timer.js"></script>
-    <!-- //Custom-JavaScript-File-Links -->
-
-    <!-- requried-jsfiles-for owl -->
-    <script src="../js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo2").owlCarousel({
-                items: 1,
-                lazyLoad: false,
-                autoPlay: true,
-                navigation: false,
-                navigationText: false,
-                pagination: true,
-            });
-        });
-    </script>
-    <!-- //requried-jsfiles-for owl -->
-    <script src="../js/index.js"></script>
-    <script src="../js/scrolling-nav.js"></script>
-
-    <script type="text/javascript" src="../js/move-top.js"></script>
-    <script type="text/javascript" src="../js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
-            });
-        });
-    </script>
-    <!-- start-smoth-scrolling -->
-    <!-- for bootstrap working -->
-    <script src="../js/bootstrap.js"></script>
-    <!-- //for bootstrap working -->
-    <!-- here stars scrolling icon -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            /*
-                var defaults = {
-                containerID: 'toTop', // fading element id
-                containerHoverID: 'toTopHover', // fading element hover id
-                scrollSpeed: 1200,
-                easingType: 'linear'
-                };
-            */
-
-            $().UItoTop({easingType: 'easeOutQuart'});
-
-        });
-
-    </script>
-    <script>
-        $('document').ready(function () {
-
-            <?php
-            if ($menu == EQUIPAS){
-            ?>
-            $('#search').keyup(function () {
-                fillTableEquipas(this.value);
-            });
-            fillTableEquipas();
-            <?php
+    </section>
+        <?php
             }
-            ?>
-            <?php
-            if ($menu == JOGADORES){
-            ?>
-            $('#search').keyup(function () {
-                fillTableJogadores(this.value);
-            });
-            fillTableJogadores();
-            <?php
-            }
-            ?>
-            <?php
-            if ($menu == NOTICIAS){
-            ?>
-            $('#search').keyup(function () {
-                fillTableNoticias(this.value);
-            });
-            fillTableNoticias();
-            <?php
-            }
-            ?>
-        })
+        ?>
 
-
-    </script>
-    <!-- //here ends scrolling icon -->
-    </body>
-    </html>
-
+        <?php
+        if($page==TEAMS){
+            ?>
+                <div class="inner-page-banner">
+                    <div class="container">
+                    </div>
+                </div>
+                <div class="inner-information-text">
+                    <div class="container">
+                        <h3>Our Team</h3>
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">Our Team</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <?php
+        }
+        ?>
 
     <?php
 }
 
+function bottom(){
+    ?>
+
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="full">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="#"><img src="images/footer-logo.png" alt="#" /></a>
+                            </div>
+                            <p>Most of our events have hard and easy route choices as we are always keen to encourage new riders.</p>
+                            <ul class="social-icons style-4 pull-left">
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="full">
+                        <div class="footer-widget">
+                            <h3>Menu</h3>
+                            <ul class="footer-menu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="team.html">Our Team</a></li>
+                                <li><a href="news.html">Latest News</a></li>
+                                <li><a href="matche.html">Recent Matchs</a></li>
+                                <li><a href="blog.html">Our Blog</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="full">
+                        <div class="footer-widget">
+                            <h3>Contact us</h3>
+                            <ul class="address-list">
+                                <li><i class="fa fa-map-marker"></i> Lorem Ipsum is simply dummy text of the printing..</li>
+                                <li><i class="fa fa-phone"></i> 123 456 7890</li>
+                                <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> demo@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="full">
+                        <div class="contact-footer">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120615.72236587871!2d73.07890527988283!3d19.140910987164396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1527759905404" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright � 2018 Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    </body>
+    </html>
+
+<?php
+}
 ?>

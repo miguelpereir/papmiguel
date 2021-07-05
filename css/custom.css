@@ -957,7 +957,7 @@
      float: left;
      width: 100%;
      min-height: 500px;
-     background-image: url('../images/about.png');
+     background-image: url('../images/about.jpg');
      background-position: center center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -1332,7 +1332,7 @@ section#contant h4 {
      margin-top: 50px;
      min-height: auto;
      padding: 50px 0;
-     background-position: cover;
+     background-position:cover;
      color: #fff;
 }
  section.main-heading .dark-section h2 {
@@ -1466,7 +1466,34 @@ body section#contant .post-info span h4 {
      z-index: 1;
      padding: 0 0;
 }
- .btn {
+.btn.btn-success{
+
+    background: #4ed82f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-weight:500;
+    transition:ease all 1s;
+}
+.btn.btn-primary{
+    float: left;
+    background: #2f81d8;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-weight:500;
+    transition:ease all 1s;
+}
+
+
+
+
+
+ .btn.btn-danger{
      float: left;
      background: #d8302f;
      color: #fff;

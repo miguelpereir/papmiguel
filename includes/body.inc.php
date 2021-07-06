@@ -426,7 +426,6 @@ function bottom()
     <?php
 }
 
-
 function top_admin($page = HOME)
 {
     ?>
@@ -531,7 +530,7 @@ function top_admin($page = HOME)
                                             <ul class="nav navbar-nav">
                                                 <li class="active"><a href="index.php">Home</a></li>
                                                 <li><a href="classificação.php">Classificação</a></li>
-                                                <li><a href="team.php">Equipas</a></li>
+                                                <li><a href="equipas.php">Equipas</a></li>
                                                 <li><a href="noticias.php">Noticias</a></li>
                                                 <li class="dropdown mega-dropdown">
                                                     <!--   <a href="match" class="dropdown-toggle" data-toggle="dropdown">Match<span
@@ -755,6 +754,26 @@ if ($page == HOME){
         <?php
     }
     ?>
+    <?php
+    if ($page == TRAINER){
+        ?>
+        <div class="inner-page-banner">
+            <div class="container">
+            </div>
+        </div>
+        <div class="inner-information-text">
+            <div class="container">
+                <h3>Treinadores</h3>
+                <ul class="breadcrumb">
+                    <li><a href="index.php">Home</a></li>
+                    <li class="active">Treinadores</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        <?php
+    }
+    ?>
 
     <?php
     if ($page == CLASSIFICACAO){
@@ -771,7 +790,7 @@ if ($page == HOME){
     <?php
 }
 
-    function bottom_admin($menu = HOME)
+function bottom_admin($menu = HOME)
     {
     ?>
 
@@ -856,6 +875,26 @@ if ($page == HOME){
                     fillTableNoticias(this.value);
                 });
                 fillTableNoticias();
+                <?php
+                }
+                ?>
+                <?php
+                if ($menu == EQUIPAS){
+                ?>
+                $('#search').keyup(function () {
+                    fillTableEquipas(this.value);
+                });
+                fillTableEquipas();
+                <?php
+                }
+                ?>
+                <?php
+                if ($menu == TREINADORES){
+                ?>
+                $('#search').keyup(function () {
+                    fillTableTreinadores(this.value);
+                });
+                fillTableTreinadores();
                 <?php
                 }
                 ?>

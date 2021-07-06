@@ -1,99 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillNoticia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameNoticia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/adicionaNoticia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovaNoticia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/editaNoticia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/eliminaNoticia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/noticias.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/teste.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classificação.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/icons/default/icons.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/jquery.tinymce.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/langs/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/advlist/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/anchor/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/autolink/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/autoresize/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/autosave/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/bbcode/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/charmap/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/code/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/codesample/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/colorpicker/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/contextmenu/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/directionality/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/emoticons/js/emojiimages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/emoticons/js/emojiimages.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/emoticons/js/emojis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/emoticons/js/emojis.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/emoticons/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/fullpage/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/fullscreen/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/help/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/hr/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/image/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/imagetools/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/importcss/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/insertdatetime/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/legacyoutput/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/link/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/lists/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/media/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/nonbreaking/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/noneditable/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/pagebreak/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/paste/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/preview/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/print/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/quickbars/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/save/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/searchreplace/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/spellchecker/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/tabfocus/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/table/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/template/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/textcolor/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/textpattern/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/toc/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/visualblocks/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/visualchars/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/plugins/wordcount/plugin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/content/dark/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/content/default/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/content/document/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/content/writer/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide-dark/content.inline.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide-dark/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide-dark/content.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide-dark/fonts/tinymce-mobile.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide-dark/skin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide-dark/skin.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide-dark/skin.shadowdom.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide/content.inline.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide/content.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide/content.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide/fonts/tinymce-mobile.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide/skin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide/skin.mobile.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/skins/ui/oxide/skin.shadowdom.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/themes/mobile/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/themes/silver/theme.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/tinymce.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tinymce/tinymce.min.js" afterDir="false" />
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="admin">
+      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillTreinador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameTreinador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/adicionaEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/adicionaTreinador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaNoticia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaNovaEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaNovoTreinador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/editaEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/editaTreinador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/eliminaEquipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/eliminaTreinador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/equipas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/treinadores.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/adicionaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaNoticia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaNoticia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +71,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\papmiguel\admin" />
+      <recent name="C:\wamp64\www\papmiguel\admin\Ajax" />
       <recent name="C:\wamp64\www\papmiguel\js" />
       <recent name="C:\wamp64\www\papmiguel" />
     </key>
@@ -150,8 +84,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625474984736</updated>
-      <workItem from="1625474986063" duration="13411000" />
+      <workItem from="1625474986063" duration="13458000" />
+      <workItem from="1625560792233" duration="13717000" />
     </task>
+    <task id="LOCAL-00001" summary="admin">
+      <created>1625500433889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625500433889</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,5 +110,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin" />
   </component>
 </project>

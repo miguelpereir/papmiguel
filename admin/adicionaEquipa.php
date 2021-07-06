@@ -104,61 +104,57 @@ top_admin(NEWS);
 
 
         <div>
-            <h1 align="center">Adicionar Noticia </h1>
+            <h1 align="center">Adicionar Equipa </h1>
         </div>
         <div class="row" align="left">
-            <form action="confirmaNovaNoticia.php" method="post" enctype="multipart/form-data">
-
+            <form action="confirmaNovaEquipa.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-10">
-                    <a href="noticias.php">
+                    <a href="equipas.php">
                         <button type="button" class="btn btn-success">Back</button>
                     </a>
                 </div>
                 <div class="col-md-02">
                     <input type="Submit" class="btn btn-success" value="Adiciona">
                 </div>
-
                 <br>
+
 
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
-
-                    <label>Titulo: </label>
-                    <input type="text" name="tituloNoticia"><br>
-                    <label>Sub Titulo:</label>
-                    <input type="text" name="subtituloNoticia"><br>
-                    <label>Data:</label>
-                    <input type="date" name="dataNoticia"><br>
-
-                </div>
-                <div class="col-md-5" >
-
+                    <label>Nome: </label>
+                    <input type="text" name="nomeEquipa"><br>
                     <div class="image-upload">
-                        <label>Imagem: </label>
+                        <label>Emblema: </label>
                         <label for="file-input"><br>
                             <img href="#" src="../images/add%20imagem.png" id="output_image" style="width: 150%;"/>
                         </label>
-                        <input id="file-input" class="custom-file-upload" type="file" accept="image/*" name="imagemNoticia" onchange="preview_image(event)" style="color: darkgray"><br>
+                        <input id="file-input" class="custom-file-upload" type="file" accept="image/*" name="emblemaEquipa" onchange="preview_image(event)" style="color: darkgray"><br>
                     </div>
-                    <div class="image-upload">
-                        <label>Foto Capa:</label>
-                        <label for="file-input_2"><br>
-                            <img href="#" src="../images/add%20imagem.png" id="output_image_2"  style="width: 150%;" />
-                        </label>
-                        <input id="file-input_2" class="custom-file-upload" type="file" accept="image/*" name="capaNoticia" onchange="preview_image_2(event)" style="color: darkgray">
-                    </div>
+                    <label>Ano de Fundação: </label>
+                    <input type="text" name="anoEquipa">
                 </div>
-
-
-
-
+                <div class="col-md-5">
+                    <label>Nome do Estádio: </label>
+                    <input type="text" name="nomeEstadio"><br>
+                    <div class="image-upload">
+                        <label>Foto Estadio: </label>
+                        <label for="file-input_2"><br>
+                            <img href="#" src="../images/add%20imagem.png" id="output_image_2" style="width: 150%;"/>
+                        </label>
+                        <input id="file-input_2" class="custom-file-upload" type="file" accept="image/*" name="fotoEstadio" onchange="preview_image_2(event)" style="color: darkgray"><br>
+                    </div>
+                    <label>Presidente:</label>
+                    <input type="text" name="presidenteEquipa"><br>
+                </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-12">
-                    <label>Descrição: </label>
-                    <textarea class="col-2" name="descricaoNoticia" id="myTextarea" cols="50" rows="5"></textarea><br>
+                    <label>Historia: </label>
+                    <textarea class="col-2" name="historiaEquipa" id="myTextarea" cols="50" rows="5"></textarea><br>
                 </div>
+
+
+            </form>
         </div>
-        </form>
     </div>
 </section>
 <?php

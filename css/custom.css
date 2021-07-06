@@ -1479,7 +1479,7 @@ body section#contant .post-info span h4 {
 }
 .btn.btn-primary{
     float: left;
-    background: #2f81d8;
+    background: #134ed0;
     color: #fff;
     padding: 10px 20px;
     font-size: 15px;
@@ -1488,6 +1488,29 @@ body section#contant .post-info span h4 {
     font-weight:500;
     transition:ease all 1s;
 }
+.btn.btn-info{
+    float: left;
+    background: #3a85a3;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-weight:500;
+    transition:ease all 1s;
+}
+.btn.btn-warning{
+    float: left;
+    background: #d29424;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-weight:500;
+    transition:ease all 1s;
+}
+
 
 
 

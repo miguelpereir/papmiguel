@@ -2,11 +2,17 @@
 include_once("../includes/body.inc.php");
 top_admin(NEWS);
 
-$id=intval($_GET['id']);
-$sql="select * from noticias where noticiaId=$id";
-$result=mysqli_query($con,$sql);
-$dados=mysqli_fetch_array($result);
+$id = intval($_GET['id']);
+$sql = "select * from noticias where noticiaId=$id";
+$result = mysqli_query($con, $sql);
+$dados = mysqli_fetch_array($result);
 ?>
+<style>
+    .image-upload > input {
+        display: none;
+    }
+
+</style>
 <script>
     function preview_image(event) {
         var reader = new FileReader();
@@ -102,18 +108,18 @@ $dados=mysqli_fetch_array($result);
 
 
         <div>
-            <h1 align="center">Adicionar Noticia </h1>
+            <h1 align="center">Editar Noticia </h1>
         </div>
         <div class="row" align="left">
             <form action="confirmaEditaNoticia.php" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="noticiaId" value="<?php echo $id?>">
-                <div class="col-md-10">
+                <input type="hidden" name="noticiaId" value="<?php echo $id ?>">
+                <div class="col-md-11">
                     <a href="noticias.php">
                         <button type="button" class="btn btn-success">Back</button>
                     </a>
                 </div>
-                <div class="col-md-02">
-                    <input type="Submit" class="btn btn-success" value="Edita">
+                <div class="col-md-01">
+                    <input type="Submit" class="btn btn-primary" value="Edita">
                 </div>
 
                 <br>
@@ -122,31 +128,48 @@ $dados=mysqli_fetch_array($result);
                 <div class="col-md-5">
 
                     <label>Titulo: </label>
-                    <input type="text" name="tituloNoticia" value="<?php echo $dados['noticiaTitulo']?>"><br>
+                    <input type="text" name="tituloNoticia" value="<?php echo $dados['noticiaTitulo'] ?>"><br>
                     <label>Sub Titulo:</label>
-                    <input type="text" name="subtituloNoticia" value="<?php echo $dados['noticiaSubTitulo']?>"><br>
+                    <input type="text" name="subtituloNoticia" value="<?php echo $dados['noticiaSubTitulo'] ?>"><br>
                     <label>Data:</label>
-                    <input type="date" name="dataNoticia" ><br>
+                    <input type="date" name="dataNoticia" value="<?php echo $dados['noticiaData']?>"><br>
 
                 </div>
                 <div class="col-md-5">
-                    <label>Imagem: </label>
-                    <img width="200" id="output_image" src="<?php echo $dados['noticiaImagemURL'] ?>">
-                    <input type="file" accept="image/*" name="imagemNoticia" onchange="preview_image(event)" style="color: darkgray">
-                    <label>Foto Capa:</label>
-                    <img width="100" id="output_image_2" src="../<?php echo $dados['noticiaCapaURL'] ?>">
-                    <input type="file" accept="image/*" name="capaNoticia" onchange="preview_image_2(event)" style="color: darkgray">
+
+                    <div class="image-upload">
+                        <label>Imagem: </label>
+                        <label for="file-input"><br>
+                            <img href="#" src="../<?php echo $dados['noticiaImagemURL'] ?>" id="output_image"
+                                 style="width: 100px;"/>
+                        </label>
+                        <input id="file-input" class="custom-file-upload" type="file" accept="image/*"
+                               name="imagemNoticia" onchange="preview_image(event)" style="color: darkgray"><br>
+                    </div>
+
+
+                    <div class="image-upload">
+                        <label>Foto Capa:</label>
+                        <label for="file-input_2"><br>
+                            <img href="#" src="../<?php echo $dados['noticiaCapaURL'] ?>" id="output_image_2"
+                                 style="width: 100px;"/>
+                        </label>
+                        <input id="file-input_2" class="custom-file-upload" type="file" accept="image/*"
+                               name="capaNoticia" onchange="preview_image_2(event)" style="color: darkgray">
+                    </div>
 
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-12">
                     <label>Descrição: </label>
-                    <textarea class="col-2" name="descricaoNoticia" id="myTextarea" cols="50" rows="5" <?php echo $dados['noticiaDescricao']?>></textarea><br>
+                    <textarea class="col-2" name="descricaoNoticia" id="myTextarea" cols="50"
+                              rows="5" <?php echo $dados['noticiaDescricao'] ?>></textarea><br>
                 </div>
+            </form>
         </div>
-        </form>
     </div>
 </section>
+
 <?php
 bottom_admin();
 ?>

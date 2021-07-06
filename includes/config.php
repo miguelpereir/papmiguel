@@ -7,7 +7,10 @@
     define("TEAMS",2);
     define("NEWS",3);
     define("CLASSIFICACAO",4);
-    define("NOTICIAS",5);
+    define("TRAINER",5);
+    define("NOTICIAS",6);
+    define("EQUIPAS",7);
+    define("TREINADORES",8);
  //   define("HOME",1);
  //   define("HOME",1);
 ?>

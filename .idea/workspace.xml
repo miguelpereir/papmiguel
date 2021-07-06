@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="admin">
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillTreinador.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameTreinador.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/adicionaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/adicionaTreinador.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaNoticia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovoTreinador.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/editaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/editaTreinador.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/eliminaEquipa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/eliminaTreinador.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/equipas.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/treinadores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adicionaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
-    </list>
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../papmiguel - Cópia" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -85,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625474984736</updated>
       <workItem from="1625474986063" duration="13458000" />
-      <workItem from="1625560792233" duration="13717000" />
+      <workItem from="1625560792233" duration="14113000" />
     </task>
     <task id="LOCAL-00001" summary="admin">
       <created>1625500433889</created>
@@ -94,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625500433889</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mais admin">
+      <created>1625584622368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625584622368</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin" />
+    <MESSAGE value="mais admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="mais admin" />
   </component>
 </project>

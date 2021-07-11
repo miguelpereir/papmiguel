@@ -74,8 +74,62 @@ function confirmaEliminaTreinador(idTreinador) {
         },
         success:function (result){
             nomeTreinador=result;
-            if(confirm('Confirma que deseja eliminar a Treinador:'+nomeTreinador+'?'))
+            if(confirm('Confirma que deseja eliminar o Treinador:'+nomeTreinador+'?'))
                 window.location="eliminaTreinador.php?id=" + idTreinador;
+        }
+    })
+};
+function fillTableJogadores(txt = '') {
+    $.ajax({
+        url: "AJAX/AJAXFillJogador.php",
+        type: "post",
+        data: {
+            txt: txt
+        },
+        success: function (result) {
+            $('#tableContent').html(result);
+        }
+    });
+};
+function confirmaEliminaJogador(idJogador) {
+    var nomeJogador;
+    $.ajax({
+        url:"AJAX/AJAXGetNameJogador.php",
+        type:"post",
+        data:{
+            idJogador:idJogador
+        },
+        success:function (result){
+            nomeJogador=result;
+            if(confirm('Confirma que deseja eliminar o Jogador:'+nomeJogador+'?'))
+                window.location="eliminaJogador.php?id=" + idJogador;
+        }
+    })
+};
+function fillTablePaises(txt = '') {
+    $.ajax({
+        url: "AJAX/AJAXFillPais.php",
+        type: "post",
+        data: {
+            txt: txt
+        },
+        success: function (result) {
+            $('#tableContent').html(result);
+        }
+    });
+};
+function confirmaEliminaPais(idPais) {
+    var nomePais;
+    $.ajax({
+        url:"AJAX/AJAXGetNamePais.php",
+        type:"post",
+        data:{
+            idPais:idPais
+        },
+        success:function (result){
+            nomePais=result;
+            if(confirm('Confirma que deseja eliminar o Pais:'+nomePais+'?'))
+                window.location="eliminaPais.php?id=" + idPais;
         }
     })
 };

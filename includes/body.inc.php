@@ -605,7 +605,7 @@ function top_admin($page = HOME)
                                                           -->
                                                     </ul>
                                                 </li>
-                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="jogadores.php">Jogadores</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
                                         </div>
@@ -776,6 +776,46 @@ if ($page == HOME){
         <?php
     }
     ?>
+        <?php
+        if ($page == PLAYERS){
+        ?>
+    <div class="inner-page-banner">
+        <div class="container">
+        </div>
+    </div>
+    <div class="inner-information-text">
+        <div class="container">
+            <h3>Jogadores</h3>
+            <ul class="breadcrumb">
+                <li><a href="index.php">Home</a></li>
+                <li class="active">Jogadores</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+<?php
+}
+?>
+<?php
+if ($page == COUNTRYS){
+?>
+    <div class="inner-page-banner">
+        <div class="container">
+        </div>
+    </div>
+    <div class="inner-information-text">
+        <div class="container">
+            <h3>Paises</h3>
+            <ul class="breadcrumb">
+                <li><a href="index.php">Home</a></li>
+                <li class="active">Paises</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+<?php
+}
+?>
 
     <?php
     if ($page == CLASSIFICACAO){
@@ -897,6 +937,27 @@ function bottom_admin($menu = HOME)
                     fillTableTreinadores(this.value);
                 });
                 fillTableTreinadores();
+                <?php
+                }
+                ?>
+                <?php
+                if ($menu == JOGADORES){
+                ?>
+                $('#search').keyup(function () {
+                    fillTableJogadores(this.value);
+                });
+                fillTableJogadores();
+                <?php
+                }
+                ?>
+
+                <?php
+                if ($menu == PAISES){
+                ?>
+                $('#search').keyup(function () {
+                    fillTablePaises(this.value);
+                });
+                fillTablePaises();
                 <?php
                 }
                 ?>

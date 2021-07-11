@@ -19,7 +19,7 @@ if($imagem!=''){
 }
 $sql.=", noticiaSubTitulo='".$subtitulo."'";
 if ($capa!=''){
-    $sql.=", noticiaCapaURl='../images/".$capa."'";
+    $sql.=", noticiaCapaURl='images/".$capa."'";
     copy($_FILES['capaNoticia']['tmp_name'],$novo);
 }
 $sql.=", noticiaDescricao='".$descricao."', noticiaData='".$data."'";

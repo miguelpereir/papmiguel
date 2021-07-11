@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/admin/Ajax/AJAXFillJogador.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/admin/Ajax/AJAXFillPais.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/admin/Ajax/AJAXGetNamePais.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaEquipa.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaEditaJogador.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaEditaPais.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/admin/confirmaEditaTreinador.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/admin/confirmaNovaEquipa.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaNovoJogador.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/admin/confirmaNovoPais.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/admin/editaEquipa.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/admin/eliminaPais.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/images/favicon.ico" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/js/tinymce" charset="ISO-8859-1" />
   </component>

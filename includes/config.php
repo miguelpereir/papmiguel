@@ -11,6 +11,11 @@
     define("NOTICIAS",6);
     define("EQUIPAS",7);
     define("TREINADORES",8);
+    define("PLAYERS",9);
+    define("JOGADORES",10);
+    define("COUNTRYS",11);
+    define("PAISES",12);
+
  //   define("HOME",1);
  //   define("HOME",1);
 ?>

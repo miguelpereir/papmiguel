@@ -110,7 +110,7 @@ top_admin(NEWS);
             <form action="confirmaNovaEquipa.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-10">
                     <a href="equipas.php">
-                        <button type="button" class="btn btn-success">Back</button>
+                        <button type="button" class="btn btn-black">Back</button>
                     </a>
                 </div>
                 <div class="col-md-02">

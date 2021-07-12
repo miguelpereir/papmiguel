@@ -36,7 +36,7 @@ $dadosTreinadores = mysqli_fetch_array($resultTreinadores);
             <form action="confirmaEditaTreinador.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-11">
                     <a href="treinadores.php">
-                        <button type="button" class="btn btn-success">Back</button>
+                        <button type="button" class="btn btn-black">Back</button>
                     </a>
                 </div>
                 <div class="col-md-01">

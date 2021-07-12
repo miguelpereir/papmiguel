@@ -1,6 +1,9 @@
 <?php
 include_once ("includes/body.inc.php");
-top()
+top();
+
+$sql = "Select * from noticias";
+$result = mysqli_query($con, $sql);
 ?>
       <div class="matchs-info">
          <div class="col-md-6 col-sm-6 col-xs-12">
@@ -195,6 +198,9 @@ top()
                </div>
                <div class="col-lg-8 col-sm-8 col-xs-12">
                   <div class="news-post-holder">
+                    <?php
+                    while ($dados = mysqli_fetch_array($result)) {
+                        ?>
                      <div class="news-post-widget">
                         <img class="img-responsive" src="images/img-01_002.jpg" alt="">
                         <div class="news-post-detail">
@@ -203,24 +209,9 @@ top()
                            <p>Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
                         </div>
                      </div>
-                     <div class="news-post-widget">
-                        <img class="img-responsive" src="images/img-02_003.jpg" alt="">
-                        <div class="news-post-detail">
-                           <span class="date">20 march 2016</span>
-                           <h2><a href="blog-detail.html">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
-                           <p>Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="news-post-holder">
-                     <div class="news-post-widget">
-                        <img class="img-responsive" src="images/img-03_003.jpg" alt="">
-                        <div class="news-post-detail">
-                           <span class="date">20 march 2016</span>
-                           <h2><a href="blog-detail.html">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
-                           <p>Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
-                        </div>
-                     </div>
+                        <?php
+                    }
+                    ?>
                   </div>
                </div>
             </div>

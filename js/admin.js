@@ -132,4 +132,59 @@ function confirmaEliminaPais(idPais) {
                 window.location="eliminaPais.php?id=" + idPais;
         }
     })
+};function fillTablePlantel(txt = '',id=-1) {
+    $.ajax({
+        url: "AJAX/AJAXFillPlantel.php",
+        type: "post",
+        data: {
+            txt: txt,
+            id:id
+        },
+        success: function (result) {
+            $('#tableContent').html(result);
+        }
+    });
+};
+function confirmaEliminaPlantel(idPlantel) {
+    var nomePlantel;
+    $.ajax({
+        url:"AJAX/AJAXGetNamePlantel.php",
+        type:"post",
+        data:{
+            idPlantel:idPlantel
+        },
+        success:function (result){
+            nomePlantel=result;
+            if(confirm('Confirma que deseja eliminar o numero:'+nomePlantel+'?'))
+                window.location="eliminaPlantel.php?id=" + idPlantel;
+        }
+    })
+};
+function fillTablePosicao(txt = '',id=-1) {
+    $.ajax({
+        url: "AJAX/AJAXFillPosicao.php",
+        type: "post",
+        data: {
+            txt: txt,
+            id:id
+        },
+        success: function (result) {
+            $('#tableContent').html(result);
+        }
+    });
+};
+function confirmaEliminaPosicao(idPosicao) {
+    var nomePosicao;
+    $.ajax({
+        url:"AJAX/AJAXGetNamePosicao.php",
+        type:"post",
+        data:{
+            idPosicao:idPosicao
+        },
+        success:function (result){
+            nomePosicao=result;
+            if(confirm('Confirma que deseja eliminar a Posicao:'+nomePosicao+'?'))
+                window.location="eliminaPosicao.php?id=" + idPosicao;
+        }
+    })
 };

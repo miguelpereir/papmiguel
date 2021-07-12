@@ -34,7 +34,7 @@ $dados=mysqli_fetch_array($result);
             <form action="confirmaEditaPais.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-11">
                     <a href="paises.php">
-                        <button type="button" class="btn btn-success">Back</button>
+                        <button type="button" class="btn btn-black">Back</button>
                     </a>
                 </div>
                 <div class="col-md-01">

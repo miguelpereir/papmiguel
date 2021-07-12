@@ -15,6 +15,10 @@
     define("JOGADORES",10);
     define("COUNTRYS",11);
     define("PAISES",12);
+    define("SQUAD",13);
+    define("PLANTEL",14);
+    define("POSITIONS",15);
+    define("POSICOES",16);
 
  //   define("HOME",1);
  //   define("HOME",1);

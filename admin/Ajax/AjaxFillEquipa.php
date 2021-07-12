@@ -40,7 +40,7 @@ $result = mysqli_query($con, $sql);
             <td><img width="90" src="../<?php echo $dados['equipaEstadioURL'] ?>"></td>
             <td><?php echo substr($dados['equipaHistoria'], 0,100)."(..)" ?></td>
             <td><?php echo $dados['equipaPresidente'] ?></td>
-            <td><a href="admin_plantel.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-info">Plantel</i></a></td>
+            <td><a href="plantel.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-info">Plantel</i></a></td>
             <td><a href="editaEquipa.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-primary">Editar</i></a></td>
             <td><a href="#" onclick="confirmaEliminaEquipa(<?php echo $dados['equipaId'] ?>);"> <i class="btn btn-danger">Eliminar</i></a></td>
         </tr>

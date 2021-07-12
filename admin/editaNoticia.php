@@ -115,7 +115,7 @@ $dados = mysqli_fetch_array($result);
                 <input type="hidden" name="noticiaId" value="<?php echo $id ?>">
                 <div class="col-md-11">
                     <a href="noticias.php">
-                        <button type="button" class="btn btn-success">Back</button>
+                        <button type="button" class="btn btn-black">Back</button>
                     </a>
                 </div>
                 <div class="col-md-01">

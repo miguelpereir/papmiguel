@@ -32,7 +32,7 @@ top_admin(COUNTRYS);
             <form action="confirmaNovoPais.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-10">
                     <a href="paises.php">
-                        <button type="button" class="btn btn-primary">Back</button>
+                        <button type="button" class="btn btn-success">Back</button>
                     </a>
                 </div>
                 <div class="col-md-02">

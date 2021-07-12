@@ -32,7 +32,7 @@ top_admin(TRAINER);
             <form action="confirmaNovoTreinador.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-10">
                     <a href="treinadores.php">
-                        <button type="button" class="btn btn-success">Back</button>
+                        <button type="button" class="btn btn-black">Back</button>
                     </a>
                 </div>
                 <div class="col-md-02">

@@ -111,7 +111,7 @@ top_admin(NEWS);
 
                 <div class="col-md-10">
                     <a href="noticias.php">
-                        <button type="button" class="btn btn-success">Back</button>
+                        <button type="button" class="btn btn-black">Back</button>
                     </a>
                 </div>
                 <div class="col-md-02">

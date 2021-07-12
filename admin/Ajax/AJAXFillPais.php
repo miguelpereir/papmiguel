@@ -9,9 +9,11 @@ $result = mysqli_query($con, $sql);
 ?>
 <table class='table table-striped' align="center" width="100%">
     <tr>
-        <td colspan="5" align='right'>
-            <a  class='btn btn-primary' href="jogadores.php"><i> Back</i></a>
-            <a href="adicionaPais.php"><i class='btn btn-success'> Adiciona</i></a>
+        <td colspan="1" align='left'>
+            <a  class='btn btn-success' href="jogadores.php"><i> Back</i></a>
+        </td>
+        <td colspan="4" align='right'>
+        <a href="adicionaPais.php"><i class='btn btn-success'> Adiciona</i></a>
         </td>
     </tr>
     <tr>

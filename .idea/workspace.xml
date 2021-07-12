@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillPlantel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillPosicao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXGetNamePlantel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXGetNamePosicao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/adicionaPlantel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovoPlantel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/editaPlantel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/eliminaPlantel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/plantel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/posicoes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Ajax/AJAXFillPais.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillPais.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Ajax/AjaxFillEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adicionaEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adicionaJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaJogador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adicionaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adicionaPais.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaPais.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adicionaTreinador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaTreinador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaJogador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaPais.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaPais.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaTreinador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaTreinador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipas.php" afterDir="false" />
-    </list>
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625584622368</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mais admin">
+      <created>1626104172146</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626104172146</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

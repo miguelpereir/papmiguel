@@ -1,0 +1,72 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"42e24d5b-cc31-4a2f-8587-e8383cb3ab67\" name=\"Default Changelist\" comment=\"mais admin\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1utBPzccpqdOvMvQ8MEKdEOcLJ0\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../papmiguel - Cópia\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\wamp64\\www\\papmiguel\\admin\" />\r\n      <recent name=\"C:\\wamp64\\www\\papmiguel\\admin\\Ajax\" />\r\n      <recent name=\"C:\\wamp64\\www\\papmiguel\\js\" />\r\n      <recent name=\"C:\\wamp64\\www\\papmiguel\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"42e24d5b-cc31-4a2f-8587-e8383cb3ab67\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1625474984736</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1625474984736</updated>\r\n      <workItem from=\"1625474986063\" duration=\"13458000\" />\r\n      <workItem from=\"1625560792233\" duration=\"14113000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"admin\">\r\n      <created>1625500433889</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625500433889</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"mais admin\">\r\n      <created>1625584622368</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625584622368</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"admin\" />\r\n    <MESSAGE value=\"mais admin\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mais admin\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 68f5d4f00eeea3a82752fae86ae5c037a9a14624)
++++ b/.idea/workspace.xml	(date 1625668691398)
+@@ -1,7 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin" />
++    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="icon">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -38,12 +40,13 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="true" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../papmiguel - Cópia" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+     <property name="list.type.of.created.stylesheet" value="CSS" />
+     <property name="vue.rearranger.settings.migration" value="true" />
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\wamp64\www\papmiguel\images" />
+       <recent name="C:\wamp64\www\papmiguel\admin" />
+       <recent name="C:\wamp64\www\papmiguel\admin\Ajax" />
+       <recent name="C:\wamp64\www\papmiguel\js" />
+@@ -59,7 +62,8 @@
+       <option name="presentableId" value="Default" />
+       <updated>1625474984736</updated>
+       <workItem from="1625474986063" duration="13458000" />
+-      <workItem from="1625560792233" duration="14113000" />
++      <workItem from="1625560792233" duration="14298000" />
++      <workItem from="1625668275090" duration="415000" />
+     </task>
+     <task id="LOCAL-00001" summary="admin">
+       <created>1625500433889</created>
+@@ -75,7 +79,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1625584622368</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="icon">
++      <created>1625584942131</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1625584942131</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -96,6 +107,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="admin" />
+     <MESSAGE value="mais admin" />
+-    <option name="LAST_COMMIT_MESSAGE" value="mais admin" />
++    <MESSAGE value="icon" />
++    <option name="LAST_COMMIT_MESSAGE" value="icon" />
+   </component>
+ </project>
+\ No newline at end of file

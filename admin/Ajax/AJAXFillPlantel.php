@@ -38,7 +38,7 @@ $result = mysqli_query($con, $sql);
             <td><?php echo $dados['jogadorNome'] ?></td>
             <td><?php echo $dados['posicaoNome'] ?></td>
             <td><?php echo $dados['equipaJogadorNumero'] ?></td>
-            <td><a href="editaPlantel.php?id=<?php echo $id ?>"> <i class="btn btn-primary">Edita</i></a></td>
+            <td><a href="editaPlantel.php?idJog=<?php echo $dados['jogadorId'] ?>&idEq=<?php echo $id ?>"> <i class="btn btn-primary">Edita</i></a></td>
             <td><a href="#" onclick="confirmaEliminaPlantel(<?php echo $dados['equipaJogadorJogadorId'] ?>);"><i class="btn btn-danger">Elimina</i></a></td>
         </tr>
         <?php

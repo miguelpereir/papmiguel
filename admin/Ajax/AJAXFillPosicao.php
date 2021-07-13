@@ -3,7 +3,7 @@
 include_once("../../includes/body.inc.php"); //precisa do ../
 $id = intval($_POST['id']);
 $txt = addslashes($_POST['txt']);
-$sql = "Select * from posicoes inner join  where posicaoNome LIKE '$txt%'";
+$sql = "Select * from posicoes  where posicaoNome LIKE '$txt%'";
 if($id!=-1)
     $sql.=" and equipaId= $id";
 

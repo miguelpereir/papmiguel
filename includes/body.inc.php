@@ -109,6 +109,7 @@ function top($page = HOME)
                                                     <li><a href="classificação.php">Classificação</a></li>
                                                     <li><a href="equipas.php">Equipas</a></li>
                                                     <li><a href="noticias.php">Noticias</a></li>
+
                                                     <li class="dropdown mega-dropdown">
                                                         <!--   <a href="match" class="dropdown-toggle" data-toggle="dropdown">Match<span
                                                                        class="caret"></span></a>-->
@@ -532,6 +533,7 @@ function top_admin($page = HOME)
                                                     <li><a href="classificação.php">Classificação</a></li>
                                                     <li><a href="equipas.php">Equipas</a></li>
                                                     <li><a href="noticias.php">Noticias</a></li>
+                                                    <li><a href="posicoes.php">Posições</a></li>
                                                     <li class="dropdown mega-dropdown">
                                                         <!--   <a href="match" class="dropdown-toggle" data-toggle="dropdown">Match<span
                                                                        class="caret"></span></a>-->

@@ -1,14 +1,12 @@
 <?php
 include_once("../includes/body.inc.php");
 top_admin(COUNTRYS);
-$id=-1;
-if(isset($_GET['id']))
-    $id=intval($_GET['id']);
+$idJog=intval($_GET['idJog']);
+$idEq=intval($_GET['idEq']);
 
-$sql = "select * from equipajogadores";
+$sql = "select * from equipajogadores where equipaJogadorJogadorId=$idJog and equipaJogadorEquipaId=$idEq";
 $result = mysqli_query($con, $sql);
-$resultPlantel = mysqli_query($con, $sql);
-$dadosPlantel = mysqli_fetch_array($resultPlantel);
+$dadosPlantel = mysqli_fetch_array($result);
 ?>
 <link href="../css/admin.css" rel="stylesheet">
 <section id="contant" class="contant main-heading team">
@@ -20,7 +18,7 @@ $dadosPlantel = mysqli_fetch_array($resultPlantel);
         <div class="row" align="left">
             <form action="confirmaEditaPlantel.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-11">
-                    <a href="plantel.php?id=<?php echo $id?>">
+                    <a href="plantel.php?id=<?php echo $idEq?>">
                         <button type="button" class="btn btn-black">Back</button>
                     </a>
                 </div>
@@ -31,7 +29,8 @@ $dadosPlantel = mysqli_fetch_array($resultPlantel);
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
 
-                    <input type="hidden" name="paisId" value="<?php echo $id ?>">
+                    <input type="hidden" name="jogadorId" value="<?php echo $idJog ?>">
+                    <input type="hidden" name="equipaId" value="<?php echo $idEq ?>">
                     <label>Jogador:</label>
                     <select name="jogador">
                         <option value="-1">Escolha o jogador...</option>
@@ -42,7 +41,7 @@ $dadosPlantel = mysqli_fetch_array($resultPlantel);
                             ?>
                             <option value="<?php echo $dadosJogadores['jogadorId'] ?>"
                                 <?php
-                                if ($dadosPlantel['equipaJogadorJogadorId'] == $dadosJogadores['jogadorId'])
+                                if ($idJog == $dadosJogadores['jogadorId'])
                                     echo " selected ";
                                 ?>
                             >

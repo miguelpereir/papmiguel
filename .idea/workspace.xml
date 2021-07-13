@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
-      <change afterPath="$PROJECT_DIR$/admin/adicionaPosicao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovaPosicao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/editaPosicao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="Leandro - Novo Layout">
+      <change afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v1.0 - Cópia.mwb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v1.0.mwb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v1.0.mwb.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v2.0.mwb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v2.0.mwb.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_07_2021_10_08__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_07_2021_10_08__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Ajax/AJAXFillPlantel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillPlantel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editaPlantel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaPlantel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,16 +40,24 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1utBPzccpqdOvMvQ8MEKdEOcLJ0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -125,6 +134,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="admin" />
     <MESSAGE value="mais admin" />
     <option name="LAST_COMMIT_MESSAGE" value="mais admin" />

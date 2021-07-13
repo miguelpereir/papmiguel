@@ -1,9 +1,6 @@
 <?php
 include_once("../includes/body.inc.php");
 top_admin(SQUAD);
-$id = -1;
-if (isset($_GET['id']))
-    $id = intval($_GET['id']);
 ?>
 <link href="../css/admin.css" rel="stylesheet">
 <section id="contant" class="contant main-heading team">

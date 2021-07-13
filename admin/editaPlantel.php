@@ -1,10 +1,10 @@
 <?php
 include_once("../includes/body.inc.php");
-top_admin(COUNTRYS);
+top_admin(SQUAD);
 $idJog=intval($_GET['idJog']);
 $idEq=intval($_GET['idEq']);
 
-$sql = "select * from equipajogadores where equipaJogadorJogadorId=$idJog and equipaJogadorEquipaId=$idEq";
+$sql = "select * from equipajogadores inner join jogadores on equipaJogadorJogadorId=jogadorId where equipaJogadorJogadorId=$idJog and equipaJogadorEquipaId=$idEq";
 $result = mysqli_query($con, $sql);
 $dadosPlantel = mysqli_fetch_array($result);
 ?>
@@ -13,7 +13,7 @@ $dadosPlantel = mysqli_fetch_array($result);
     <div class="container" align="center">
 
         <div>
-            <h1 align="center">Edita Pais </h1>
+            <h1 align="center">Edita Plantel</h1>
         </div>
         <div class="row" align="left">
             <form action="confirmaEditaPlantel.php" method="post" enctype="multipart/form-data">
@@ -32,27 +32,7 @@ $dadosPlantel = mysqli_fetch_array($result);
                     <input type="hidden" name="jogadorId" value="<?php echo $idJog ?>">
                     <input type="hidden" name="equipaId" value="<?php echo $idEq ?>">
                     <label>Jogador:</label>
-                    <select name="jogador">
-                        <option value="-1">Escolha o jogador...</option>
-                        <?php
-                        $sql = "select * from jogadores order by jogadorNome";
-                        $resultJogadores = mysqli_query($con, $sql);
-                        while ($dadosJogadores = mysqli_fetch_array($resultJogadores)) {
-                            ?>
-                            <option value="<?php echo $dadosJogadores['jogadorId'] ?>"
-                                <?php
-                                if ($idJog == $dadosJogadores['jogadorId'])
-                                    echo " selected ";
-                                ?>
-                            >
-                                <?php echo $dadosJogadores['jogadorNome'] ?>
-                            </option>
-                            <?php
-                        }
-
-
-                        ?>
-                    </select>
+                    <input disabled type="text" value="<?php echo $dadosPlantel['jogadorNome'] ?>">
 
                 </div>
 

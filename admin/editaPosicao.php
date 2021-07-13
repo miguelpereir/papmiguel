@@ -1,9 +1,7 @@
 <?php
 include_once("../includes/body.inc.php");
 top_admin(SQUAD);
-$id = -1;
-if (isset($_GET['id']))
-    $id = intval($_GET['id']);
+
 $id = intval($_GET['id']);
 $sql = "select * from posicoes where posicaoId=$id";
 $result = mysqli_query($con, $sql);
@@ -13,16 +11,6 @@ $dados = mysqli_fetch_array($result);
 <link href="../css/admin.css" rel="stylesheet">
 <section id="contant" class="contant main-heading team">
     <div class="container" align="center">
-
-
-        <br>
-        <div align="left">
-
-
-            <input type="Submit" value="Edita"><br>
-        </div>
-
-
         <div>
             <h1 align="center">Edita Posição </h1>
         </div>
@@ -50,7 +38,7 @@ $dados = mysqli_fetch_array($result);
 
                     <label>No Campo:</label>
                     <select name="campoPosicao">
-                        <option value="-1">Escolha a posicao...</option>
+                        <option value="-1"><?php echo $dados['posicaoCampo'] ?></option>
                         <option value="1">Guarda redes</option>
                         <option value="2">Defesa</option>
                         <option value="3">Médio</option>
@@ -63,5 +51,5 @@ $dados = mysqli_fetch_array($result);
     </div>
 </section>
 <?php
-bottom_admin(PLANTEL);
+bottom_admin();
 ?>

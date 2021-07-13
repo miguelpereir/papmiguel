@@ -160,13 +160,12 @@ function confirmaEliminaPlantel(idPlantel) {
         }
     })
 };
-function fillTablePosicao(txt = '',id=-1) {
+function fillTablePosicao(txt = '') {
     $.ajax({
         url: "AJAX/AJAXFillPosicao.php",
         type: "post",
         data: {
-            txt: txt,
-            id:id
+            txt: txt
         },
         success: function (result) {
             $('#tableContent').html(result);

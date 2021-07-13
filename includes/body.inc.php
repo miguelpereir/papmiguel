@@ -533,7 +533,7 @@ function top_admin($page = HOME)
                                                     <li><a href="classificação.php">Classificação</a></li>
                                                     <li><a href="equipas.php">Equipas</a></li>
                                                     <li><a href="noticias.php">Noticias</a></li>
-                                                    <li><a href="posicoes.php">Posições</a></li>
+
                                                     <li class="dropdown mega-dropdown">
                                                         <!--   <a href="match" class="dropdown-toggle" data-toggle="dropdown">Match<span
                                                                        class="caret"></span></a>-->
@@ -606,7 +606,7 @@ function top_admin($page = HOME)
                                                         </ul>
                                                     </li>
                                                     <li><a href="jogadores.php">Jogadores</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="posicoes.php">Posições</a></li>
                                                 </ul>
                                             </div>
                                             <!-- /.nav-collapse -->
@@ -851,8 +851,6 @@ if ($page == POSITIONS){
             <h3>Plantel</h3>
             <ul class="breadcrumb">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="equipas.php">Equipas</a></li>
-                <li><a href="plantel.php">Plantel</a></li>
                 <li class="active">Posicoes</li>
             </ul>
         </div>
@@ -915,7 +913,7 @@ function bottom_admin($menu = HOME)
                         <li><a href="equipas.php">Equipas</a></li>
                         <li><a href="noticias.php">Noticias</a></li>
                         <li><a href="jogadores.php">Jogadores</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="posicoes.php">Posições</a></li>
                     </ul>
                 </div>
             </div>
@@ -1025,9 +1023,9 @@ function bottom_admin($menu = HOME)
             if ($menu == POSICOES){
             ?>
             $('#search').keyup(function () {
-                fillTablePosicao(this.value, $('#idPlantel').val());
+                fillTablePosicao(this.value);
             });
-            fillTablePosicao('', $('#idPlantel').val());
+            fillTablePosicao();
             <?php
             }
             ?>

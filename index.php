@@ -1,7 +1,6 @@
 <?php
 include_once ("includes/body.inc.php");
 top();
-
 $sql = "Select * from noticias";
 $result = mysqli_query($con, $sql);
 ?>
@@ -202,11 +201,11 @@ $result = mysqli_query($con, $sql);
                     while ($dados = mysqli_fetch_array($result)) {
                         ?>
                      <div class="news-post-widget">
-                        <img class="img-responsive" src="images/img-01_002.jpg" alt="">
+                         <a href="noticia.php?id=<?php echo $dados['noticiaId'] ?>"><img class="img-responsive" src="<?php echo $dados['noticiaCapaURL'] ?>" alt=""></a>
                         <div class="news-post-detail">
-                           <span class="date">20 march 2016</span>
-                           <h2><a href="blog-detail.html">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
-                           <p>Just hours after that his grandma had died, Angel Di Maria imagined how she might react if he didn't play</p>
+                           <span class="date"><?php echo $dados['noticiaData'] ?></span>
+                           <h2><a href="noticia.php?id=<?php echo $dados['noticiaId'] ?>"><?php echo $dados['noticiaTitulo'] ?></a></h2>
+                           <p><?php echo $dados['noticiaSubTitulo'] ?></p>
                         </div>
                      </div>
                         <?php

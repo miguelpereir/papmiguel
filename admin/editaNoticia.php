@@ -163,8 +163,8 @@ $dados = mysqli_fetch_array($result);
                 <div class="col-md-12">
                     <label>Descrição: </label>
                     <textarea class="col-2" name="descricaoNoticia" id="myTextarea" cols="50"
-                              rows="5" <?php echo $dados['noticiaDescricao'] ?>></textarea><br>
-                </div>
+                              rows="5"> <?php echo $dados['noticiaDescricao'] ?></textarea><br>
+                </div
             </form>
         </div>
     </div>

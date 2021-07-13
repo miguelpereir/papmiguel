@@ -359,10 +359,9 @@ function bottom()
                     <div class="full">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="#"><img src="images/footer-logo.png" alt="#"/></a>
+                                <a href="index.php"><img src="images/icon1.png" alt="#"/></a>
                             </div>
-                            <p>Most of our events have hard and easy route choices as we are always keen to encourage
-                                new riders.</p>
+                            <p>Bought a pool, can't even swim</p>
                             <ul class="social-icons style-4 pull-left">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -377,12 +376,11 @@ function bottom()
                         <div class="footer-widget">
                             <h3>Menu</h3>
                             <ul class="footer-menu">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="team.html">Our Team</a></li>
-                                <li><a href="news.html">Latest News</a></li>
-                                <li><a href="matche.html">Recent Matchs</a></li>
-                                <li><a href="blog.html">Our Blog</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="classificacao.html">Classificação</a></li>
+                                <li><a href="equipas.php">Equipas</a></li>
+                                <li><a href="noticias.php">Noticias</a></li>
+                                <li><a href="jogadores.php">Jogadores</a></li>
+                                <li><a href="contactos.php">Contactos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -883,8 +881,11 @@ function bottom_admin($menu = HOME)
 
 
     <footer id="footer" class="footer">
+
         <div class="container">
             <div class="row">
+                <div class="col-md-4"></div>
+                <!--
                 <div class="col-md-4">
                     <div class="full">
                         <div class="footer-widget">
@@ -902,21 +903,22 @@ function bottom_admin($menu = HOME)
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="full">
-                        <div class="footer-widget">
-                            <h3>Menu</h3>
-                            <ul class="footer-menu">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="team.html">Our Team</a></li>
-                                <li><a href="news.html">Latest News</a></li>
-                                <li><a href="matche.html">Recent Matchs</a></li>
-                                <li><a href="blog.html">Our Blog</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                -->
+        <div class="col-md-4" align="center">
+            <div class="full">
+                <div class="footer-widget">
+                    <h3>Menu</h3>
+                    <ul class="footer-menu">
+                        <li><a href="classificacao.html">Classificação</a></li>
+                        <li><a href="equipas.php">Equipas</a></li>
+                        <li><a href="noticias.php">Noticias</a></li>
+                        <li><a href="jogadores.php">Jogadores</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
+            </div>
+        </div>
+        <!--
                 <div class="col-md-3">
                     <div class="full">
                         <div class="footer-widget">
@@ -930,6 +932,7 @@ function bottom_admin($menu = HOME)
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-3">
                     <div class="full">
                         <div class="contact-footer">
@@ -939,7 +942,7 @@ function bottom_admin($menu = HOME)
                     </div>
                 </div>
             </div>
-        </div>
+            -->
         <div class="footer-bottom">
             <div class="container">
                 <p>Copyright © 2018 Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>

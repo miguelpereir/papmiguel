@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
-      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaPlantel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaPosicao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AJAX/AJAXFillNoticias.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Ajax/AJAXFillPlantel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillPlantel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Ajax/AJAXFillPosicao.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillPosicao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adicionaPosicao.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaPosicao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaPlantel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaPlantel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaPosicao.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaPosicao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/posicoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/posicoes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaPlantel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaPlantel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -74,7 +69,7 @@
       <workItem from="1625474986063" duration="13458000" />
       <workItem from="1625560792233" duration="14113000" />
       <workItem from="1626170943446" duration="3388000" />
-      <workItem from="1626176941418" duration="3411000" />
+      <workItem from="1626176941418" duration="8095000" />
     </task>
     <task id="LOCAL-00001" summary="admin">
       <created>1625500433889</created>
@@ -118,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626175702489</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mais admin">
+      <created>1626185832300</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1626185832300</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

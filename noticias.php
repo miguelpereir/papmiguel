@@ -2,36 +2,28 @@
 include_once ("includes/body.inc.php");
 top(NEWS);
 
-$sql = "Select * from noticias";
-
-$result = mysqli_query($con, $sql);
 ?>
       <section id="contant" class="contant">
          <div class="container">
             <div class="row">
                <div class="col-lg-9 col-sm-12 col-xs-12">
                   <div class="news-post-holder">
+                    <div id="tableContent">
 
-                        <?php
-                    while ($dados = mysqli_fetch_array($result)) {
-                        ?>
-                     <div class="col-lg-6 col-sm-6 col-xs-12">
-                        <div class="news-post-widget">
-                            <a href="noticia.php?id=<?php echo $dados['noticiaId'] ?>"><img width="100" class="img-responsive" src="<?php echo $dados['noticiaCapaURL'] ?>" alt=""></a>
-                           <div class="news-post-detail">
-                              <span class="date"><?php echo $dados['noticiaData'] ?></span>
-                              <h2><a  href="noticia.php?id=<?php echo $dados['noticiaId'] ?>"><?php echo $dados['noticiaTitulo'] ?></a></h2>
-                              <p><?php echo $dados['noticiaSubTitulo'] ?></p>
-                           </div>
-                        </div>
-                     </div>
+                    </div>
 
-                        <?php
-                    }
-                        ?>
                   </div>
                </div>
+
                <div class="col-lg-3 col-sm-6 col-xs-12">
+                   <div class="blog-sidebar">
+                       <div class="search-bar-blog">
+                           <form>
+                               <input type="text" id="search" placeholder="search" />
+                               <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                           </form>
+                       </div>
+                   </div>
                   <div class="content-widget top-story" style="background: url(images/top-story-bg.jpg);">
                      <div class="top-stroy-header">
                         <h2>Top Soccer Headlines Story <a href="#" class="fa fa-fa fa-angle-right"></a></h2>
@@ -59,5 +51,5 @@ $result = mysqli_query($con, $sql);
          </div>
       </section>
 <?php
-bottom();
+bottom(NOTICIAS);
 ?>

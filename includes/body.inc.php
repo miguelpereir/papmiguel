@@ -348,7 +348,7 @@ if ($page == CLASSIFICACAO){
     <?php
 }
 
-function bottom()
+function bottom($menu = HOME)
 {
     ?>
 
@@ -389,12 +389,13 @@ function bottom()
                 <div class="col-md-3">
                     <div class="full">
                         <div class="footer-widget">
-                            <h3>Contact us</h3>
+                            <h3>Contacte-nos</h3>
                             <ul class="address-list">
-                                <li><i class="fa fa-map-marker"></i> Lorem Ipsum is simply dummy text of the printing..
+                                <li><i class="fa fa-map-marker"></i>Rua do Alfredo, nº43, lote 5, Leria, Africa
                                 </li>
-                                <li><i class="fa fa-phone"></i> 123 456 7890</li>
-                                <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> demo@gmail.com</li>
+                                <li><i class="fa fa-phone"></i>911111112</li>
+                                <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> exemplo@gmail.com
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -403,7 +404,7 @@ function bottom()
                     <div class="full">
                         <div class="contact-footer">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120615.72236587871!2d73.07890527988283!3d19.140910987164396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1527759905404"
-                                    width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    width="600" height="350" frameborder="0" style=" border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -418,8 +419,24 @@ function bottom()
     <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
+    <script src="js/common.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+    <script>
+        $('document').ready(function () {
+            <?php
+
+            if ($menu == NOTICIAS){
+            ?>
+            $('#search').keyup(function () {
+                fillTableNoticia(this.value);
+            });
+            fillTableNoticia();
+            <?php
+            }
+            ?>
+        })
+    </script>
     </body>
     </html>
 
@@ -904,50 +921,51 @@ function bottom_admin($menu = HOME)
                     </div>
                 </div>
                 -->
-        <div class="col-md-4" align="center">
-            <div class="full">
-                <div class="footer-widget">
-                    <h3>Menu</h3>
-                    <ul class="footer-menu">
-                        <li><a href="classificacao.html">Classificação</a></li>
-                        <li><a href="equipas.php">Equipas</a></li>
-                        <li><a href="noticias.php">Noticias</a></li>
-                        <li><a href="jogadores.php">Jogadores</a></li>
-                        <li><a href="posicoes.php">Posições</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--
-                <div class="col-md-3">
+                <div class="col-md-4" align="center">
                     <div class="full">
                         <div class="footer-widget">
-                            <h3>Contact us</h3>
-                            <ul class="address-list">
-                                <li><i class="fa fa-map-marker"></i> Lorem Ipsum is simply dummy text of the printing..
-                                </li>
-                                <li><i class="fa fa-phone"></i> 123 456 7890</li>
-                                <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> demo@gmail.com</li>
+                            <h3>Menu</h3>
+                            <ul class="footer-menu">
+                                <li><a href="classificacao.html">Classificação</a></li>
+                                <li><a href="equipas.php">Equipas</a></li>
+                                <li><a href="noticias.php">Noticias</a></li>
+                                <li><a href="jogadores.php">Jogadores</a></li>
+                                <li><a href="posicoes.php">Posições</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <!--
+                        <div class="col-md-3">
+                            <div class="full">
+                                <div class="footer-widget">
+                                    <h3>Contact us</h3>
+                                    <ul class="address-list">
+                                        <li><i class="fa fa-map-marker"></i> Lorem Ipsum is simply dummy text of the printing..
+                                        </li>
+                                        <li><i class="fa fa-phone"></i> 123 456 7890</li>
+                                        <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> demo@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="col-md-3">
-                    <div class="full">
-                        <div class="contact-footer">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120615.72236587871!2d73.07890527988283!3d19.140910987164396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1527759905404"
-                                    width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="col-md-3">
+                            <div class="full">
+                                <div class="contact-footer">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120615.72236587871!2d73.07890527988283!3d19.140910987164396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1527759905404"
+                                            width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p>Copyright © 2018 Distributed by <a href="https://themewagon.com/"
+                                                              target="_blank">ThemeWagon</a></p>
+                    </div>
                 </div>
-            </div>
-            -->
-        <div class="footer-bottom">
-            <div class="container">
-                <p>Copyright © 2018 Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
-            </div>
-        </div>
     </footer>
     <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
     <!-- ALL JS FILES -->

@@ -5,8 +5,9 @@ $idEq=intval($_POST['equipaId']);
 $posicaoId=intval($_POST['posicao']);
 $numero=addslashes($_POST['numeroJogador']);
 
-$sql="Update equipaJogadores set equipaJogadorEquipaId='".$idEq."', equipaJogadorJogadorId='".$idJog."',equipaJogadorPosicaoId='".$posicaoId."',equipaJogadorNumero='".$numero."'";
-echo $sql.=" where equipaJogadorJogadorId=".$idJog;
+$sql="Update equipaJogadores set equipaJogadorPosicaoId=$posicaoId,equipaJogadorNumero=$numero";
+echo $sql.=" where equipaJogadorJogadorId=".$idJog." and equipaJogadorEquipaId=".$idEq;
+mysqli_query($con,$sql);
 header("location:plantel.php?id=".$idEq);
 ?>
 

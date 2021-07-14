@@ -19,6 +19,7 @@
     define("PLANTEL",14);
     define("POSITIONS",15);
     define("POSICOES",16);
+    define("CONTACT",17);
  //   define("HOME",1);
  //   define("HOME",1);
 ?>

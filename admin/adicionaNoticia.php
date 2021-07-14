@@ -125,8 +125,8 @@ top_admin(NEWS);
 
                     <label>Titulo: </label>
                     <input type="text" name="tituloNoticia"><br>
-                    <label>Sub Titulo:</label>
-                    <input type="text" name="subtituloNoticia"><br>
+                    <label>Resumo:</label>
+                    <input type="text" name="resumoNoticia"><br>
                     <label>Data:</label>
                     <input type="date" name="dataNoticia"><br>
 

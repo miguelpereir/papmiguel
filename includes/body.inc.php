@@ -181,8 +181,7 @@ function top($page = HOME)
                                                               -->
                                                         </ul>
                                                     </li>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="contactos.php">Contactos</a></li>
                                                 </ul>
                                             </div>
                                             <!-- /.nav-collapse -->
@@ -332,6 +331,26 @@ if ($page == NEWS){
 <?php
 }
 ?>
+<?php
+if ($page == CONTACT){
+?>
+    <div class="inner-page-banner">
+        <div class="container">
+        </div>
+    </div>
+    <div class="inner-information-text">
+        <div class="container">
+            <h3>Contactos</h3>
+            <ul class="breadcrumb">
+                <li><a href="index.php">Home</a></li>
+                <li class="active">Contactos</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+<?php
+}
+?>
 
 <?php
 if ($page == CLASSIFICACAO){
@@ -356,7 +375,8 @@ function bottom($menu = HOME)
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
                     <div class="full">
                         <div class="footer-widget">
                             <div class="footer-logo">
@@ -380,7 +400,6 @@ function bottom($menu = HOME)
                                 <li><a href="classificacao.html">Classificação</a></li>
                                 <li><a href="equipas.php">Equipas</a></li>
                                 <li><a href="noticias.php">Noticias</a></li>
-                                <li><a href="jogadores.php">Jogadores</a></li>
                                 <li><a href="contactos.php">Contactos</a></li>
                             </ul>
                         </div>
@@ -400,6 +419,7 @@ function bottom($menu = HOME)
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="col-md-3">
                     <div class="full">
                         <div class="contact-footer">
@@ -408,6 +428,7 @@ function bottom($menu = HOME)
                         </div>
                     </div>
                 </div>
+                -->
             </div>
         </div>
         <div class="footer-bottom">

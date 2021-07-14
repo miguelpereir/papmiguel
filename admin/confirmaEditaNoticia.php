@@ -2,7 +2,7 @@
 include_once ("../includes/body.inc.php");
 $id=intval($_POST['noticiaId']);
 $titulo=addslashes($_POST['tituloNoticia']);
-$subtitulo=addslashes($_POST['subtituloNoticia']);
+$resumo=addslashes($_POST['resumoNoticia']);
 $imagem=$_FILES['imagemNoticia']['name'];
 $novoNome="../images/".$imagem;
 $capa=$_FILES['capaNoticia']['name'];
@@ -17,7 +17,7 @@ if($imagem!=''){
     $sql.=", noticiaImagemURL='images/".$imagem."'";
     copy($_FILES['imagemNoticia']['tmp_name'],$novoNome);
 }
-$sql.=", noticiaSubTitulo='".$subtitulo."'";
+$sql.=", noticiaResumo='".$resumo."'";
 if ($capa!=''){
     $sql.=", noticiaCapaURl='images/".$capa."'";
     copy($_FILES['capaNoticia']['tmp_name'],$novo);

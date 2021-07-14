@@ -129,8 +129,8 @@ $dados = mysqli_fetch_array($result);
 
                     <label>Titulo: </label>
                     <input type="text" name="tituloNoticia" value="<?php echo $dados['noticiaTitulo'] ?>"><br>
-                    <label>Sub Titulo:</label>
-                    <input type="text" name="subtituloNoticia" value="<?php echo $dados['noticiaSubTitulo'] ?>"><br>
+                    <label>Resumo:</label>
+                    <input type="text" name="resumoNoticia" value="<?php echo $dados['noticiaResumo'] ?>"><br>
                     <label>Data:</label>
                     <input type="date" name="dataNoticia" value="<?php echo $dados['noticiaData']?>"><br>
 

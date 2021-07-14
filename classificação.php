@@ -98,58 +98,91 @@ top(CLASSIFICACAO);
             <div class="row">
                 <div class="col-md-12" align="center"><h1>Liga NOS </h1></div>
             </div>
-            <table class='table table-hover'  width="100%" align="center">
-            <tr>
-                <th colspan="1">Id</th>
-                <th colspan="2">Imagem</th>
-                <th colspan="2">Nome</th>
-                <th colspan="1">Jogos</th>
-                <th colspan="1">Vitorias</th>
-                <th colspan="1">Empates</th>
-                <th colspan="1">Derrotas</th>
-                <th colspan="1">Golos M.</th>
-                <th colspan="1">Golos S.</th>
-                <th colspan="1">Pontos</th>
-
-
-            </tr>
-            <tr>
-                <td colspan="1">1</td>
-                <td colspan="2"></td>
-                <td colspan="2">Sporting</a></td>
-                <td colspan="1">14</td>
-                <td colspan="1">11</td>
-                <td colspan="1">3</td>
-                <td colspan="1">0</td>
-                <td colspan="1">31</td>
-                <td colspan="1">9</td>
-                <td colspan="1">36</td>
-            </tr>
-            <tr>
-                <td colspan="1">2</td>
-                <td colspan="2"></td>
-                <td colspan="2">Porto</td>
-                <td colspan="1">14</td>
-                <td colspan="1">11</td>
-                <td colspan="1">3</td>
-                <td colspan="1">0</td>
-                <td colspan="1">31</td>
-                <td colspan="1">9</td>
-                <td colspan="1">36</td>
-            </tr>
-            <tr>
-                <td colspan="1">3</td>
-                <td colspan="2"></td>
-                <td colspan="2">Braga</td>
-                <td colspan="1">14</td>
-                <td colspan="1">11</td>
-                <td colspan="1">3</td>
-                <td colspan="1">0</td>
-                <td colspan="1">31</td>
-                <td colspan="1">9</td>
-                <td colspan="1">36</td>
-            </tr>
-        </table>
+            <div class="feature-matchs">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Equipa</th>
+                        <th>Jogos</th>
+                        <th>Pontos</th>
+                        <th>Vitórias</th>
+                        <th>Empates</th>
+                        <th>Derrotas</th>
+                        <th>Golos M. </th>
+                        <th>Golos S. </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="images/img-01_004.png" alt="">Liverpool</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="images/img-02_002.png" alt="">Chelsea</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="images/img-03_003.png" alt="">Norwich City</td>
+                        <td>20</td>
+                        <td>15</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img src="images/img-04_002.png" alt="">West Brom</td>
+                        <td>60</td>
+                        <td>10</td>
+                        <td>60</td>
+                        <td>60</td>
+                        <td>60</td>
+                        <td>60</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><img src="images/img-05.png" alt="">sunderland</td>
+                        <td>30</td>
+                        <td>06</td>
+                        <td>30</td>
+                        <td>30</td>
+                        <td>30</td>
+                        <td>30</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="images/img-01_004.png" alt="">Liverpool</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>20</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
     </div>
 </section>
 <?php

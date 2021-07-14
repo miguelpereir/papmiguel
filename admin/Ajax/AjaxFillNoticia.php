@@ -16,7 +16,7 @@ $result = mysqli_query($con, $sql);
     <tr>
         <th>Id</th>
         <th>Titulo</th>
-        <th>Sub Titulo</th>
+        <th>Resumo</th>
         <th>Imagem</th>
         <th>Descrição</th>
         <th>Imagem de Capa</th>
@@ -31,7 +31,7 @@ $result = mysqli_query($con, $sql);
         <tr>
             <td><?php echo $dados['noticiaId'] ?></td>
             <td><?php echo $dados['noticiaTitulo'] ?></td>
-            <td><?php echo $dados['noticiaSubTitulo'] ?></td>
+            <td><?php echo $dados['noticiaResumo'] ?></td>
             <td><img width='90' src="../<?php echo $dados['noticiaImagemURL'] ?>"></td>
             <td><?php echo $dados['noticiaDescricao'] ?></td>
             <td><img width="90" src="../<?php echo $dados['noticiaCapaURL'] ?>"></td>

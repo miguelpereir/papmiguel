@@ -23,6 +23,7 @@ function top($page = HOME)
     <link rel="apple-touch-icon" href="">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <!-- Site CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Colors CSS -->
@@ -41,6 +42,7 @@ function top($page = HOME)
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <script src="js/3dslider.js"></script>
+    <link rel="stylesheet" href="css/common.css">
     </head>
     <body class="game_info" data-spy="scroll" data-target=".header">
     <!-- LOADER -->

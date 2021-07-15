@@ -205,7 +205,7 @@ $result = mysqli_query($con, $sql);
                         <div class="news-post-detail">
                            <span class="date"><?php echo $dados['noticiaData'] ?></span>
                            <h2><a href="noticia.php?id=<?php echo $dados['noticiaId'] ?>"><?php echo $dados['noticiaTitulo'] ?></a></h2>
-                           <p><?php echo $dados['noticiaSubTitulo'] ?></p>
+                           <p><?php echo $dados['noticiaResumo'] ?></p>
                         </div>
                      </div>
                         <?php

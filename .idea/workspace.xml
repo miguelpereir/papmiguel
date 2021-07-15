@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
-      <change afterPath="$PROJECT_DIR$/contactos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/noticia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/AJAXFillNoticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/AJAXFillNoticias.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Ajax/AjaxFillNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adicionaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaNovaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v2.0.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v2.0.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v2.0.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v2.0.mwb.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classificação.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificação.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipas.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -78,7 +71,8 @@
       <workItem from="1625560792233" duration="14113000" />
       <workItem from="1626170943446" duration="3388000" />
       <workItem from="1626176941418" duration="8150000" />
-      <workItem from="1626262758022" duration="6065000" />
+      <workItem from="1626262758022" duration="6137000" />
+      <workItem from="1626344545551" duration="10262000" />
     </task>
     <task id="LOCAL-00001" summary="admin">
       <created>1625500433889</created>
@@ -136,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626191717339</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="mais admin">
+      <created>1626278614892</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626278614892</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

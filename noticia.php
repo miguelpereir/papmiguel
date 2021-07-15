@@ -1,7 +1,8 @@
 <?php
 include_once("includes/body.inc.php");
 top(NEWS);
-$sql = "Select * from noticias";
+$id = intval($_GET['id']);
+$sql = "Select * from noticias where noticiaid=$id";
 $result = mysqli_query($con, $sql);
 $dados = mysqli_fetch_array($result)
 ?>
@@ -68,26 +69,7 @@ $dados = mysqli_fetch_array($result)
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
                     <!--
-                    <div class="blog-sidebar">
-                        <h4 class="heading">Informação</h4>
-                        <div class="category-menu">
-                            <ul>
-                                <li>
-                                    <span>
-                                  <h5>Ano de fundação:</h5> <h3>1905</h3>
-                                  <h5>Presidente:</h5><h3>Miguel Pereira</h3>
-                               </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <aside id="sidebar" class="right-bar">
-                        <div align="center" class="banner">
-                            <img class="img-responsive" src="images/about.jpeg" alt="#">
-                            <h3 style="padding-left: 10px">Estadio de Alvadade</h3>
-                        </div>
-                    </aside>
                      -->
                     <div class="blog-sidebar">
                         <h4 class="heading">Popular News</h4>

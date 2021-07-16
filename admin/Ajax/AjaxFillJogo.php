@@ -2,7 +2,9 @@
 // dados na base de dados
 include_once("../../includes/body.inc.php"); //precisa do ../
 $txt = addslashes($_POST['txt']);
-$sql = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora from equipas as e1 inner join jogos on e1.equipaId=jogos.jogoCasaEquipaId inner join equipas as e2 on e2.equipaId=jogos.jogoForaEquipaId";
+$sql = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora 
+        from equipas as e1 inner join jogos on e1.equipaId=jogos.jogoCasaEquipaId 
+        inner join equipas as e2 on e2.equipaId=jogos.jogoForaEquipaId order by jogoData Asc";
 $result = mysqli_query($con, $sql);
 
 ?>

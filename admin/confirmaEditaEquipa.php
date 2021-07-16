@@ -3,11 +3,11 @@ include_once ("../includes/body.inc.php");
 $id=intval($_POST['equipaId']);
 $nome=addslashes($_POST['nomeEquipa']);
 $imagem=$_FILES['emblemaEquipa']['name'];
-$novoNome="images/".$imagem;
+$novoNome="../images/".$imagem;
 $ano=addslashes($_POST['anoEquipa']);
 $estadioN=addslashes($_POST['nomeEstadio']);
 $estadioF=$_FILES['fotoEstadio']['name'];
-$novo="images/".$estadioF;
+$novo="../images/".$estadioF;
 $historia=addslashes($_POST['historiaEquipa']);
 $presidente=addslashes($_POST['presidenteEquipa']);
 

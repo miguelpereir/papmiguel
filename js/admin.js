@@ -199,3 +199,18 @@ function fillTableJogo(txt = '') {
         }
     });
 };
+function confirmaEliminaJogo(idJogo) {
+    var nomeJogo;
+    $.ajax({
+        url:"AJAX/AJAXGetNameJogo.php",
+        type:"post",
+        data:{
+            idJogo:idJogo
+        },
+        success:function (result){
+            nomeJogo=result;
+            if(confirm('Confirma que deseja eliminar o Jogo:'+nomeJogo+'?'))
+                window.location="eliminaJogo.php?id=" + idJogo;
+        }
+    })
+};

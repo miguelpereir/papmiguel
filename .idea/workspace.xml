@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="[leandro] - Melhor Admin">
-      <change afterPath="$PROJECT_DIR$/baseDados/pap2021luisfranco_v2.mwb.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Captura de EcrÃ£ (1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bacalhau.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/carne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameJogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/eliminaJogo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/Ajax/AjaxFillJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/jogos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/jogos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />

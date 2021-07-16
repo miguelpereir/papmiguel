@@ -187,3 +187,15 @@ function confirmaEliminaPosicao(idPosicao) {
         }
     })
 };
+function fillTableJogo(txt = '') {
+    $.ajax({
+        url: "AJAX/AJAXFillJogo.php",
+        type: "post",
+        data: {
+            txt: txt
+        },
+        success: function (result) {
+            $('#tableContent').html(result);
+        }
+    });
+};

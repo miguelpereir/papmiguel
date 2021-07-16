@@ -108,7 +108,7 @@ function top($page = HOME)
                                             <div class="collapse navbar-collapse js-navbar-collapse">
                                                 <ul class="nav navbar-nav">
                                                     <li class="active"><a href="index.php">Home</a></li>
-                                                    <li><a href="classificação.php">Classificação</a></li>
+                                                    <li><a href="classificacao.php">Classificação</a></li>
                                                     <li><a href="equipas.php">Equipas</a></li>
                                                     <li><a href="noticias.php">Noticias</a></li>
 
@@ -570,7 +570,7 @@ function top_admin($page = HOME)
                                             <div class="collapse navbar-collapse js-navbar-collapse">
                                                 <ul class="nav navbar-nav">
                                                     <li class="active"><a href="index.php">Home</a></li>
-                                                    <li><a href="classificação.php">Classificação</a></li>
+                                                    <li><a href="classificacao.php">Classificação</a></li>
                                                     <li><a href="equipas.php">Equipas</a></li>
                                                     <li><a href="noticias.php">Noticias</a></li>
 
@@ -899,6 +899,27 @@ if ($page == POSITIONS){
 <?php
 }
 ?>
+<?php
+if ($page == GAMES){
+?>
+    <div class="inner-page-banner">
+        <div class="container">
+        </div>
+    </div>
+    <div class="inner-information-text">
+        <div class="container">
+            <h3>Jogos</h3>
+            <ul class="breadcrumb">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="classificacao.php">Classificação</a></li>
+                <li class="active">Jogos</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+<?php
+}
+?>
 
 <?php
 if ($page == CLASSIFICACAO){
@@ -1067,6 +1088,16 @@ function bottom_admin($menu = HOME)
                 fillTablePosicao(this.value);
             });
             fillTablePosicao();
+            <?php
+            }
+            ?>
+            <?php
+            if ($menu == JOGOS){
+            ?>
+            $('#search').keyup(function () {
+                fillTableJogo(this.value);
+            });
+            fillTableJogo();
             <?php
             }
             ?>

@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
-      <change afterPath="$PROJECT_DIR$/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillJogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/adicionaJogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/classificacao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/confirmaNovoJogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/jogos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equipas.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classificação.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +49,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\papmiguel" />
       <recent name="C:\wamp64\www\papmiguel\admin" />
       <recent name="C:\wamp64\www\papmiguel\admin\Ajax" />
+      <recent name="C:\wamp64\www\papmiguel" />
       <recent name="C:\wamp64\www\papmiguel\js" />
     </key>
   </component>
@@ -72,7 +74,8 @@
       <workItem from="1626170943446" duration="3388000" />
       <workItem from="1626176941418" duration="8150000" />
       <workItem from="1626262758022" duration="6137000" />
-      <workItem from="1626344545551" duration="10262000" />
+      <workItem from="1626344545551" duration="11140000" />
+      <workItem from="1626429098205" duration="9819000" />
     </task>
     <task id="LOCAL-00001" summary="admin">
       <created>1625500433889</created>
@@ -137,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626278614892</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mais admin">
+      <created>1626364788389</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626364788389</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -20,6 +20,8 @@
     define("POSITIONS",15);
     define("POSICOES",16);
     define("CONTACT",17);
+    define("GAMES",18);
+    define("JOGOS",19);
  //   define("HOME",1);
  //   define("HOME",1);
 ?>

@@ -2,7 +2,7 @@
 include_once("includes/body.inc.php");
 top(TEAMS);
 $id = intval($_GET['id']);
-$sql = "Select * from equipas inner join treinadores on equipaId=treinadorequipaId where equipaId=$id";
+$sql = "Select * from equipas  where equipaId=$id";
 $result = mysqli_query($con, $sql);
 $dados = mysqli_fetch_array($result);
 
@@ -48,7 +48,7 @@ $result2 = mysqli_query($con, $sql2);
                             </div>
                             <div class="team-btw-match">
                                 <?php
-                                $sqlEquipas = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora,
+                            echo    $sqlEquipas = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora,
                                     f1.equipaEmblemaUrl as foto1,f2.equipaEmblemaURL as foto2,
                                     id1.equipaId as idcasa,id2.equipaId as idfora
                                     from equipas as e1 inner join jogos on e1.equipaId=jogos.jogoCasaEquipaId 
@@ -56,7 +56,7 @@ $result2 = mysqli_query($con, $sql2);
                                     inner join equipas as f1 on f1.equipaId=jogos.jogoCasaEquipaId
                                     inner join equipas as f2 on f2.equipaId=jogos.jogoForaEquipaId
                                     inner join equipas as id1 on id1.equipaId=jogos.jogoCasaEquipaId
-                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId where jogoCasaEquipaId=$id ";
+                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId where jogoCasaEquipaId=$id or jogoForaEquipaId=$id ";
 
                                 $resultEquipas = mysqli_query($con, $sqlEquipas);
                                 while ($dadosEquipas = mysqli_fetch_array($resultEquipas)) {
@@ -198,9 +198,9 @@ $result2 = mysqli_query($con, $sql2);
                         <div class="category-menu">
                             <ul>
                                 <li>
-                                    <span><img src="<?php echo $dados['treinadorFotoURL'] ?>" alt="#"></span>
+                                    <span><img src="<?php echo $dados['equipaTreinadorFotoURL'] ?>" alt="#"></span>
                                     <span>
-                                 <h3><?php echo $dados['treinadorNome'] ?></h3>
+                                 <h3><?php echo $dados['equipaTreinador'] ?></h3>
                               </span>
                                 </li>
                             </ul>

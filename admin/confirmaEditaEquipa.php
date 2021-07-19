@@ -2,12 +2,15 @@
 include_once ("../includes/body.inc.php");
 $id=intval($_POST['equipaId']);
 $nome=addslashes($_POST['nomeEquipa']);
+$nomeTreinador=addslashes($_POST['nomeTreinador']);
 $imagem=$_FILES['emblemaEquipa']['name'];
 $novoNome="../images/".$imagem;
 $ano=addslashes($_POST['anoEquipa']);
 $estadioN=addslashes($_POST['nomeEstadio']);
 $estadioF=$_FILES['fotoEstadio']['name'];
 $novo="../images/".$estadioF;
+$treinadorF=$_FILES['fotoTreinador']['name'];
+$novoTF="../images/".$treinadorF;
 $historia=addslashes($_POST['historiaEquipa']);
 $presidente=addslashes($_POST['presidenteEquipa']);
 
@@ -23,7 +26,11 @@ if ($estadioF!=''){
     $sql.=", equipaEstadioURl='images/".$estadioF."'";
     copy($_FILES['fotoEstadio']['tmp_name'],$novo);
 }
-$sql.=", equipaHistoria='".$historia."', equipaPresidente='".$presidente."'";
+if ($treinadorF!=''){
+    $sql.=", equipaTreinadorFotoURl='images/".$treinadorF."'";
+    copy($_FILES['fotoTreinador']['tmp_name'],$novoTF);
+}
+$sql.=", equipaHistoria='".$historia."', equipaPresidente='".$presidente."', equipaTreinador='".$nomeTreinador."'";
 
 $sql.=" where equipaId=".$id;
 mysqli_query($con,$sql);

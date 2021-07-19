@@ -1,9 +1,9 @@
 <?php
 include_once("../includes/body.inc.php");
-top_admin(NEWS);
+top_admin(TEAMS);
 ?>
 <style>
-    .image-upload>input {
+    .image-upload > input {
         display: none;
     }
 
@@ -117,44 +117,98 @@ top_admin(NEWS);
                     <input type="Submit" class="btn btn-success" value="Adiciona">
                 </div>
                 <br>
-
-
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <label>Nome: </label>
-                    <input type="text" name="nomeEquipa"><br>
-                    <div class="image-upload">
-                        <label>Emblema: </label>
-                        <label for="file-input"><br>
-                            <img href="#" src="../images/add%20imagem.png" id="output_image" style="width: 150%;"/>
-                        </label>
-                        <input id="file-input" class="custom-file-upload" type="file" accept="image/*" name="emblemaEquipa" onchange="preview_image(event)" style="color: darkgray"><br>
-                    </div>
-                    <label>Ano de Fundação: </label>
-                    <input type="text" name="anoEquipa">
-                </div>
-                <div class="col-md-5">
-                    <label>Nome do Estádio: </label>
-                    <input type="text" name="nomeEstadio"><br>
-                    <div class="image-upload">
-                        <label>Foto Estadio: </label>
-                        <label for="file-input_2"><br>
-                            <img href="#" src="../images/add%20imagem.png" id="output_image_2" style="width: 150%;"/>
-                        </label>
-                        <input id="file-input_2" class="custom-file-upload" type="file" accept="image/*" name="fotoEstadio" onchange="preview_image_2(event)" style="color: darkgray"><br>
-                    </div>
-                    <label>Presidente:</label>
-                    <input type="text" name="presidenteEquipa"><br>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-12">
-                    <label>Historia: </label>
-                    <textarea class="col-2" name="historiaEquipa" id="myTextarea" cols="50" rows="5"></textarea><br>
-                </div>
-
-
-            </form>
         </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <input type="hidden" name="equipaId" value="">
+                <label>Nome: </label>
+                <input type="text" name="nomeEquipa" value="">
+
+            </div>
+            <div class="col-md-5">
+                <label>Nome do Estádio: </label>
+                <input class="custom-file-upload" type="text" name="nomeEstadio"
+                       value=""><br>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="image-upload">
+                    <label>Emblema: </label>
+                    <label for="file-input"><br>
+                        <img href="#" src="../images/add%20imagem.png" id="output_image"
+                             style="height: 100px;"/>
+                    </label>
+                    <input id="file-input" class="custom-file-upload" type="file" accept="image/*"
+                           name="emblemaEquipa" onchange="preview_image(event)" style="color: darkgray"><br>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <div class="image-upload">
+                    <label>Foto Estadio:</label>
+                    <label for="file-input_2"><br>
+                        <img href="#" src="../images/add%20imagem.png" id="output_image_2"
+                             style="height: 100px;"/>
+                    </label>
+                    <input id="file-input_2" class="custom-file-upload" type="file" accept="image/*"
+                           name="fotoEstadio" onchange="preview_image_2(event)" style="color: darkgray">
+                </div>
+
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <label>Ano de Fundação: </label>
+                <input type="text" name="anoEquipa" value=""><br>
+            </div>
+            <div class="col-md-5">
+                <label>Presidente:</label>
+                <input type="text" name="presidenteEquipa" value=""><br>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <label style="width: 100%">Nome do treinador: </label>
+                <input type="text" name="nomeTreinador" value=""><br>
+            </div>
+            <div class="col-md-5">
+                <div class="image-upload">
+                    <label>Foto Treinador:</label>
+                    <label for="file-input_3"><br>
+                        <img href="#" src="../images/add%20imagem.png" id="output_image_3"
+                             style="height: 100px;"/>
+                    </label>
+                    <input id="file-input_3" class="custom-file-upload" type="file" accept="image/*"
+                           name="fotoTreinador" onchange="preview_image_3(event)" style="color: darkgray">
+                </div>
+
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+
+            <div class="col-md-12">
+                <label>Historia: </label>
+                <textarea class="col-2" name="historiaEquipa" id="myTextarea" cols="50" rows="5"></textarea><br>
+            </div>
+        </div>
+        </form>
+    </div>
     </div>
 </section>
 <?php

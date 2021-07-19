@@ -21,12 +21,19 @@ $dados = mysqli_fetch_array($result);
             }
             reader.readAsDataURL(event.target.files[0]);
         }
-    </script>
-    <script>
+
         function preview_image_2(event) {
             var reader = new FileReader();
             reader.onload = function () {
                 var output = document.getElementById('output_image_2');
+                output.src = reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+        function preview_image_3(event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('output_image_3');
                 output.src = reader.result;
             }
             reader.readAsDataURL(event.target.files[0]);
@@ -120,44 +127,90 @@ $dados = mysqli_fetch_array($result);
                     </div>
 
                     <br>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
-                        <input type="hidden" name="equipaId" value="<?php echo $id ?>">
-                        <label>Nome: </label>
-                        <input type="text" name="nomeEquipa" value="<?php echo $dados['equipaNome'] ?>"><br>
-                        <div class="image-upload">
-                            <label>Emblema: </label>
-                            <label for="file-input"><br>
-                                <img href="#" src="../<?php echo $dados['equipaEmblemaURL'] ?>" id="output_image"
-                                     style="width: 100px;"/>
-                            </label>
-                            <input id="file-input" class="custom-file-upload" type="file" accept="image/*"
-                                   name="emblemaEquipa" onchange="preview_image(event)" style="color: darkgray"><br>
-                        </div>
-                        <label>Ano de Fundação: </label>
-                        <input type="text" name="anoEquipa" value="<?php echo $dados['equipaAnoFundacao'] ?>"><br>
-                    </div>
-                    <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <input type="hidden" name="equipaId" value="<?php echo $id ?>">
+                            <label>Nome: </label>
+                            <input type="text" name="nomeEquipa" value="<?php echo $dados['equipaNome'] ?>">
 
-                        <label>Nome do Estádio: </label>
-                        <input class="custom-file-upload" type="text" name="nomeEstadio"
-                               value="<?php echo $dados['equipaEstadioNome'] ?>"><br>
-                        <br>
-                        <div class="image-upload">
-                            <label>Foto Estadio:</label>
-                            <label for="file-input_2"><br>
-                                <img href="#" src="../<?php echo $dados['equipaEstadioURL'] ?>" id="output_image_2"
-                                     style="width: 100px;"/>
-                            </label>
-                            <input id="file-input_2" class="custom-file-upload" type="file" accept="image/*"
-                                   name="fotoEstadio" onchange="preview_image_2(event)" style="color: darkgray">
                         </div>
-                        <label>Presidente:</label>
-                        <input type="text" name="presidenteEquipa" value="<?php echo $dados['equipaPresidente'] ?>"><br>
+                        <div class="col-md-5">
+                            <label>Nome do Estádio: </label>
+                            <input class="custom-file-upload" type="text" name="nomeEstadio"
+                                   value="<?php echo $dados['equipaEstadioNome'] ?>"><br>
+                        </div>
+                        <div class="col-md-1">
+    
+                        </div>
                     </div>
-                    <div class="col-md-1">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                             <div class="image-upload">
+                                <label>Emblema: </label>
+                                <label for="file-input"><br>
+                                    <img href="#" src="../<?php echo $dados['equipaEmblemaURL'] ?>" id="output_image"
+                                         style="height: 100px;"/>
+                                </label>
+                                <input id="file-input" class="custom-file-upload" type="file" accept="image/*"
+                                       name="emblemaEquipa" onchange="preview_image(event)" style="color: darkgray"><br>
+                            </div>
 
+                        </div>
+                        <div class="col-md-5">
+                            <div class="image-upload">
+                                <label>Foto Estadio:</label>
+                                <label for="file-input_2"><br>
+                                    <img href="#" src="../<?php echo $dados['equipaEstadioURL'] ?>" id="output_image_2"
+                                         style="height: 100px;"/>
+                                </label>
+                                <input id="file-input_2" class="custom-file-upload" type="file" accept="image/*"
+                                       name="fotoEstadio" onchange="preview_image_2(event)" style="color: darkgray">
+                            </div>
+
+                        </div>
+                        <div class="col-md-1">
+    
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <label>Ano de Fundação: </label>
+                            <input type="text" name="anoEquipa" value="<?php echo $dados['equipaAnoFundacao'] ?>"><br>
+                        </div>
+                        <div class="col-md-5">
+                             <label>Presidente:</label>
+                            <input type="text" name="presidenteEquipa" value="<?php echo $dados['equipaPresidente'] ?>"><br>
+                        </div>
+                        <div class="col-md-1">
+    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <label style="width: 100%">Nome do treinador: </label>
+                            <input type="text" name="nomeTreinador" value="<?php echo $dados['equipaTreinador'] ?>"><br>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="image-upload">
+                                <label>Foto Treinador:</label>
+                                <label for="file-input_3"><br>
+                                    <img href="#" src="../<?php echo $dados['equipaTreinadorFotoURL'] ?>" id="output_image_3"
+                                         style="height: 100px;"/>
+                                </label>
+                                <input id="file-input_3" class="custom-file-upload" type="file" accept="image/*"
+                                       name="fotoTreinador" onchange="preview_image_3(event)" style="color: darkgray">
+                            </div>
+
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                    </div>
+
                     <div class="col-md-12">
                         <label>Historia: </label>
                         <textarea name="historiaEquipa" id="myTextarea" cols="50"

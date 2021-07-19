@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_07_2021_10_08_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_07_2021_10_08__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="[leandro] - Melhor Admin">
+      <change afterPath="$PROJECT_DIR$/baseDados/pap2021luisfranco_v2.mwb.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Captura de EcrÃ£ (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bacalhau.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carne.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/luz.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/adicionaEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adicionaEquipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaEquipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/confirmaNovaEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaNovaEquipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/editaEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaEquipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v3.0.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v3.0.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v3.0.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v3.0.mwb.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equipas.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

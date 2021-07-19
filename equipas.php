@@ -56,7 +56,20 @@ $result = mysqli_query($con, $sql);
                     $resGSF = mysqli_query($con, $sql);
                     $dadosGSF = mysqli_fetch_array($resGSF);
 
+                    $sqlAx="select pontoResultado from pontos INNER JOIN jogos on jogoId=pontoJogoId ";
+                    $sqlAx.=" where pontoEquipaId=".$dados['equipaId']."  order by jogoData desc limit 5";
+                    $resAx=mysqli_query($con,$sqlAx);
+                    $txt="<span>";
+                    while ($dadosAx=mysqli_fetch_array($resAx)){
+                        if($dadosAx[0]=='V')
+                            $txt.="<span class=\"text-success\">".$dadosAx[0]."</span> ";
+                        if($dadosAx[0]=='E')
+                            $txt.="<span class=\"text-warning\">".$dadosAx[0]."</span> ";
+                        if($dadosAx[0]=='D')
+                            $txt.="<span class=\"text-danger\">".$dadosAx[0]."</span> ";
 
+                    }
+                    $txt.="</span>"
                     ?>
 
 
@@ -66,6 +79,7 @@ $result = mysqli_query($con, $sql);
                                 <div class="">
                                     <a href="equipa.php?id=<?php echo $dados['equipaId'] ?>">
                                         <h4><?php echo $dados['equipaNome'] ?></h4></a>
+                                        <h4><?php echo $txt ?></h4></a>
                                     <p class="title"><?php echo $contador ?>º</p>
                                     <p>
                                         <!--<div class="center"><button class="button">Contact</button></div>-->

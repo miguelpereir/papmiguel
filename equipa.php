@@ -4,8 +4,21 @@ top(TEAMS);
 $id = intval($_GET['id']);
 $sql = "Select * from equipas inner join treinadores on equipaId=treinadorequipaId where equipaId=$id";
 $result = mysqli_query($con, $sql);
-$dados = mysqli_fetch_array($result)
+$dados = mysqli_fetch_array($result);
+
+$sql2="select equipaId,equipaNome, sum(pontoValor) as totalPts
+from equipas left join pontos on equipaId=pontoEquipaId
+group by 1
+order by totalPts desc";
+$result2 = mysqli_query($con, $sql2);
 ?>
+    <script>
+        $(document).ready(function($) {
+            $(".clickable-row").click(function() {
+                window.location = $(this).data("href");
+            });
+        });
+    </script>
     <section id="contant" class="contant main-heading team">
         <div class="row">
             <div class="container">
@@ -34,50 +47,37 @@ $dados = mysqli_fetch_array($result)
 
                             </div>
                             <div class="team-btw-match">
-                                <ul>
-                                    <li>
-                                        <img src="images/img-01_002.png" alt="">
-                                        <span>Portugal</span>
-                                    </li>
-                                    <li class="vs"><span>vs</span></li>
-                                    <li>
-                                        <img src="images/img-02.png" alt="">
-                                        <span>Germany</span>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <img src="images/img-03_002.png" alt="">
-                                        <span>Portugal</span>
-                                    </li>
-                                    <li class="vs"><span>vs</span></li>
-                                    <li>
-                                        <img src="images/img-04_003.png" alt="">
-                                        <span>Germany</span>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <img src="images/img-05_002.png" alt="">
-                                        <span>Portugal</span>
-                                    </li>
-                                    <li class="vs"><span>vs</span></li>
-                                    <li>
-                                        <img src="images/img-06.png" alt="">
-                                        <span>Germany</span>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <img src="images/img-07_002.png" alt="">
-                                        <span>Portugal</span>
-                                    </li>
-                                    <li class="vs"><span>vs</span></li>
-                                    <li>
-                                        <img src="images/img-08.png" alt="">
-                                        <span>Germany</span>
-                                    </li>
-                                </ul>
+                                <?php
+                                $sqlEquipas = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora,
+                                    f1.equipaEmblemaUrl as foto1,f2.equipaEmblemaURL as foto2,
+                                    id1.equipaId as idcasa,id2.equipaId as idfora
+                                    from equipas as e1 inner join jogos on e1.equipaId=jogos.jogoCasaEquipaId 
+                                    inner join equipas as e2 on e2.equipaId=jogos.jogoForaEquipaId
+                                    inner join equipas as f1 on f1.equipaId=jogos.jogoCasaEquipaId
+                                    inner join equipas as f2 on f2.equipaId=jogos.jogoForaEquipaId
+                                    inner join equipas as id1 on id1.equipaId=jogos.jogoCasaEquipaId
+                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId where jogoCasaEquipaId=$id ";
+
+                                $resultEquipas = mysqli_query($con, $sqlEquipas);
+                                while ($dadosEquipas = mysqli_fetch_array($resultEquipas)) {
+                                    ?>
+                                    <ul>
+                                        <li>
+                                            <a href="equipa.php?id=<?php echo $dadosEquipas['idcasa'] ?>"><img width="40%" src="<?php echo $dadosEquipas['foto1'] ?>" alt=""></a>
+                                            <a href="equipa.php?id=<?php echo $dadosEquipas['idcasa'] ?>"><span><?php echo $dadosEquipas['casa'] ?></span></a>
+                                        </li>
+                                        <li class="vs"><span><?php echo $dadosEquipas['jogoCasaGolos'] ?></span></li>
+                                        <li class="vs"><span>vs</span></li>
+                                        <li class="vs"><span><?php echo $dadosEquipas['jogoForaGolos'] ?></span></li>
+                                        <li>
+                                            <a href="equipa.php?id=<?php echo $dadosEquipas['idfora'] ?>"><img width="40%" src="<?php echo $dadosEquipas['foto2'] ?>" alt=""></a>
+                                            <a href="equipa.php?id=<?php echo $dadosEquipas['idfora'] ?>"><span><?php echo $dadosEquipas['fora'] ?></span></a>
+                                        </li>
+                                    </ul>
+                                    <?php
+                                }
+                                ?>
+
                             </div>
                         </div>
                     </aside>
@@ -148,45 +148,47 @@ $dados = mysqli_fetch_array($result)
                                     <th>Equipa</th>
                                     <th>P</th>
                                     <th>V</th>
+                                    <th>E</th>
                                     <th>D</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><img src="images/img-01_004.png" alt="">Liverpool</td>
-                                    <td>10</td>
-                                    <td>12</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td><img src="images/img-02_002.png" alt="">Chelsea</td>
-                                    <td>10</td>
-                                    <td>12</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td><img src="images/img-03_003.png" alt="">Norwich City</td>
-                                    <td>20</td>
-                                    <td>15</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td><img src="images/img-04_002.png" alt="">West Brom</td>
-                                    <td>60</td>
-                                    <td>10</td>
-                                    <td>60</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td><img src="images/img-05.png" alt="">sunderland</td>
-                                    <td>30</td>
-                                    <td>06</td>
-                                    <td>30</td>
-                                </tr>
+                                <?php
+                                $contador = 0;
+                                while ($dados2 = mysqli_fetch_array($result2)) {
+                                    $contador++;
+                                    $id = $dados2['equipaId'];
+                                    $sql = "select count(pontoJogoId) as totalJogos
+                    from pontos where pontoEquipaId =$id";
+                                    $resJogos = mysqli_query($con, $sql);
+                                    $dadosJogos = mysqli_fetch_array($resJogos);
+
+                                    $sql = "select count(pontoJogoId) as totalV
+	        from  pontos where pontoResultado='V' and pontoEquipaId =$id";
+                                    $resV = mysqli_query($con, $sql);
+                                    $dadosV = mysqli_fetch_array($resV);
+                                    $sql = "select count(pontoJogoId) as totalE
+	        from  pontos where pontoResultado='E' and pontoEquipaId =$id";
+                                    $resE = mysqli_query($con, $sql);
+                                    $dadosE = mysqli_fetch_array($resE);
+                                    $sql = "select count(pontoJogoId) as totalD
+	        from  pontos where pontoResultado='D' and pontoEquipaId =$id";
+                                    $resD = mysqli_query($con, $sql);
+                                    $dadosD = mysqli_fetch_array($resD);
+                                    ?>
+
+                                    <tr  class='clickable-row' data-href='equipa.php?id=<?php echo $dados2['equipaId'] ?>'>
+                                        <td><?php echo $contador ?></td>
+                                        <td><?php echo $dados2['equipaNome'] ?></td>
+                                        <td><?php echo $dados2['totalPts'] ?></td>
+                                        <td><?php echo $dadosV['totalV'] ?></td>
+                                        <td><?php echo $dadosE['totalE'] ?></td>
+                                        <td><?php echo $dadosD['totalD'] ?></td>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
+
                                 </tbody>
                             </table>
                         </div>

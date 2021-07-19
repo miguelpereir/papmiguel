@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="[leandro] - Melhor Admin">
-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameJogo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/eliminaJogo.php" afterDir="false" />
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_07_2021_10_08_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_07_2021_10_08__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Ajax/AjaxFillJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classificacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/classificacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipas.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +81,7 @@
       <workItem from="1626262758022" duration="6137000" />
       <workItem from="1626344545551" duration="11140000" />
       <workItem from="1626429098205" duration="9819000" />
+      <workItem from="1626688151166" duration="7333000" />
     </task>
     <task id="LOCAL-00001" summary="admin">
       <created>1625500433889</created>
@@ -150,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626364788389</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="mais admin">
+      <created>1626455380904</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626455380904</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

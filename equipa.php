@@ -9,7 +9,7 @@ $dados = mysqli_fetch_array($result);
 $sql2="select equipaId,equipaNome, sum(pontoValor) as totalPts
 from equipas left join pontos on equipaId=pontoEquipaId
 group by 1
-order by totalPts desc";
+order by totalPts desc limit 5";
 $result2 = mysqli_query($con, $sql2);
 ?>
     <script>
@@ -48,7 +48,7 @@ $result2 = mysqli_query($con, $sql2);
                             </div>
                             <div class="team-btw-match">
                                 <?php
-                            echo    $sqlEquipas = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora,
+                            $sqlEquipas = "Select jogos.*, e1.equipaNome as casa, e2.equipaNome as fora,
                                     f1.equipaEmblemaUrl as foto1,f2.equipaEmblemaURL as foto2,
                                     id1.equipaId as idcasa,id2.equipaId as idfora
                                     from equipas as e1 inner join jogos on e1.equipaId=jogos.jogoCasaEquipaId 
@@ -56,7 +56,7 @@ $result2 = mysqli_query($con, $sql2);
                                     inner join equipas as f1 on f1.equipaId=jogos.jogoCasaEquipaId
                                     inner join equipas as f2 on f2.equipaId=jogos.jogoForaEquipaId
                                     inner join equipas as id1 on id1.equipaId=jogos.jogoCasaEquipaId
-                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId where jogoCasaEquipaId=$id or jogoForaEquipaId=$id ";
+                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId where jogoCasaEquipaId=$id or jogoForaEquipaId=$id order by jogoData desc ";
 
                                 $resultEquipas = mysqli_query($con, $sqlEquipas);
                                 while ($dadosEquipas = mysqli_fetch_array($resultEquipas)) {

@@ -28,6 +28,14 @@ top_admin(TEAMS);
         }
         reader.readAsDataURL(event.target.files[0]);
     }
+    function preview_image_3(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('output_image_3');
+            output.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
 </script>
 
 
@@ -128,7 +136,7 @@ top_admin(TEAMS);
             </div>
             <div class="col-md-5">
                 <label>Nome do Estádio: </label>
-                <input class="custom-file-upload" type="text" name="nomeEstadio"
+                <input  type="text" name="nomeEstadio"
                        value=""><br>
             </div>
             <div class="col-md-1">

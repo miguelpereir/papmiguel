@@ -52,33 +52,6 @@ function confirmaEliminaEquipa(idEquipa) {
         }
     })
 };
-function fillTableTreinadores(txt = '') {
-    $.ajax({
-        url: "AJAX/AJAXFillTreinador.php",
-        type: "post",
-        data: {
-            txt: txt
-        },
-        success: function (result) {
-            $('#tableContent').html(result);
-        }
-    });
-};
-function confirmaEliminaTreinador(idTreinador) {
-    var nomeTreinador;
-    $.ajax({
-        url:"AJAX/AJAXGetNameTreinador.php",
-        type:"post",
-        data:{
-            idTreinador:idTreinador
-        },
-        success:function (result){
-            nomeTreinador=result;
-            if(confirm('Confirma que deseja eliminar o Treinador:'+nomeTreinador+'?'))
-                window.location="eliminaTreinador.php?id=" + idTreinador;
-        }
-    })
-};
 function fillTableJogadores(txt = '') {
     $.ajax({
         url: "AJAX/AJAXFillJogador.php",

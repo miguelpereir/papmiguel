@@ -33,7 +33,7 @@ $result = mysqli_query($con, $sql);
             <td><?php echo $dados['noticiaTitulo'] ?></td>
             <td><?php echo $dados['noticiaResumo'] ?></td>
             <td><img width='90' src="../<?php echo $dados['noticiaImagemURL'] ?>"></td>
-            <td><?php echo $dados['noticiaDescricao'] ?></td>
+            <td><?php echo substr($dados['noticiaDescricao'],0,100). "(...)" ?></td>
             <td><img width="90" src="../<?php echo $dados['noticiaCapaURL'] ?>"></td>
             <td><?php echo $dados['noticiaData'] ?></td>
             <td><a href="editaNoticia.php?id=<?php echo $dados['noticiaId'] ?>"> <i class="btn btn-primary">Editar</i></a></td>

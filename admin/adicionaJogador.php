@@ -62,10 +62,11 @@ top_admin(PLAYERS);
 
                 </div>
                 <div class="col-md-5">
+                    <br>
                     <div class="image-upload">
                         <label>Foto:</label>
                         <label for="file-input"><br>
-                            <img href="#" src="../images/add%20imagem.png" id="output_image"  style="width: 150%;" />
+                            <img href="#" src="../images/add%20imagem.png" id="output_image"  style="height: 200px;" />
                         </label>
                         <input id="file-input" class="custom-file-upload" type="file" accept="image/*" name="fotoJogador" onchange="preview_image(event)" style="color: darkgray">
                     </div>

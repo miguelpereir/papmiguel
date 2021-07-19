@@ -1,0 +1,27 @@
+.vitoria{
+    padding: 1px 8px;
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    background-color: #3c763d;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.empate{
+    padding: 1px 9px;
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    background-color: #8a6d3b;;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.derrota{
+    padding: 1px 8px;
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    background-color: #a94442;
+    border-radius: 20px;
+    font-size: 20px;
+}

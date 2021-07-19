@@ -62,11 +62,11 @@ $result = mysqli_query($con, $sql);
                     $txt="<span>";
                     while ($dadosAx=mysqli_fetch_array($resAx)){
                         if($dadosAx[0]=='V')
-                            $txt.="<span class=\"text-success\">".$dadosAx[0]."</span> ";
+                            $txt.="<span class=\"vitoria\" title='Vitoria'>".$dadosAx[0]."</span> ";
                         if($dadosAx[0]=='E')
-                            $txt.="<span class=\"text-warning\">".$dadosAx[0]."</span> ";
+                            $txt.="<span class=\"empate\" title='Empate'>".$dadosAx[0]."</span> ";
                         if($dadosAx[0]=='D')
-                            $txt.="<span class=\"text-danger\">".$dadosAx[0]."</span> ";
+                            $txt.="<span class=\"derrota\" title='Derrota'>".$dadosAx[0]."</span> ";
 
                     }
                     $txt.="</span>"
@@ -79,8 +79,9 @@ $result = mysqli_query($con, $sql);
                                 <div class="">
                                     <a href="equipa.php?id=<?php echo $dados['equipaId'] ?>">
                                         <h4><?php echo $dados['equipaNome'] ?></h4></a>
-                                        <h4><?php echo $txt ?></h4></a>
+
                                     <p class="title"><?php echo $contador ?>º</p>
+                                    <h4><?php echo $txt ?></h4></a>
                                     <p>
                                         <!--<div class="center"><button class="button">Contact</button></div>-->
                                     </p>

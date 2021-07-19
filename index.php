@@ -1,13 +1,13 @@
 <?php
 include_once("includes/body.inc.php");
 top();
-$sql2 = "Select * from noticias";
+$sql2 = "Select * from noticias limit 3";
 $result2 = mysqli_query($con, $sql2);
 
 $sql = "select equipaId,equipaNome, sum(pontoValor) as totalPts
 from equipas left join pontos on equipaId=pontoEquipaId
 group by 1
-order by totalPts desc";
+order by totalPts desc limit 5";
 $result = mysqli_query($con, $sql);
 
 $sql3 = "select * from jogos";
@@ -81,7 +81,7 @@ $dados3 = mysqli_fetch_array($result3);
                                     inner join equipas as f1 on f1.equipaId=jogos.jogoCasaEquipaId
                                     inner join equipas as f2 on f2.equipaId=jogos.jogoForaEquipaId
                                     inner join equipas as id1 on id1.equipaId=jogos.jogoCasaEquipaId
-                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId";
+                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId limit 5";
 
                                 $resultEquipas = mysqli_query($con, $sqlEquipas);
                                 while ($dadosEquipas = mysqli_fetch_array($resultEquipas)) {

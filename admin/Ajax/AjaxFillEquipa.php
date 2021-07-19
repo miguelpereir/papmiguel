@@ -9,8 +9,7 @@ $result = mysqli_query($con, $sql);
 ?>
 <table  class='table table-striped align-middle' width="100%">
     <tr>
-        <td colspan="12" align='right'>
-        <a href="treinadores.php"><i class='btn btn-warning'> Treinadores</i></a>
+        <td colspan="13" align='right'>
         <a href="adicionaEquipa.php"><i class='btn btn-success'> Adiciona</i></a>
         </td>
     </tr>
@@ -23,8 +22,10 @@ $result = mysqli_query($con, $sql);
         <th>Foto do Estadio</th>
         <th>Historia</th>
         <th>Presidente</th>
+        <th>Treinador</th>
+        <th>Foto Treinador</th>
 
-        <th colspan="3"  >Opções</th>
+        <th colspan="2"  >Opções</th>
     </tr>
 
     <?php
@@ -40,6 +41,8 @@ $result = mysqli_query($con, $sql);
             <td><img width="90" src="../<?php echo $dados['equipaEstadioURL'] ?>"></td>
             <td><?php echo substr($dados['equipaHistoria'], 0,100)."(..)" ?></td>
             <td><?php echo $dados['equipaPresidente'] ?></td>
+            <td><?php echo $dados['equipaTreinador'] ?></td>
+            <td><img width="90" src="../<?php echo $dados['equipaTreinadorFotoURL'] ?>" alt=""></td>
             <td><a href="plantel.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-info">Plantel</i></a></td>
             <td><a href="editaEquipa.php?id=<?php echo $dados['equipaId'] ?>"> <i class="btn btn-primary">Editar</i></a></td>
             <td><a href="#" onclick="confirmaEliminaEquipa(<?php echo $dados['equipaId'] ?>);"> <i class="btn btn-danger">Eliminar</i></a></td>

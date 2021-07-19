@@ -24,6 +24,7 @@ top(NEWS);
                            </form>
                        </div>
                    </div>
+                   <!--
                   <div class="content-widget top-story" style="background: url(images/top-story-bg.jpg);">
                      <div class="top-stroy-header">
                         <h2>Top Soccer Headlines Story <a href="#" class="fa fa-fa fa-angle-right"></a></h2>
@@ -41,11 +42,13 @@ top(NEWS);
                         <li><a href="#">Messi wins libel case.</a></li>
                      </ul>
                   </div>
+
                   <aside id="sidebar" class="right-bar">
                      <div class="banner">
                         <img class="img-responsive" src="images/bg.png" alt="#">
                      </div>
                   </aside>
+                  -->
                </div>
             </div>
          </div>

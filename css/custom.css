@@ -17,9 +17,6 @@
  .main-container {
      padding: 10px 15px;
 }
- .skyblue {
-     background-image:url('../images/main-slider-img1.jpg');
-}
  .darkerskyblue {
      background-image:url('../images/slide1.jpg');
 }
@@ -957,7 +954,7 @@
      float: left;
      width: 100%;
      min-height: 500px;
-     background-image: url('../images/about.jpg');
+     background-image: url('../images/imagem.jpg');
      background-position: center center;
      background-repeat: no-repeat;
      background-size: cover;

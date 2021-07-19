@@ -33,7 +33,6 @@ $result = mysqli_query($con, $sql);
             <td><?php echo $dados['jogoCasaGolos'] ?></td>
             <td><?php echo $dados['jogoForaGolos'] ?></td>
             <td><?php echo $dados['jogoData'] ?></td>
-            <td><a href="editajogo.php?id=<?php echo $dados['jogoId'] ?>"> <i class="fas fa-edit text-primary"></i></a></td>
             <td><a href="#" onclick="confirmaEliminaJogo(<?php echo $dados['jogoId'] ?>);"> <i class="btn btn-danger">Elimina</i></a></td>
         </tr>
         <?php

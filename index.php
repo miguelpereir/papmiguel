@@ -62,12 +62,14 @@ $dados3 = mysqli_fetch_array($result3);
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <!--
                     <aside id="sidebar" class="left-bar">
                         <div class="banner-sidebar">
                             <img class="img-responsive" src="images/img-05.jpg" alt="#"/>
                             <h3>Lorem Ipsum is simply dummy text..</h3>
                         </div>
                     </aside>
+                    -->
                     <h4>Match Fixture</h4>
                     <aside id="sidebar" class="left-bar">
                         <div class="feature-matchs">
@@ -81,7 +83,7 @@ $dados3 = mysqli_fetch_array($result3);
                                     inner join equipas as f1 on f1.equipaId=jogos.jogoCasaEquipaId
                                     inner join equipas as f2 on f2.equipaId=jogos.jogoForaEquipaId
                                     inner join equipas as id1 on id1.equipaId=jogos.jogoCasaEquipaId
-                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId limit 5";
+                                    inner join equipas as id2 on id2.equipaId=jogos.jogoForaEquipaId order by jogoData desc limit 5";
 
                                 $resultEquipas = mysqli_query($con, $sqlEquipas);
                                 while ($dadosEquipas = mysqli_fetch_array($resultEquipas)) {
@@ -96,7 +98,7 @@ $dados3 = mysqli_fetch_array($result3);
                                         <li class="vs"><span><?php echo $dadosEquipas['jogoForaGolos'] ?></span></li>
                                         <li>
                                             <a href="equipa.php?id=<?php echo $dadosEquipas['idfora'] ?>"><img width="40%" src="<?php echo $dadosEquipas['foto2'] ?>" alt=""></a>
-                                            <a href="equipa.php?id=<?php echo $dadosEquipas['idfora'] ?>"><span><?php echo $dadosEquipas['fora'] ?></span></a>
+                                            <a href="equipa.php?id=<?php echo $dadosEquipas['idfora'] ?>"><span ><?php echo $dadosEquipas['fora'] ?></span></a>
                                         </li>
                                     </ul>
                                     <?php
@@ -161,6 +163,7 @@ $dados3 = mysqli_fetch_array($result3);
                             </table>
                         </div>
                     </aside>
+                    <!--
                     <div class="content-widget top-story" style="background: url(images/top-story-bg.jpg);">
                         <div class="top-stroy-header">
                             <h2>Top Soccer Headlines Story <a href="#" class="fa fa-fa fa-angle-right"></a></h2>
@@ -178,6 +181,7 @@ $dados3 = mysqli_fetch_array($result3);
                             <li><a href="#">Messi wins libel case.</a></li>
                         </ul>
                     </div>
+                    -->
                 </div>
                 <div class="col-lg-8 col-sm-8 col-xs-12">
                     <div class="news-post-holder">

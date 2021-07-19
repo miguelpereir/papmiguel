@@ -137,7 +137,7 @@ $dados = mysqli_fetch_array($result);
                         </div>
                         <div class="col-md-5">
                             <label>Nome do Estádio: </label>
-                            <input class="custom-file-upload" type="text" name="nomeEstadio"
+                            <input type="text" name="nomeEstadio"
                                    value="<?php echo $dados['equipaEstadioNome'] ?>"><br>
                         </div>
                         <div class="col-md-1">

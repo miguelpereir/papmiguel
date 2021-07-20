@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
-      <change afterPath="$PROJECT_DIR$/images/adan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/espanha.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
-    </list>
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="tou farto de mexer nisto dlp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +74,7 @@
       <workItem from="1626344545551" duration="11140000" />
       <workItem from="1626429098205" duration="9819000" />
       <workItem from="1626688151166" duration="7333000" />
-      <workItem from="1626735987006" duration="6117000" />
+      <workItem from="1626735987006" duration="6511000" />
     </task>
     <task id="LOCAL-00001" summary="admin">
       <created>1625500433889</created>
@@ -165,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626735606041</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="tou farto de mexer nisto dlp">
+      <created>1626742249094</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626742249094</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +189,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="admin" />
     <MESSAGE value="mais admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="mais admin" />
+    <MESSAGE value="tou farto de mexer nisto dlp" />
+    <option name="LAST_COMMIT_MESSAGE" value="tou farto de mexer nisto dlp" />
   </component>
 </project>

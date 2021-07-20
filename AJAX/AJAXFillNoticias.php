@@ -9,7 +9,7 @@ $result = mysqli_query($con, $sql);
 <?php
 while ($dados = mysqli_fetch_array($result)) {
     ?>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
+    <div style="height:400px " class="col-lg-6 col-sm-6 col-xs-12">
         <div class="news-post-widget">
             <a href="noticia.php?id=<?php echo $dados['noticiaId'] ?>"><img height="100px" width="100%" class="img-responsive" src="<?php echo $dados['noticiaCapaURL'] ?>" alt=""></a>
             <div class="news-post-detail">

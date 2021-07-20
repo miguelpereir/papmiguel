@@ -11,6 +11,7 @@ from equipas left join pontos on equipaId=pontoEquipaId
 group by 1
 order by totalPts desc limit 5";
 $result2 = mysqli_query($con, $sql2);
+
 ?>
     <script>
         $(document).ready(function ($) {
@@ -19,6 +20,7 @@ $result2 = mysqli_query($con, $sql2);
             });
         });
     </script>
+
     <section id="contant" class="contant main-heading team">
         <div class="row">
             <div class="container">
@@ -93,52 +95,228 @@ $result2 = mysqli_query($con, $sql2);
                         <h4 align="left">Guarda-Redes</h4>
                     </div>
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="row">
-                                <?php
-                                $sqlJogador = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
+
+                        <?php
+                        $sqlJogador = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
                                                   inner join posicoes on posicaoId=equipaJogadorPosicaoId
                                                   inner join paises on jogadorPaisId=paisId
                                                   where posicaoCampo='guarda redes' and equipaJogadorEquipaId=$id  order by jogadorNome";
-                                $resultJogador = mysqli_query($con, $sqlJogador);
-                                while ($dadosJogador = mysqli_fetch_array($resultJogador)) {
-                                ?>
-                                <div class="blog-sidebar">
-                                    <div class="col-md-12">
-                                        <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
-                                    </div>
-                                    <div class="category-menu">
-                                        <ul>
-                                            <li>
-                                                <div class="col-md-12">
-                                                    <img src="<?php echo $dadosJogador['jogadorFotoURL'] ?>" alt="#">
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12" align="left">
-                                                        <img style="width: 50px" class="img-responsive" src="<?php echo $dadosJogador['paisBandeiraURL'] ?>" title="<?php echo $dados['paisNome'] ?>">
+                        $resultJogador = mysqli_query($con, $sqlJogador);
+                        while ($dadosJogador = mysqli_fetch_array($resultJogador)) {
+                            ?>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="blog-sidebar">
+                                        <div class="col-md-12">
+                                            <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
+                                        </div>
+                                        <div class="category-menu">
+                                            <ul>
+                                                <li>
+                                                    <div class="col-md-12">
+                                                        <img height="180px" src="<?php echo $dadosJogador['jogadorFotoURL'] ?>"
+                                                             alt="#">
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-8" align="left">
+                                                    <div class="row">
+                                                        <div class="col-md-12" align="left">
+                                                            <img style="width: 50px" class="img-responsive"
+                                                                 src="<?php echo $dadosJogador['paisBandeiraURL'] ?>"
+                                                                 title="<?php echo $dadosJogador['paisNome'] ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-8" align="left">
                                                     <span>
                                                     <?php echo $dadosJogador['jogadorDataNascimento'] ?>
                                                     </span>
-                                                    </div>
-                                                    <div class="col-md-4" align="right">
+                                                        </div>
+                                                        <div class="col-md-4" align="right">
                                                     <span>
                                                         <?php echo $dadosJogador['equipaJogadorNumero'] ?>
                                                     </span>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <?php
-                            }
+                        }
+                        ?>
+
+                    </div>
+                    <div class="heading">
+                        <br>
+                        <h4 align="left">Defesas</h4>
+                    </div>
+                    <div class="row">
+
+                        <?php
+                        $sqlJogador = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
+                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
+                                                  inner join paises on jogadorPaisId=paisId
+                                                  where posicaoCampo='Defesa' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                        $resultJogador = mysqli_query($con, $sqlJogador);
+                        while ($dadosJogador = mysqli_fetch_array($resultJogador)) {
                             ?>
-                        </div>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="blog-sidebar">
+                                        <div class="col-md-12">
+                                            <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
+                                        </div>
+                                        <div class="category-menu">
+                                            <ul>
+                                                <li>
+                                                    <div class="col-md-12">
+                                                        <img height="180px" src="<?php echo $dadosJogador['jogadorFotoURL'] ?>"
+                                                             alt="#">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12" align="left">
+                                                            <img style="width: 50px" class="img-responsive"
+                                                                 src="<?php echo $dadosJogador['paisBandeiraURL'] ?>"
+                                                                 title="<?php echo $dadosJogador['paisNome'] ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-8" align="left">
+                                                    <span>
+                                                    <?php echo $dadosJogador['jogadorDataNascimento'] ?>
+                                                    </span>
+                                                        </div>
+                                                        <div class="col-md-4" align="right">
+                                                    <span>
+                                                        <?php echo $dadosJogador['equipaJogadorNumero'] ?>
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
+
+                    </div>
+                    <div class="heading">
+                        <br>
+                        <h4 align="left">Médios</h4>
+                    </div>
+                    <div class="row">
+
+                        <?php
+                        $sqlJogador = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
+                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
+                                                  inner join paises on jogadorPaisId=paisId
+                                                  where posicaoCampo='Médio' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                        $resultJogador = mysqli_query($con, $sqlJogador);
+                        while ($dadosJogador = mysqli_fetch_array($resultJogador)) {
+                            ?>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="blog-sidebar">
+                                        <div class="col-md-12">
+                                            <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
+                                        </div>
+                                        <div class="category-menu">
+                                            <ul>
+                                                <li>
+                                                    <div class="col-md-12">
+                                                        <img height="180px" src="<?php echo $dadosJogador['jogadorFotoURL'] ?>"
+                                                             alt="#">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12" align="left">
+                                                            <img style="width: 50px" class="img-responsive"
+                                                                 src="<?php echo $dadosJogador['paisBandeiraURL'] ?>"
+                                                                 title="<?php echo $dadosJogador['paisNome'] ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-8" align="left">
+                                                    <span>
+                                                    <?php echo $dadosJogador['jogadorDataNascimento'] ?>
+                                                    </span>
+                                                        </div>
+                                                        <div class="col-md-4" align="right">
+                                                    <span>
+                                                        <?php echo $dadosJogador['equipaJogadorNumero'] ?>
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
+
+                    </div>
+                    <div class="heading">
+                        <br>
+                        <h4 align="left">Avançados</h4>
+                    </div>
+                    <div class="row">
+
+                        <?php
+                        $sqlJogador = "select * from jogadores inner join equipajogadores on jogadorId=equipaJogadorJogadorId
+                                                  inner join posicoes on posicaoId=equipaJogadorPosicaoId
+                                                  inner join paises on jogadorPaisId=paisId
+                                                  where posicaoCampo='Avançado' and equipaJogadorEquipaId=$id  order by jogadorNome";
+                        $resultJogador = mysqli_query($con, $sqlJogador);
+                        while ($dadosJogador = mysqli_fetch_array($resultJogador)) {
+                            ?>
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="blog-sidebar">
+                                        <div class="col-md-12">
+                                            <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
+                                        </div>
+                                        <div class="category-menu">
+                                            <ul>
+                                                <li>
+                                                    <div class="col-md-12">
+                                                        <img height="180px" src="<?php echo $dadosJogador['jogadorFotoURL'] ?>"
+                                                             alt="#">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12" align="left">
+                                                            <img style="width: 50px" class="img-responsive"
+                                                                 src="<?php echo $dadosJogador['paisBandeiraURL'] ?>"
+                                                                 title="<?php echo $dadosJogador['paisNome'] ?>">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-8" align="left">
+                                                    <span>
+                                                    <?php echo $dadosJogador['jogadorDataNascimento'] ?>
+                                                    </span>
+                                                        </div>
+                                                        <div class="col-md-4" align="right">
+                                                    <span>
+                                                        <?php echo $dadosJogador['equipaJogadorNumero'] ?>
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
+
                     </div>
                 </div>
                 <div class="col-md-3 ">

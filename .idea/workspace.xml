@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="tou farto de mexer nisto dlp" />
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="tou farto de mexer nisto dlp">
+      <change afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bola.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/AJAXFillNoticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/AJAXFillNoticias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Ajax/AJAXFillPlantel.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillPlantel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/eliminaJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/eliminaJogo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v4.0.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v4.0.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/icon1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noticias.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

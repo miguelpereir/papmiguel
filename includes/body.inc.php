@@ -58,19 +58,13 @@ function top($page = HOME)
                         <div class="col-md-6">
                             <div class="full">
                                 <div class="logo">
-                                    <a href="index.php"><img src="images/icon1.png" alt="#"/></a>
+                                    <a href="index.php"><img style="border-radius: 10px" width="150px" src="images/icon1.jpg" alt="#"/></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="right_top_section">
                                 <!-- social icon -->
-                                <ul class="social-icons pull-left">
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                                    <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                </ul>
                                 <!-- end social icon -->
                                 <!-- button section -->
                                 <ul class="login">
@@ -331,15 +325,9 @@ function bottom($menu = HOME)
                     <div class="full">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.php"><img src="images/icon1.png" alt="#"/></a>
+                                <a href="index.php"><img style="border-radius: 10px" width="150px" src="images/icon1.jpg" alt="#"/></a>
                             </div>
-                            <p>Bought a pool, can't even swim</p>
-                            <ul class="social-icons style-4 pull-left">
-                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                                <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            </ul>
+                            <p>O site dedicado a pessoas que gostam de futebol</p>
                         </div>
                     </div>
                 </div>
@@ -468,34 +456,12 @@ function top_admin($page = HOME)
                     <div class="row">
                         <div class="col-md-6">
                             <div class="full">
-                                <div class="logo">
-                                    <a href="index.php"><img src="../images/icon1.png" alt="#"/></a>
+                                <div class="logo" style="background-color: #9BD9FD;border-radius: 20px">
+                                    <a href="index.php"><img style="border-radius: 10px" width="150px" src="../images/icon2.jpg" alt="#"/> - ADMISTRADOR</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="right_top_section">
-                                <!-- social icon -->
-                                <ul class="social-icons pull-left">
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                                    <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                </ul>
-                                <!-- end social icon -->
-                                <!-- button section -->
-                                <ul class="login">
-                                    <li class="login-modal">
-                                        <a href="#" class="login"><i class="fa fa-user"></i>Login</a>
-                                    </li>
-                                    <li>
-                                        <div class="cart-option">
-                                            <a href="#"><i class="fa fa-shopping-cart"></i>Register</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <!-- end button section -->
-                            </div>
                         </div>
                     </div>
                 </div>

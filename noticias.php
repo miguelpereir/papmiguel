@@ -19,7 +19,7 @@ top(NEWS);
                    <div class="blog-sidebar">
                        <div class="search-bar-blog">
                            <form>
-                               <input type="text" id="search" placeholder="search" />
+                               <input type="text" id="search" placeholder="Pesquisar:" />
                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
                            </form>
                        </div>

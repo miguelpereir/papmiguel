@@ -18,7 +18,6 @@ $result = mysqli_query($con, $sql);
             <a href="equipas.php"><i class='btn btn-black'> Back</i></a>
         </td>
         <td colspan="4" align='right'>
-            <a href="edita_ultimo11.php?id=<?php echo $id ?>"><i class='btn btn-info'> Ultimo 11</i></a>
             <a href="adicionaPlantel.php?id=<?php echo $id ?>"><i class='btn btn-success'> Adiciona</i></a>
         </td>
     </tr>

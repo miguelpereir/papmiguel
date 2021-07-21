@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dragao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/rubenamorim.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sergioconceicao.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/Ajax/AjaxFillEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillEquipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

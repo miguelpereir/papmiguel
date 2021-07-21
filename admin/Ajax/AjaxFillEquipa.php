@@ -39,7 +39,7 @@ $result = mysqli_query($con, $sql);
             <td><?php echo $dados['equipaAnoFundacao'] ?></td>
             <td><?php echo $dados['equipaEstadioNome'] ?></td>
             <td><img width="90" src="../<?php echo $dados['equipaEstadioURL'] ?>"></td>
-            <td><?php echo substr($dados['equipaHistoria'], 0,100)."(..)" ?></td>
+            <td><?php echo substr($dados['equipaHistoria'], 0,50)."(..)" ?></td>
             <td><?php echo $dados['equipaPresidente'] ?></td>
             <td><?php echo $dados['equipaTreinador'] ?></td>
             <td><img width="90" src="../<?php echo $dados['equipaTreinadorFotoURL'] ?>" alt=""></td>

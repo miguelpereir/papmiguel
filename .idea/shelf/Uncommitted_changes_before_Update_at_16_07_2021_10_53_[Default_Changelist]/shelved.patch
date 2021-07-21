@@ -1,0 +1,67 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"42e24d5b-cc31-4a2f-8587-e8383cb3ab67\" name=\"Default Changelist\" comment=\"mais admin\">\r\n      <change afterPath=\"$PROJECT_DIR$/admin/Ajax/AJAXFillJogador.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/Ajax/AJAXFillPais.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/Ajax/AJAXGetNamePais.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/Ajax/AjaxGetNameJogador.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/adicionaJogador.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/adicionaPais.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/confirmaEditaJogador.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/confirmaNovoJogador.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/confirmaNovoPais.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/editaJogador.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/editaPais.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/eliminaJogador.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/eliminaPais.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/jogadores.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/admin/paises.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/encodings.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin/confirmaEditaNoticia.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin/confirmaEditaNoticia.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin/eliminaTreinador.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin/eliminaTreinador.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/includes/body.inc.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/includes/body.inc.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/includes/config.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/includes/config.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/js/admin.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/js/admin.js\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JavaScript File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1utBPzccpqdOvMvQ8MEKdEOcLJ0\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowPanel.toolwindow.highlight.mappings\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowPanel.toolwindow.highlight.symlinks\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowPanel.toolwindow.show.date\" value=\"false\" />\r\n    <property name=\"WebServerToolWindowPanel.toolwindow.show.permissions\" value=\"false\" />\r\n    <property name=\"WebServerToolWindowPanel.toolwindow.show.size\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/admin\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\wamp64\\www\\papmiguel\\admin\" />\r\n      <recent name=\"C:\\wamp64\\www\\papmiguel\\admin\\Ajax\" />\r\n      <recent name=\"C:\\wamp64\\www\\papmiguel\\js\" />\r\n      <recent name=\"C:\\wamp64\\www\\papmiguel\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"42e24d5b-cc31-4a2f-8587-e8383cb3ab67\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1625474984736</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1625474984736</updated>\r\n      <workItem from=\"1625474986063\" duration=\"13458000\" />\r\n      <workItem from=\"1625560792233\" duration=\"14113000\" />\r\n      <workItem from=\"1625965856991\" duration=\"495000\" />\r\n      <workItem from=\"1626027712581\" duration=\"8398000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"admin\">\r\n      <created>1625500433889</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625500433889</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"mais admin\">\r\n      <created>1625584622368</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625584622368</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"admin\" />\r\n    <MESSAGE value=\"mais admin\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mais admin\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f0f74964ac124712b1ccc0670761add7441d9b9f)
++++ b/.idea/workspace.xml	(date 1626046160335)
+@@ -1,30 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin">
+-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillJogador.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXFillPais.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AJAXGetNamePais.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameJogador.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/adicionaJogador.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/adicionaPais.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/confirmaEditaJogador.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovoJogador.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/confirmaNovoPais.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/editaJogador.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/editaPais.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/eliminaJogador.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/eliminaPais.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/jogadores.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/admin/paises.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaNoticia.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/admin/eliminaTreinador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/eliminaTreinador.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
+-    </list>
++    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="mais admin" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -89,7 +66,7 @@
+       <workItem from="1625474986063" duration="13458000" />
+       <workItem from="1625560792233" duration="14113000" />
+       <workItem from="1625965856991" duration="495000" />
+-      <workItem from="1626027712581" duration="8398000" />
++      <workItem from="1626027712581" duration="8719000" />
+     </task>
+     <task id="LOCAL-00001" summary="admin">
+       <created>1625500433889</created>
+@@ -105,7 +82,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1625584622368</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="mais admin">
++      <created>1626046146105</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1626046146105</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">

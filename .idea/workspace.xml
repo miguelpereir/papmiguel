@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/images/dragao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/rubenamorim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sergioconceicao.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Ajax/AjaxFillEquipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AjaxFillEquipa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/eliminaJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/eliminaJogador.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626886244544</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update">
+      <created>1626908465873</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1626908465873</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

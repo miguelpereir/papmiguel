@@ -128,7 +128,7 @@ function confirmaEliminaPlantel(idPlantel) {
         },
         success:function (result){
             nomePlantel=result;
-            if(confirm('Confirma que deseja eliminar o numero:'+nomePlantel+'?'))
+            if(confirm('Confirma que deseja eliminar o jogador '+nomePlantel+' do plantel?'))
                 window.location="eliminaPlantel.php?id=" + idPlantel;
         }
     })

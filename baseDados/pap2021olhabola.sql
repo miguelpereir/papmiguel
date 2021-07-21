@@ -11,7 +11,7 @@
  Target Server Version : 50731
  File Encoding         : 65001
 
- Date: 20/07/2021 02:25:47
+ Date: 21/07/2021 03:19:20
 */
 
 SET NAMES utf8mb4;
@@ -42,6 +42,7 @@ INSERT INTO `equipajogadores` VALUES (1, 1, 4, 30);
 INSERT INTO `equipajogadores` VALUES (2, 1, 16, 30);
 INSERT INTO `equipajogadores` VALUES (3, 1, 7, 87);
 INSERT INTO `equipajogadores` VALUES (4, 1, 13, 45);
+INSERT INTO `equipajogadores` VALUES (5, 6, 4, 99);
 
 -- ----------------------------
 -- Table structure for equipas
@@ -64,12 +65,12 @@ CREATE TABLE `equipas`  (
 -- ----------------------------
 -- Records of equipas
 -- ----------------------------
-INSERT INTO `equipas` VALUES (1, 'Sporting', 'images/sporting.jpg', 1905, 'Estadio de Alvalade', 'images/alvalade', '<p>qualquer coisa</p>', 'Ladrão', 'Ruben Amorim', 'images/semFoto.jpg');
+INSERT INTO `equipas` VALUES (1, 'Sporting', 'images/sporting.jpg', 1905, 'Estadio de Alvalade', 'images/alvalade', '<p>qualquer coisa</p>', 'Frederico Varandas', 'Ruben Amorim', 'images/semFoto.jpg');
 INSERT INTO `equipas` VALUES (2, ' FC Porto', 'images/porto.jpg', 1893, 'Estádio do Dragão', 'images/dragao.jpg', 'qualquer coisa', 'Ladrão', 'Sergio Conceição', 'images/semFoto.jpg');
 INSERT INTO `equipas` VALUES (3, ' SL Benfica', 'images/benfica.jpg', 1904, 'Estádio da Luz', 'images/luz.jpg', 'qualquer coisa', 'Ladrão', 'Jorge Jesus', 'images/semFoto.jpg');
 INSERT INTO `equipas` VALUES (4, ' SC Braga', 'images/braga.jpg', 1921, 'Estádio Municipal de Braga', 'images/estadiobraga.jpg', 'qualquer coisa', 'Ladrão', 'Jorge Jesus', 'images/semFoto.jpg');
 INSERT INTO `equipas` VALUES (5, ' FC P.Ferreira', 'images/ferreira.jpg', 1950, 'Estádio Municipal da Capital do Móvel', 'images/luz.jpg', '<p>qualquer coisa</p>', 'Ladrão', 'Jorge Jesus', 'images/semFoto.jpg');
-INSERT INTO `equipas` VALUES (6, ' Santa Clara', 'images/santaclara.jpg', 1927, 'Estádio da Luz', 'images/luz.jpg', 'qualquer coisa', 'Ladrão', 'Jorge Jesus', 'images/semFoto.jpg');
+INSERT INTO `equipas` VALUES (6, ' Santa Clara', 'images/santaclara.jpg', 1927, 'Estádio de São Miguel', 'images/estadiosantaclara.jpg', '<p>O Clube Desportivo Santa Clara &eacute; o resultado final da grande cria&ccedil;&atilde;o de Rodrigo Neto, algo distante no tempo mas muito pr&oacute;ximo no essencial, de um fen&oacute;meno s&oacute;cio-desportivo que, iniciando-se em finais de 1917, teve o seu apogeu durante os anos de 1919 e 1920, o auge da animada disputa dos \"Campeonatos de Santa Clara\", competi&ccedil;&atilde;o na qual participavam equipas em representa&ccedil;&atilde;o de algumas das v&aacute;rias \"lojas de Santa Clara\", apresentando-se como herdeiro natural dos dois outros \"Santa Claras\"; o \"Santa Clara Foot-ball Club\" e o \"Sport Club Santa Clara\", ambos antes dele tamb&eacute;m filiados na \"Associa&ccedil;&atilde;o de Foot-ball de Sam Miguel\", hoje; Associa&ccedil;&atilde;o de Futebol de Ponta Delgada.</p>', 'Rui Melo Cordeiro', 'Daniel Ramos', 'images/danielramos.jpg');
 INSERT INTO `equipas` VALUES (7, ' Vitória SC', 'images/vitoria.jpg', 1922, 'Estádio da Luz', 'images/luz.jpg', 'qualquer coisa', 'Ladrão', 'Jorge Jesus', 'images/semFoto.jpg');
 INSERT INTO `equipas` VALUES (8, ' Moreirense FC', 'images/moreirense.jpg', 1938, 'Estádio da Luz', 'images/luz.jpg', 'qualquer coisa', 'Ladrão', 'Jorge Jesus', 'images/semFoto.jpg');
 INSERT INTO `equipas` VALUES (9, ' FC Famalicão', 'images/famalicao.jpg', 1931, 'Estádio da Luz', 'images/luz.jpg', 'qualquer coisa', 'Ladrão', 'Jorge Jesus', 'images/semFoto.jpg');
@@ -96,7 +97,7 @@ CREATE TABLE `jogadores`  (
   PRIMARY KEY (`jogadorId`) USING BTREE,
   INDEX `fk_jogadores_paises_idx`(`jogadorPaisId`) USING BTREE,
   CONSTRAINT `fk_jogadores_paises` FOREIGN KEY (`jogadorPaisId`) REFERENCES `paises` (`paisId`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of jogadores
@@ -105,6 +106,7 @@ INSERT INTO `jogadores` VALUES (1, 'Adan', '2021-07-13', 'images/adan.png', 1);
 INSERT INTO `jogadores` VALUES (2, 'Joao', '2021-07-20', 'images/jj.jpg', 1);
 INSERT INTO `jogadores` VALUES (3, 'Holandaa', '2021-07-21', 'images/semFoto.jpg', 1);
 INSERT INTO `jogadores` VALUES (4, 'grdfw', '2021-07-27', 'images/semFoto.jpg', 1);
+INSERT INTO `jogadores` VALUES (5, 'Marco Pereira', '1987-01-12', 'images/marcopereira.png', 2);
 
 -- ----------------------------
 -- Table structure for jogos
@@ -170,13 +172,14 @@ CREATE TABLE `noticias`  (
   `noticiaDescricao` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `noticiaData` date NOT NULL,
   PRIMARY KEY (`noticiaId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of noticias
 -- ----------------------------
 INSERT INTO `noticias` VALUES (11, 'Benfica informa que Darwin foi submetido a uma artroscopia ao joelho direito', '', 'images/about.jpg', 'images/about.jpg', '<p>O Benfica anunciou esta segunda-feira que Darwin foi submetido a uma artroscopia ao joelho direito. De acordo com as &aacute;guias, a&nbsp;cirurgia \"decorreu sem intercorr&ecirc;ncias, estando prevista&nbsp;alta hospitalar para esta ter&ccedil;a-feira\".<br /><br /></p>\r\n<div id=\"incontent\"></div>\r\n<p>N&atilde;o foi divulgado o tempo de paragem do avan&ccedil;ado uruguaio que, recorde-se, j&aacute; vinha evidenciando dores naquele joelho, o mesmo que o obrigou a parar no final de fevereiro.</p>\r\n<p>&nbsp;</p>', '2021-05-25');
 INSERT INTO `noticias` VALUES (12, 'Carlos Carvalhal: “Disse aos jogadores que estava todo borrado...”', '', 'images/imagem.png', 'images/slide1.jpg', '<h2>Significado do t&iacute;tulo</h2>\r\n<p>&ldquo;Os meus pais iam ver os jogos quando eu era beb&eacute;. Essa foi sempre a minha vida, o de ir ao est&aacute;dio aos domingos. Sou da cidade, todos os meus amigos e a minha fam&iacute;lia s&atilde;o do Sp. Braga, acho que conhe&ccedil;o pessoalmente metade dos adeptos do Sp. Braga. &Eacute; o meu clube, era algo que eu ambicionava desde sempre. Era o que eu tinha dentro de mim e estou grato aos meus jogadores por isso.&rdquo;</p>\r\n<h2>A opera&ccedil;&atilde;o do pai</h2>\r\n<p>&ldquo;Eu disse-lhes que estava todo borrado, todo cagado, tinha a ver com o meu pai, que foi operado hoje. Vivi um dia um bocado angustiante, at&eacute; saber que estava tudo bem. Quando vou para a palestra antes do jogo, vou satisfeito e a relativizar. Isto n&atilde;o era uma situa&ccedil;&atilde;o de vida ou de morte, era para desfrutar. Eu, filho da Mariazinha e do Felisberto, tenho o meu nome gravado a ouro na hist&oacute;ria do Sp. Braga.&rdquo;</p>\r\n<h2>Arbitragem</h2>\r\n<p>&ldquo;N&atilde;o falo sobre arbitragem, nunca falei, mesmo quando tinha jogadores meus expulsos em jogos importantes. Jog&aacute;mos contra uma grande equipa. O que os meus jogadores fizeram foi brilhante, o de diminuir as diferen&ccedil;as. Foram extremamente competentes e merecemos inteiramente esta vitoria.&rdquo;</p>\r\n<h2>Candidatura ao t&iacute;tulo</h2>\r\n<p>&ldquo;O controlo das expectativas &eacute; complicado. Consegue-se atenuar as coisas de uma forma progressiva e com um crescimento sustentado. Esta no bom caminho a diminuir essa diferen&ccedil;a, mas continua a ser uma diferen&ccedil;a muito grande. N&atilde;o fora estarmos envolvidos nas quatro competi&ccedil;&otilde;es e ter&iacute;amos feito melhor no campeonato. Foi por isso que considero que esta foi uma das melhores &eacute;pocas do Sp. Braga no ano do seu centen&aacute;rio. O futuro dir&aacute; quando o Sp. Braga puder disputar o t&iacute;tulo.&rdquo;</p>\r\n<h2>Sp. Braga proactivo</h2>\r\n<p>&ldquo;Tivemos um caudal ofensivo significativo, fomos sempre uma equipa proactiva. N&atilde;o esper&aacute;mos pelo Benfica. Fizemos isto em 52 jogos, and&aacute;mos o ano inteiro a ter iniciativa. Chegamos ao final com a satisfa&ccedil;&atilde;o plena.&rdquo;</p>', '2021-05-25');
+INSERT INTO `noticias` VALUES (13, 'A crónica do Sporting-Angers, 2-0: combustível caro dá meio depósito', 'Equipa só arrancou com Tabata a acelerar no meio e Paulinho a aquecer o pé canhoto', 'images/noticia2.jpg', 'images/noticia1.jpg', '<p>O Sporting venceu (2-0) o particular frente aos franceses do Angers, o sexto triunfo em sete jogos dos le&otilde;es nesta pr&eacute;-temporada. O resultado acaba por ser melhor do que a exibi&ccedil;&atilde;o: a equipa de R&uacute;ben Amorim mostrou uma tremenda efic&aacute;cia com dois golos nas tr&ecirc;s ocasi&otilde;es claras de golo que disp&ocirc;s. Numa 1&ordf; parte em que o Angers foi superior, o Sporting conseguiu chegar &agrave; vit&oacute;ria j&aacute; no segundo tempo. Gon&ccedil;alo In&aacute;cio (63&rsquo;) e Paulinho (86&rsquo;) fizeram os golos.</p>', '2021-07-21');
 
 -- ----------------------------
 -- Table structure for onzes
@@ -209,12 +212,13 @@ CREATE TABLE `paises`  (
   `paisNome` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `paisBandeiraURL` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`paisId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of paises
 -- ----------------------------
 INSERT INTO `paises` VALUES (1, 'Espanha', 'images/espanha.jpg');
+INSERT INTO `paises` VALUES (2, 'Portugal', 'images/portugal.png');
 
 -- ----------------------------
 -- Table structure for pontos

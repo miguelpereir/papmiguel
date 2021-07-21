@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="dados">
-      <change afterPath="$PROJECT_DIR$/images/danielramos.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/estadiosantaclara.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/marcopereira.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/noticia1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/noticia2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/portugal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameJogo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Ajax/AjaxGetNameJogo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/body.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/body.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/noticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/noticia.php" afterDir="false" />
-    </list>
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="dados" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626742249094</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="dados">
+      <created>1626829865082</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626829865082</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +197,7 @@
     <MESSAGE value="admin" />
     <MESSAGE value="mais admin" />
     <MESSAGE value="tou farto de mexer nisto dlp" />
-    <option name="LAST_COMMIT_MESSAGE" value="tou farto de mexer nisto dlp" />
+    <MESSAGE value="dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="dados" />
   </component>
 </project>

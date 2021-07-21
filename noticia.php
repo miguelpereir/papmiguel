@@ -9,10 +9,10 @@ $dados = mysqli_fetch_array($result)
     <section id="contant" class="contant">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <div class="feature-post">
                         <h1><?php echo $dados['noticiaTitulo'] ?></h1>
-                        <div class="feature-img">
+                        <div align="center" class="feature-img">
                             <img src="<?php echo $dados['noticiaImagemURL'] ?>" class="img-responsive" alt="#"/>
                         </div>
                         <div class="feature-cont">
@@ -29,6 +29,7 @@ $dados = mysqli_fetch_array($result)
                             </div>
                         </div>
                     </div>
+                    <!--
                     <div class="post-heading">
                     <h2>Comentarios</h2>
                     </div>
@@ -65,12 +66,11 @@ $dados = mysqli_fetch_array($result)
                             </ul>
                         </form>
                     </div>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-xs-12">
-                    <!--
 
-                     -->
                     <div class="blog-sidebar">
                         <h4 class="heading">Popular News</h4>
                         <div class="category-menu">
@@ -85,6 +85,7 @@ $dados = mysqli_fetch_array($result)
                             </ul>
                         </div>
                     </div>
+                    -->
 
                 </div>
             </div>

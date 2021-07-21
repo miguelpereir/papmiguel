@@ -349,10 +349,10 @@ function bottom($menu = HOME)
                         <div class="footer-widget">
                             <h3>Contacte-nos</h3>
                             <ul class="address-list">
-                                <li><i class="fa fa-map-marker"></i>Rua do Alfredo, nº43, lote 5, Leria, Africa
+                                <li><i class="fa fa-map-marker"></i>Rua Professora Amélia Cândida, Boavista, 2430-053 M.nha Grande
                                 </li>
-                                <li><i class="fa fa-phone"></i>911111112</li>
-                                <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> exemplo@gmail.com
+                                <li><i class="fa fa-phone"></i>244 555 170</li>
+                                <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> miguel.mcp.21@gmail.com
                                 </li>
                             </ul>
                         </div>

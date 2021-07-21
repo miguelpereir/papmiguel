@@ -70,7 +70,7 @@ $dados3 = mysqli_fetch_array($result3);
                         </div>
                     </aside>
                     -->
-                    <h4>Match Fixture</h4>
+                    <h4>Jogos</h4>
                     <aside id="sidebar" class="left-bar">
                         <div class="feature-matchs">
                             <div class="team-btw-match">
@@ -108,7 +108,7 @@ $dados3 = mysqli_fetch_array($result3);
                             </div>
                         </div>
                     </aside>
-                    <h4>Points Table</h4>
+                    <h4>Classificação</h4>
                     <aside id="sidebar" class="left-bar">
                         <div class="feature-matchs">
                             <table class="table table-bordered table-hover">

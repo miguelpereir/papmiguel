@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/admin/eliminaJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/eliminaJogador.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/espanha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadio22dejunho.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadioS.Luis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadiobarcelos.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadiobraga.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadioguimaraes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadiomadeira.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadiomaritimo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadiomoreirense.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadiomovel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadionacional.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadioportimao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadiorio.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/estadiotondela.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equipa.php" beforeDir="false" afterPath="$PROJECT_DIR$/equipa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/espanha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/portugal.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/portugal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/admin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +95,7 @@
       <workItem from="1626429098205" duration="9819000" />
       <workItem from="1626688151166" duration="7333000" />
       <workItem from="1626735987006" duration="6511000" />
+      <workItem from="1626942239676" duration="3286000" />
     </task>
     <task id="LOCAL-00001" summary="admin">
       <created>1625500433889</created>
@@ -197,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626908465873</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update">
+      <created>1626909010479</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1626909010479</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -106,9 +106,9 @@ $result2 = mysqli_query($con, $sql2);
                             ?>
                             <div class="col-md-3">
                                 <div class="row">
-                                    <div class="blog-sidebar">
+                                    <div style="height: 361px" class="blog-sidebar">
                                         <div class="col-md-12">
-                                            <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
+                                            <h3 style="width: 100%;"  class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
                                         </div>
                                         <div class="category-menu">
                                             <ul>
@@ -120,7 +120,7 @@ $result2 = mysqli_query($con, $sql2);
                                                     <div class="row">
                                                         <div class="col-md-12" align="left">
                                                             <img style="width: 50px" class="img-responsive"
-                                                                 src="<?php echo $dadosJogador['paisBandeiraURL'] ?>"
+                                                                 src=" <?php echo $dadosJogador['paisBandeiraURL'] ?>"
                                                                  title="<?php echo $dadosJogador['paisNome'] ?>">
                                                         </div>
                                                     </div>
@@ -163,9 +163,9 @@ $result2 = mysqli_query($con, $sql2);
                             ?>
                             <div class="col-md-3">
                                 <div class="row">
-                                    <div class="blog-sidebar">
+                                    <div style="height: 361px" class="blog-sidebar">
                                         <div class="col-md-12">
-                                            <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
+                                            <h3 style="width: 100%"  class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
                                         </div>
                                         <div class="category-menu">
                                             <ul>
@@ -220,7 +220,7 @@ $result2 = mysqli_query($con, $sql2);
                             ?>
                             <div class="col-md-3">
                                 <div class="row">
-                                    <div class="blog-sidebar">
+                                    <div style="height: 361px" class="blog-sidebar">
                                         <div class="col-md-12">
                                             <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
                                         </div>
@@ -277,7 +277,7 @@ $result2 = mysqli_query($con, $sql2);
                             ?>
                             <div class="col-md-3">
                                 <div class="row">
-                                    <div class="blog-sidebar">
+                                    <div style="height: 361px" class="blog-sidebar">
                                         <div class="col-md-12">
                                             <h3 class="heading"><?php echo $dadosJogador['jogadorNome'] ?></h3>
                                         </div>

@@ -182,8 +182,8 @@ function confirmaEliminaJogo(idJogo) {
         },
         success:function (result){
             nomeJogo=result;
-            if(confirm('Confirma que deseja eliminar a Posicao:'+nomeJogo+'?'))
-                window.location="eliminaPosicao.php?id=" + idJogo;
+            if(confirm('Confirma que deseja eliminar o jogo:'+nomeJogo+'?'))
+                window.location="eliminaJogo.php?id=" + idJogo;
         }
     })
 };

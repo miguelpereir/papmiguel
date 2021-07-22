@@ -141,7 +141,7 @@ $dados = mysqli_fetch_array($result);
                         <label>Imagem: </label>
                         <label for="file-input"><br>
                             <img href="#" src="../<?php echo $dados['noticiaImagemURL'] ?>" id="output_image"
-                                 style="width: 100px;"/>
+                                 style="width: 150%;"/>
                         </label>
                         <input id="file-input" class="custom-file-upload" type="file" accept="image/*"
                                name="imagemNoticia" onchange="preview_image(event)" style="color: darkgray"><br>
@@ -152,7 +152,7 @@ $dados = mysqli_fetch_array($result);
                         <label>Foto Capa:</label>
                         <label for="file-input_2"><br>
                             <img href="#" src="../<?php echo $dados['noticiaCapaURL'] ?>" id="output_image_2"
-                                 style="width: 100px;"/>
+                                 style="width: 150%;"/>
                         </label>
                         <input id="file-input_2" class="custom-file-upload" type="file" accept="image/*"
                                name="capaNoticia" onchange="preview_image_2(event)" style="color: darkgray">

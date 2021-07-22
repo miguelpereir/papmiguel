@@ -5,7 +5,7 @@ $id=intval($_POST['jogadorId']);
 $data=$_POST['dataJogador'];
 $paisId=intval($_POST['jogadorPais']);
 $imagem=$_FILES['fotoJogador']['name'];
-$novoNome="images/".$imagem;
+$novoNome="../images/".$imagem;
 
 
 $sql="Update jogadores set jogadorNome='".$nome."', jogadorDataNascimento='".$data."'";

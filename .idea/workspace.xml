@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/imagens/danielbragança.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/feddal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/jogador3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/noticia1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/noticia2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagens/ricardoesgaio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/andrepaulo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/koala.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/luismaximiano.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/noticia3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/noticia4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/noticia5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/noticia6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/pokemon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/semFoto.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaJogador.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaJogador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/confirmaEditaPais.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/confirmaEditaPais.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/editaNoticia.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/editaNoticia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/modeloOlhaBola_v5.0.mwb.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preview_img/preview.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="42e24d5b-cc31-4a2f-8587-e8383cb3ab67" name="Default Changelist" comment="dados" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +75,7 @@
       <workItem from="1626429098205" duration="9819000" />
       <workItem from="1626688151166" duration="7333000" />
       <workItem from="1626735987006" duration="6511000" />
-      <workItem from="1626942239676" duration="6842000" />
+      <workItem from="1626942239676" duration="6921000" />
     </task>
     <task id="LOCAL-00001" summary="admin">
       <created>1625500433889</created>
@@ -247,7 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626951464600</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="ultimo">
+      <created>1626955513936</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1626955513936</updated>
+    </task>
+    <task id="LOCAL-00023" summary="dados">
+      <created>1626955568290</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1626955568290</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,8 +261,9 @@
     <MESSAGE value="admin" />
     <MESSAGE value="mais admin" />
     <MESSAGE value="tou farto de mexer nisto dlp" />
-    <MESSAGE value="dados" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="ultimo" />
+    <MESSAGE value="dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="dados" />
   </component>
 </project>

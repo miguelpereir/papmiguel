@@ -1,7 +1,7 @@
 <?php
 include_once("includes/body.inc.php");
 top();
-$sql2 = "Select * from noticias limit 3";
+$sql2 = "Select * from noticias order by noticiaData desc limit 3";
 $result2 = mysqli_query($con, $sql2);
 
 $sql = "select equipaId,equipaNome, sum(pontoValor) as totalPts
